@@ -1,6 +1,8 @@
-# Contributing to BetterSolano.org
+# Contributing to Better Zamboanga
 
-Thank you for your interest in contributing to BetterSolano.org! This civic-tech project thrives on community participation. Whether you're a developer, designer, translator, or a concerned citizen of Solano, your contributions are welcome.
+Thank you for your interest in contributing to Better Zamboanga! This civic-tech project thrives on community participation. Whether you're a developer, designer, translator, or a concerned citizen of Zamboanga City, your contributions are welcome.
+
+> **Fork Note:** This project is a fork of [BetterSolano.org](https://github.com/BetterSolano/bettersolano). While we inherit the same contribution philosophy and technical architecture, contributions here are specifically focused on localizing content and data for Zamboanga City.
 
 ## Getting Started
 
@@ -14,8 +16,8 @@ Thank you for your interest in contributing to BetterSolano.org! This civic-tech
 ### Setup
 
 ```bash
-git clone https://github.com/BetterSolano/bettersolano.git
-cd bettersolano
+git clone https://github.com/Banyel3/BetterZamboanga.git
+cd BetterZamboanga
 npm install
 npm run dev
 ```
@@ -26,7 +28,7 @@ Open http://localhost:8000 in your browser.
 
 ### Reporting Bugs
 
-1. Check existing [issues](https://github.com/BetterSolano/bettersolano/issues) to avoid duplicates
+1. Check existing [issues](https://github.com/Banyel3/BetterZamboanga/issues) to avoid duplicates
 2. Create a new issue with:
    - Clear, descriptive title
    - Steps to reproduce
@@ -80,13 +82,30 @@ Types:
 |------|-------------|
 | Bug Fixes | Fix reported issues |
 | Features | Implement new functionality |
-| Content | Update municipal service information |
-| Translations | Translate to Filipino or Ilocano |
+| Content | Update municipal service information for Zamboanga City |
+| Data Contributions | Update JSON files in `data/` (officials, services, projects, statistics) |
+| Translations | Translate to Filipino, Chavacano, or other local languages |
 | Design | Improve UI/UX and accessibility |
-| Data | Verify and update statistics |
+| Data Validation | Verify statistics and sources, run `assets/js/services-validator.js` |
 | Documentation | Improve guides and comments |
 | API Integration | Connect real-time data sources |
 | Data Visualization | Enhance charts and graphs |
+
+### Data Contribution Guidelines
+
+When contributing JSON data (`data/officials.json`, `data/services.json`, `data/dpwh-projects.json`, `data/competitive-index.json`, `data/ordinances.json`, `data/resolutions.json`):
+
+1. **Source verification:** Only use data from official government sources (Zamboanga City LGU, PSA, BLGF, DPWH Region IX)
+2. **Provenance:** Include source URLs and access dates in commit messages or add provenance metadata files (`data/*.provenance.json`) when available
+3. **Validation:** Run `node assets/js/services-validator.js` after editing `data/services.json`
+4. **Licensing:** Ensure datasets are public domain or properly attributed; avoid copyrighted materials
+5. **Privacy:** Do not include personal contact details beyond official public channels
+6. **Format consistency:** Match existing schema structures; test by loading pages locally
+
+**Example commit for data contribution:**
+```bash
+git commit -m "Update: data/officials.json with Q1 2026 Zamboanga City officials (source: zamboanga.gov.ph, accessed 2026-01-02)"
+```
 
 ## Code Guidelines
 
@@ -114,10 +133,11 @@ Types:
 - Test with screen readers if possible
 
 ### Data Accuracy
-- Only use data from official government sources
-- Include source attribution
+- Only use data from official government sources (Zamboanga City LGU, PSA, BLGF, DPWH)
+- Include source attribution in commit messages or provenance files
 - Verify information before submitting
 - Do not include unverified or speculative data
+- For real-time external API integrations, document endpoints and terms of use
 
 ## Pull Request Process
 
@@ -141,9 +161,10 @@ Pull requests are reviewed for:
 
 ## Community
 
-- **Discord:** [Join our community](https://discord.com/invite/qeSu7RJkjQ)
-- **Facebook:** [@bettersolano.org](https://www.facebook.com/bettersolano.org)
-- **Email:** volunteer@bettersolano.org
+- **GitHub Issues:** [Report bugs or suggest features](https://github.com/Banyel3/BetterZamboanga/issues)
+- **Community channels:** _To be announced_
+- **Code of Conduct:** [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md)
+- **Security Policy:** [SECURITY.md](SECURITY.md)
 
 ## Recognition
 
@@ -155,4 +176,4 @@ Feel free to open an issue or reach out on Discord. We're happy to help!
 
 ---
 
-Thank you for helping make government information accessible to the people of Solano.
+Thank you for helping make government information accessible to the people of Zamboanga City.

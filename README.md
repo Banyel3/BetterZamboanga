@@ -1,8 +1,8 @@
-# BetterSolano.org
+# Better Zamboanga
 
-A civic-tech initiative providing transparent access to municipal services, programs, and public funds of LGU Solano, Nueva Vizcaya, Philippines.
+A civic-tech initiative providing transparent access to municipal services, programs, and public funds of Zamboanga City, Philippines.
 
-![Version](https://img.shields.io/badge/version-1.1.7-green)
+![Version](https://img.shields.io/badge/version-1.1.8-green)
 ![License](https://img.shields.io/badge/license-MIT%20%7C%20CC%20BY%204.0-blue)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
@@ -11,13 +11,15 @@ A civic-tech initiative providing transparent access to municipal services, prog
 
 ## About
 
-BetterSolano.org is a volunteer-driven, open-source project that empowers the people of Solano with easy access to local government information. The platform aggregates public data from official government portals and presents it in a user-friendly, accessible format.
+Better Zamboanga is a volunteer-driven, open-source project that empowers the people of Zamboanga City with easy access to local government information. The platform aggregates public data from official government portals and presents it in a user-friendly, accessible format.
 
-**Cost to the People of Solano = ₱0**
+**Cost to the People of Zamboanga City = ₱0**
+
+> **Origin & Credits:** This repository is a fork of [BetterSolano.org](https://github.com/BetterSolano/bettersolano), originally created by Ramon Logan Jr. for LGU Solano, Nueva Vizcaya. Better Zamboanga adapts the platform architecture and templates for Zamboanga City. We deeply appreciate the pioneering work of the BetterSolano.org team.
 
 ## Live Demo
 
-Visit the live website: [https://bettersolano.org](https://bettersolano.org)
+_Live deployment URL will be announced once hosting is finalized for Zamboanga City._
 
 ## Technology Stack
 
@@ -61,10 +63,10 @@ Visit the live website: [https://bettersolano.org](https://bettersolano.org)
 
 ```bash
 # Clone the repository
-git clone https://github.com/BetterSolano/bettersolano.git
+git clone https://github.com/Banyel3/BetterZamboanga.git
 
 # Navigate to project directory
-cd bettersolano
+cd BetterZamboanga
 
 # Install dependencies
 npm install
@@ -91,8 +93,8 @@ npm run dev
 
 1. **Clone the repository**
 ```bash
-git clone https://github.com/BetterSolano/bettersolano.git
-cd bettersolano
+git clone https://github.com/Banyel3/BetterZamboanga.git
+cd BetterZamboanga
 ```
 
 2. **Install dependencies**
@@ -150,7 +152,7 @@ npm run build
 ## Project Structure
 
 ```
-bettersolano/
+BetterZamboanga/
 ├── assets/
 │   ├── css/              # Stylesheets (9 files)
 │   ├── js/               # JavaScript modules (15 files)
@@ -183,7 +185,12 @@ bettersolano/
 
 ## Contributing
 
-We welcome contributions from everyone! Whether you're a developer, designer, data researcher, content writer, translator, or a concerned citizen of Solano, your participation helps shape this project for all.
+We welcome contributions from everyone! Whether you're a developer, designer, data researcher, content writer, translator, or a concerned citizen of Zamboanga City, your participation helps shape this project for all.
+
+**Please read our community standards:**
+- [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) - Our community values and expected behavior
+- [CONTRIBUTING.md](CONTRIBUTING.md) - Detailed contribution guidelines and workflow
+- [SECURITY.md](SECURITY.md) - Responsible security disclosure procedures
 
 ### How to Contribute
 
@@ -238,11 +245,13 @@ All public information is sourced from official government portals:
 
 | Source | URL | Data Type |
 |--------|-----|-----------|
-| LGU Solano Official Website | [solano.gov.ph](https://solano.gov.ph/) | Services, Officials |
-| Sangguniang Bayan ng Solano | [sangguniangbayan.solano.gov.ph](https://sangguniangbayan.solano.gov.ph/) | Ordinances, Resolutions |
-| Bureau of Local Government Finance | [blgf.gov.ph](https://blgf.gov.ph/) | Budget, Financial Reports |
+| Zamboanga City Official Website | [zamboanga.gov.ph](https://zamboanga.gov.ph/) | Services, Officials |
 | Philippine Statistics Authority | [psa.gov.ph](https://psa.gov.ph/) | Demographics, Census |
+| Bureau of Local Government Finance | [blgf.gov.ph](https://blgf.gov.ph/) | Budget, Financial Reports |
+| DPWH Region IX | [dpwh.gov.ph](https://dpwh.gov.ph/) | Infrastructure Projects |
 | DTI CMCI Portal | [cmci.dti.gov.ph](https://cmci.dti.gov.ph/) | Competitive Index |
+
+_Note: Data sources are being updated to reflect Zamboanga City official channels. Some datasets may be incomplete during the initial localization phase._
 
 ## License
 
@@ -257,26 +266,27 @@ See [LICENSE](LICENSE) for full details.
 
 ## Contact
 
-| Channel | Link |
-|---------|------|
-| Website | [bettersolano.org](https://bettersolano.org) |
-| Email | volunteer@bettersolano.org |
-| Facebook | [@bettersolano.org](https://www.facebook.com/bettersolano.org) |
-| LinkedIn | [BetterSolano](https://www.linkedin.com/company/bettersolano/) |
-| Discord | [Join Community](https://discord.com/invite/qeSu7RJkjQ) |
-| GitHub | [BetterSolano/bettersolano](https://github.com/BetterSolano/bettersolano) |
+_Contact channels and social media links will be announced once Better Zamboanga community infrastructure is established._
+
+| Channel | Status |
+|---------|--------|
+| Website | In Development |
+| Email | TBD |
+| Social Media | TBD |
+| GitHub | [Banyel3/BetterZamboanga](https://github.com/Banyel3/BetterZamboanga) |
 
 ## Acknowledgments
 
-- [BetterGov.ph](https://bettergov.ph) for the civic-tech initiative in the Philippines
-- LGU Solano for public data availability and transparency
-- All volunteers and contributors who dedicate their time
+- **[BetterSolano.org](https://github.com/BetterSolano/bettersolano)** - Original platform architecture and civic-tech vision by Ramon Logan Jr.
+- [BetterGov.ph](https://bettergov.ph) - For the civic-tech initiative in the Philippines
+- Zamboanga City LGU - For public data availability and transparency efforts
+- All volunteers and contributors who dedicate their time to this fork
 - Open-source community for the tools and libraries used
-- Citizens of Solano for their feedback and support
+- Citizens of Zamboanga City for their feedback and support
 
 ---
 
-Made for the people of Solano, Nueva Vizcaya
+Made for the people of Zamboanga City
 
 ## Developer
 
