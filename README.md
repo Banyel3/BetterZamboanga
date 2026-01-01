@@ -23,41 +23,41 @@ _Live deployment URL will be announced once hosting is finalized for Zamboanga C
 
 ## Technology Stack
 
-| Category | Technologies |
-|----------|-------------|
-| **Frontend** | HTML5, CSS3, JavaScript (ES6+) |
-| **Styling** | Custom CSS, CSS Variables, Flexbox, CSS Grid, Responsive Design |
-| **Icons** | Bootstrap Icons (CDN) |
-| **Fonts** | Google Fonts (Inter) |
-| **Maps** | Leaflet.js, OpenStreetMap |
-| **Charts** | Chart.js (Canvas-based) |
-| **Data Format** | JSON |
-| **APIs** | Open-Meteo (Weather), ExchangeRate API (Currency) |
-| **Build Tools** | Node.js, npm, Bash |
-| **Minification** | html-minifier-terser, clean-css-cli, terser |
-| **Version Control** | Git, GitHub |
-| **Server** | Apache (.htaccess), mod_rewrite, mod_deflate |
-| **Hosting** | cPanel (Production), Python HTTP Server (Development) |
-| **SEO** | Open Graph, Twitter Cards, XML Sitemap, robots.txt |
-| **Security** | HTTPS, CSP Headers, HSTS, X-Frame-Options |
-| **Analytics** | Google Analytics (gtag.js) |
-| **Accessibility** | WCAG 2.1, ARIA, Semantic HTML |
-| **Performance** | GZIP Compression, Browser Caching, Asset Minification |
+| Category            | Technologies                                                    |
+| ------------------- | --------------------------------------------------------------- |
+| **Frontend**        | HTML5, CSS3, JavaScript (ES6+)                                  |
+| **Styling**         | Custom CSS, CSS Variables, Flexbox, CSS Grid, Responsive Design |
+| **Icons**           | Bootstrap Icons (CDN)                                           |
+| **Fonts**           | Google Fonts (Inter)                                            |
+| **Maps**            | Leaflet.js, OpenStreetMap                                       |
+| **Charts**          | Chart.js (Canvas-based)                                         |
+| **Data Format**     | JSON                                                            |
+| **APIs**            | Open-Meteo (Weather), ExchangeRate API (Currency)               |
+| **Build Tools**     | Node.js, npm, Bash                                              |
+| **Minification**    | html-minifier-terser, clean-css-cli, terser                     |
+| **Version Control** | Git, GitHub                                                     |
+| **Server**          | Apache (.htaccess), mod_rewrite, mod_deflate                    |
+| **Hosting**         | cPanel (Production), Python HTTP Server (Development)           |
+| **SEO**             | Open Graph, Twitter Cards, XML Sitemap, robots.txt              |
+| **Security**        | HTTPS, CSP Headers, HSTS, X-Frame-Options                       |
+| **Analytics**       | Google Analytics (gtag.js)                                      |
+| **Accessibility**   | WCAG 2.1, ARIA, Semantic HTML                                   |
+| **Performance**     | GZIP Compression, Browser Caching, Asset Minification           |
 
 ## Key Features
 
-| Feature | Description |
-|---------|-------------|
+| Feature                          | Description                                                                           |
+| -------------------------------- | ------------------------------------------------------------------------------------- |
 | **Municipal Services Directory** | Comprehensive guide to all LGU services with requirements, fees, and processing times |
-| **Government Officials** | Directory of elected officials and department heads with contact information |
-| **Budget Transparency** | Financial reports, income/expenditure breakdowns, and infrastructure projects |
-| **Legislative Documents** | Searchable database of ordinances and resolutions from Sangguniang Bayan |
-| **Municipal Statistics** | Demographics, economic data, and competitive index rankings |
-| **Real-time Information** | Live weather updates, currency exchange rates, and Philippine time |
-| **Multi-language Support** | Available in English, Filipino, and Ilocano |
-| **Accessibility** | WCAG 2.1 compliant with skip links, ARIA labels, and semantic HTML |
-| **SEO Optimized** | Meta tags, Open Graph, Twitter Cards, structured data, and XML sitemap |
-| **Performance** | 90% size reduction through minification, GZIP compression, and browser caching |
+| **Government Officials**         | Directory of elected officials and department heads with contact information          |
+| **Budget Transparency**          | Financial reports, income/expenditure breakdowns, and infrastructure projects         |
+| **Legislative Documents**        | Searchable database of ordinances and resolutions from Sangguniang Bayan              |
+| **Municipal Statistics**         | Demographics, economic data, and competitive index rankings                           |
+| **Real-time Information**        | Live weather updates, currency exchange rates, and Philippine time                    |
+| **Multi-language Support**       | Available in English, Filipino, and Ilocano                                           |
+| **Accessibility**                | WCAG 2.1 compliant with skip links, ARIA labels, and semantic HTML                    |
+| **SEO Optimized**                | Meta tags, Open Graph, Twitter Cards, structured data, and XML sitemap                |
+| **Performance**                  | 90% size reduction through minification, GZIP compression, and browser caching        |
 
 ## Quick Start
 
@@ -82,27 +82,30 @@ npm run dev
 
 ### Prerequisites
 
-| Requirement | Version | Purpose |
-|-------------|---------|---------|
-| Node.js | v16+ | Build tools and package management |
-| npm | v8+ | Dependency management |
-| Python 3 | v3.x | Local development server |
-| Git | Latest | Version control |
+| Requirement | Version | Purpose                            |
+| ----------- | ------- | ---------------------------------- |
+| Node.js     | v16+    | Build tools and package management |
+| npm         | v8+     | Dependency management              |
+| Python 3    | v3.x    | Local development server           |
+| Git         | Latest  | Version control                    |
 
 ### Setup Steps
 
 1. **Clone the repository**
+
 ```bash
 git clone https://github.com/Banyel3/BetterZamboanga.git
 cd BetterZamboanga
 ```
 
 2. **Install dependencies**
+
 ```bash
 npm install
 ```
 
 3. **Start the development server**
+
 ```bash
 npm run dev
 ```
@@ -115,26 +118,28 @@ npm run dev
 
 ### Development Commands
 
-| Command | Description |
-|---------|-------------|
-| `npm run dev` | Start local development server (port 8000) |
-| `npm run build` | Build minified production files to `dist/` (auto-bumps patch version) |
-| `npm run build:minor` | Bump minor version and build |
-| `npm run build:major` | Bump major version and build |
-| `npm run serve:dist` | Serve production build (port 8080) |
-| `npm run version:check` | Display current version |
-| `npm run version:patch` | Bump patch version only |
-| `npm run version:minor` | Bump minor version only |
-| `npm run version:major` | Bump major version only |
+| Command                 | Description                                                           |
+| ----------------------- | --------------------------------------------------------------------- |
+| `npm run dev`           | Start local development server (port 8000)                            |
+| `npm run build`         | Build minified production files to `dist/` (auto-bumps patch version) |
+| `npm run build:minor`   | Bump minor version and build                                          |
+| `npm run build:major`   | Bump major version and build                                          |
+| `npm run serve:dist`    | Serve production build (port 8080)                                    |
+| `npm run version:check` | Display current version                                               |
+| `npm run version:patch` | Bump patch version only                                               |
+| `npm run version:minor` | Bump minor version only                                               |
+| `npm run version:major` | Bump major version only                                               |
 
 ### Production Deployment
 
 1. **Build production files**
+
 ```bash
 npm run build
 ```
 
 2. **Output location**
+
    - Minified files are generated in the `dist/` folder
    - Original size: ~17MB → Minified: ~1.8MB (90% reduction)
 
@@ -144,10 +149,10 @@ npm run build
 
 ### File Permissions (cPanel)
 
-| Type | Permission | Numeric |
-|------|------------|---------|
-| Files | rw-r--r-- | 644 |
-| Directories | rwxr-xr-x | 755 |
+| Type        | Permission | Numeric |
+| ----------- | ---------- | ------- |
+| Files       | rw-r--r--  | 644     |
+| Directories | rwxr-xr-x  | 755     |
 
 ## Project Structure
 
@@ -188,6 +193,7 @@ BetterZamboanga/
 We welcome contributions from everyone! Whether you're a developer, designer, data researcher, content writer, translator, or a concerned citizen of Zamboanga City, your participation helps shape this project for all.
 
 **Please read our community standards:**
+
 - [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) - Our community values and expected behavior
 - [CONTRIBUTING.md](CONTRIBUTING.md) - Detailed contribution guidelines and workflow
 - [SECURITY.md](SECURITY.md) - Responsible security disclosure procedures
@@ -213,43 +219,43 @@ We welcome contributions from everyone! Whether you're a developer, designer, da
 
 ### Contribution Areas
 
-| Area | Description |
-|------|-------------|
-| **Bug Fixes** | Report issues or submit fixes for existing bugs |
-| **Features** | Propose or implement new functionality |
-| **Content** | Update service information, add missing municipal data |
-| **Translations** | Help translate content to Filipino or Ilocano |
-| **Design** | Improve UI/UX, accessibility, and visual consistency |
-| **Data** | Verify and update municipal statistics and records |
-| **Documentation** | Enhance README, code comments, and guides |
-| **API Integration** | Propose or implement API connections for real-time data feeds |
-| **Data Visualization** | Enhance charts, graphs, and interactive presentations |
+| Area                   | Description                                                   |
+| ---------------------- | ------------------------------------------------------------- |
+| **Bug Fixes**          | Report issues or submit fixes for existing bugs               |
+| **Features**           | Propose or implement new functionality                        |
+| **Content**            | Update service information, add missing municipal data        |
+| **Translations**       | Help translate content to Filipino or Ilocano                 |
+| **Design**             | Improve UI/UX, accessibility, and visual consistency          |
+| **Data**               | Verify and update municipal statistics and records            |
+| **Documentation**      | Enhance README, code comments, and guides                     |
+| **API Integration**    | Propose or implement API connections for real-time data feeds |
+| **Data Visualization** | Enhance charts, graphs, and interactive presentations         |
 
 ### Code Style Guidelines
 
-| Guideline | Description |
-|-----------|-------------|
-| **HTML** | Use semantic HTML5 elements; validate before committing |
-| **CSS** | Follow BEM naming conventions; use CSS custom properties |
-| **JavaScript** | Keep vanilla JS unless proposing framework for data visualization |
-| **Naming** | Use meaningful, descriptive variable and function names |
-| **Comments** | Add comments for complex logic and non-obvious implementations |
-| **Accessibility** | Ensure WCAG 2.1 compliance (alt text, ARIA, keyboard navigation) |
-| **Performance** | Optimize images; minimize DOM manipulation |
-| **Testing** | Test on Chrome, Firefox, Safari, Edge; test mobile responsiveness |
-| **Validation** | Validate HTML/CSS before pull requests |
+| Guideline         | Description                                                       |
+| ----------------- | ----------------------------------------------------------------- |
+| **HTML**          | Use semantic HTML5 elements; validate before committing           |
+| **CSS**           | Follow BEM naming conventions; use CSS custom properties          |
+| **JavaScript**    | Keep vanilla JS unless proposing framework for data visualization |
+| **Naming**        | Use meaningful, descriptive variable and function names           |
+| **Comments**      | Add comments for complex logic and non-obvious implementations    |
+| **Accessibility** | Ensure WCAG 2.1 compliance (alt text, ARIA, keyboard navigation)  |
+| **Performance**   | Optimize images; minimize DOM manipulation                        |
+| **Testing**       | Test on Chrome, Firefox, Safari, Edge; test mobile responsiveness |
+| **Validation**    | Validate HTML/CSS before pull requests                            |
 
 ## Data Sources
 
 All public information is sourced from official government portals:
 
-| Source | URL | Data Type |
-|--------|-----|-----------|
-| Zamboanga City Official Website | [zamboanga.gov.ph](https://zamboanga.gov.ph/) | Services, Officials |
-| Philippine Statistics Authority | [psa.gov.ph](https://psa.gov.ph/) | Demographics, Census |
-| Bureau of Local Government Finance | [blgf.gov.ph](https://blgf.gov.ph/) | Budget, Financial Reports |
-| DPWH Region IX | [dpwh.gov.ph](https://dpwh.gov.ph/) | Infrastructure Projects |
-| DTI CMCI Portal | [cmci.dti.gov.ph](https://cmci.dti.gov.ph/) | Competitive Index |
+| Source                             | URL                                           | Data Type                 |
+| ---------------------------------- | --------------------------------------------- | ------------------------- |
+| Zamboanga City Official Website    | [zamboanga.gov.ph](https://zamboanga.gov.ph/) | Services, Officials       |
+| Philippine Statistics Authority    | [psa.gov.ph](https://psa.gov.ph/)             | Demographics, Census      |
+| Bureau of Local Government Finance | [blgf.gov.ph](https://blgf.gov.ph/)           | Budget, Financial Reports |
+| DPWH Region IX                     | [dpwh.gov.ph](https://dpwh.gov.ph/)           | Infrastructure Projects   |
+| DTI CMCI Portal                    | [cmci.dti.gov.ph](https://cmci.dti.gov.ph/)   | Competitive Index         |
 
 _Note: Data sources are being updated to reflect Zamboanga City official channels. Some datasets may be incomplete during the initial localization phase._
 
@@ -257,10 +263,10 @@ _Note: Data sources are being updated to reflect Zamboanga City official channel
 
 This project is dual-licensed:
 
-| License | Applies To | Details |
-|---------|------------|---------|
-| MIT License | Source Code | Free to use, modify, and distribute |
-| CC BY 4.0 | Content | Attribution required for content reuse |
+| License     | Applies To  | Details                                |
+| ----------- | ----------- | -------------------------------------- |
+| MIT License | Source Code | Free to use, modify, and distribute    |
+| CC BY 4.0   | Content     | Attribution required for content reuse |
 
 See [LICENSE](LICENSE) for full details.
 
@@ -268,12 +274,12 @@ See [LICENSE](LICENSE) for full details.
 
 _Contact channels and social media links will be announced once Better Zamboanga community infrastructure is established._
 
-| Channel | Status |
-|---------|--------|
-| Website | In Development |
-| Email | TBD |
-| Social Media | TBD |
-| GitHub | [Banyel3/BetterZamboanga](https://github.com/Banyel3/BetterZamboanga) |
+| Channel      | Status                                                                |
+| ------------ | --------------------------------------------------------------------- |
+| Website      | In Development                                                        |
+| Email        | TBD                                                                   |
+| Social Media | TBD                                                                   |
+| GitHub       | [Banyel3/BetterZamboanga](https://github.com/Banyel3/BetterZamboanga) |
 
 ## Acknowledgments
 

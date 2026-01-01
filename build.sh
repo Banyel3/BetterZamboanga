@@ -1,9 +1,9 @@
 #!/bin/bash
 
-# BetterSolano Build Script
+# Better Zamboanga Build Script (forked from BetterSolano.org)
 # Creates minified production files in dist/ folder
 
-echo "Building BetterSolano for production..."
+echo "Building Better Zamboanga for production..."
 
 # Auto-bump patch version (skip if --no-bump flag is passed)
 if [ "$1" != "--no-bump" ] && [ -f "scripts/version.sh" ]; then

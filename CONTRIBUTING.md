@@ -78,18 +78,18 @@ Types:
 
 ## Contribution Areas
 
-| Area | Description |
-|------|-------------|
-| Bug Fixes | Fix reported issues |
-| Features | Implement new functionality |
-| Content | Update municipal service information for Zamboanga City |
+| Area               | Description                                                              |
+| ------------------ | ------------------------------------------------------------------------ |
+| Bug Fixes          | Fix reported issues                                                      |
+| Features           | Implement new functionality                                              |
+| Content            | Update municipal service information for Zamboanga City                  |
 | Data Contributions | Update JSON files in `data/` (officials, services, projects, statistics) |
-| Translations | Translate to Filipino, Chavacano, or other local languages |
-| Design | Improve UI/UX and accessibility |
-| Data Validation | Verify statistics and sources, run `assets/js/services-validator.js` |
-| Documentation | Improve guides and comments |
-| API Integration | Connect real-time data sources |
-| Data Visualization | Enhance charts and graphs |
+| Translations       | Translate to Filipino, Chavacano, or other local languages               |
+| Design             | Improve UI/UX and accessibility                                          |
+| Data Validation    | Verify statistics and sources, run `assets/js/services-validator.js`     |
+| Documentation      | Improve guides and comments                                              |
+| API Integration    | Connect real-time data sources                                           |
+| Data Visualization | Enhance charts and graphs                                                |
 
 ### Data Contribution Guidelines
 
@@ -103,6 +103,7 @@ When contributing JSON data (`data/officials.json`, `data/services.json`, `data/
 6. **Format consistency:** Match existing schema structures; test by loading pages locally
 
 **Example commit for data contribution:**
+
 ```bash
 git commit -m "Update: data/officials.json with Q1 2026 Zamboanga City officials (source: zamboanga.gov.ph, accessed 2026-01-02)"
 ```
@@ -110,29 +111,34 @@ git commit -m "Update: data/officials.json with Q1 2026 Zamboanga City officials
 ## Code Guidelines
 
 ### HTML
+
 - Use semantic HTML5 elements
 - Include proper ARIA labels for accessibility
 - Validate HTML before submitting
 
 ### CSS
+
 - Follow existing naming conventions
 - Use CSS custom properties (variables)
 - Ensure responsive design
 - Test on mobile devices
 
 ### JavaScript
+
 - Keep vanilla JS (no frameworks unless approved)
 - Use meaningful variable and function names
 - Add comments for complex logic
 - Avoid global variables
 
 ### Accessibility
+
 - Maintain WCAG 2.1 compliance
 - Include alt text for images
 - Ensure keyboard navigation works
 - Test with screen readers if possible
 
 ### Data Accuracy
+
 - Only use data from official government sources (Zamboanga City LGU, PSA, BLGF, DPWH)
 - Include source attribution in commit messages or provenance files
 - Verify information before submitting

@@ -1,5 +1,5 @@
-/**
- * Better Solano - Enhanced Translation System
+﻿/**
+ * Better Zamboanga - Enhanced Translation System
  * Supports: English (en), Filipino (fil), Ilocano (ilo)
  * Updated: 2025-12-10
  */
@@ -23,8 +23,8 @@ const translations = {
         "nav-accessibility": "Accessibility",
         
         // Statistics Page
-        "stats-title": "Municipal Statistics",
-        "stats-subtitle": "Data and statistics about Solano, Nueva Vizcaya",
+        "stats-title": "City Statistics",
+        "stats-subtitle": "Data and statistics about Zamboanga City",
         "stats-demographics": "Demographics Overview",
         "stats-economic": "Economic Indicators",
         "stats-barangay": "Population by Barangay",
@@ -50,8 +50,8 @@ const translations = {
         "breadcrumb-terms": "Terms of Use",
         
         // Hero Section
-        "hero-welcome": "Welcome to BetterSolano.org",
-        "hero-subtitle": "Access government services, information, and resources for the people of Solano, Nueva Vizcaya.",
+        "hero-welcome": "Welcome to Better Zamboanga",
+        "hero-subtitle": "Access government services, information, and resources for the people of Zamboanga City.",
         "hero-browse": "Browse Services",
         "hero-contact": "Contact Us",
         "hero-search-placeholder": "Search for services...",
@@ -82,10 +82,10 @@ const translations = {
         "btn-view-all": "View All",
         "btn-read-more": "Read More",
         
-        // Municipal Leadership
-        "section-leadership": "Municipal Leadership",
-        "title-mayor": "Municipal Mayor",
-        "title-vice-mayor": "Municipal Vice Mayor",
+        // City Leadership
+        "section-leadership": "City Leadership",
+        "title-mayor": "City Mayor",
+        "title-vice-mayor": "City Vice Mayor",
         "title-councilor": "Councilor",
         "title-secretary": "Secretary",
         "btn-view-officials": "View All Officials",
@@ -98,20 +98,20 @@ const translations = {
         "contact-visit": "Visit Us",
         "contact-hours": "Mon-Fri: 8:00 AM - 5:00 PM",
         "contact-response": "We'll respond within 24 hours",
-        "contact-municipal-hall": "Municipal Hall",
+        "contact-municipal-hall": "City Hall",
         "contact-location": "Location",
         "contact-directions": "Get Directions",
         
         // Footer
-        "footer-title": "Better Solano",
-        "footer-desc": "A service-first information portal for the Municipality of Solano, Nueva Vizcaya.",
+        "footer-title": "Better Zamboanga",
+        "footer-desc": "A service-first information portal for the Municipality of Zamboanga City.",
         "footer-quick-links": "Quick Links",
         "footer-all-services": "All Services",
         "footer-officials": "Officials",
         "footer-contact-us": "Contact Us",
         "footer-faq": "FAQ",
         "footer-contact": "Contact",
-        "footer-copyright": "Better Solano. All rights reserved.",
+        "footer-copyright": "Better Zamboanga. All rights reserved.",
         "accessibility-statement": "Accessibility Statement",
         "footer-privacy": "Privacy Policy",
         "footer-terms": "Terms of Use",
@@ -120,8 +120,8 @@ const translations = {
         "footer-contribute": "Contribute code with us",
 
         // Services Page
-        "services-title": "Municipal Services Directory",
-        "services-subtitle": "Browse all services offered by the Municipality of Solano",
+        "services-title": "City Services Directory",
+        "services-subtitle": "Browse all services offered by the City of Zamboanga",
         "search-placeholder": "Search services...",
         "search-no-results": "No services found",
         "search-try-different": "Try different keywords or browse categories below",
@@ -166,7 +166,7 @@ const translations = {
         "cat-online": "Online Services",
         "cat-online-desc": "Digital services available through Filipizen and other online platforms.",
         "cat-government": "Government Services",
-        "cat-government-desc": "General municipal services and administrative functions.",
+        "cat-government-desc": "General City services and administrative functions.",
 
         // Service Details
         "service-requirements": "Requirements",
@@ -191,12 +191,12 @@ const translations = {
         
         // Government Page
         "gov-title": "Government Structure & Officials",
-        "gov-subtitle": "Meet the leadership and offices serving Solano",
+        "gov-subtitle": "Meet the leadership and offices serving Zamboanga City",
         "gov-executive": "Executive Branch",
-        "gov-sb-members": "Sangguniang Bayan Members",
-        "gov-sb-subtitle": "Municipal Councilors serving the people of Solano",
+        "gov-sb-members": "Sangguniang Panlungsod Members",
+        "gov-sb-subtitle": "City Councilors serving the people of Zamboanga City",
         "gov-departments": "Department Heads & Key Offices",
-        "gov-dept-subtitle": "Municipal offices providing services to citizens",
+        "gov-dept-subtitle": "City offices providing services to citizens",
         "gov-barangays": "Barangays of Solano",
         "gov-barangays-count": "22 Barangays serving our community",
         "gov-organizational-chart": "Organizational Chart",
@@ -204,8 +204,8 @@ const translations = {
         
         // Budget Page
         "budget-title": "Budget & Financial Transparency",
-        "budget-subtitle": "Tracking municipal finances and projects for accountability",
-        "budget-overview": "2025 Municipal Budget Overview",
+        "budget-subtitle": "Tracking City finances and projects for accountability",
+        "budget-overview": "2025 City Budget Overview",
         "budget-total": "Total Budget",
         "budget-personnel": "Personnel Services",
         "budget-operations": "Operations",
@@ -222,7 +222,7 @@ const translations = {
         
         // FAQ Page
         "faq-title": "Frequently Asked Questions",
-        "faq-subtitle": "Find answers to common questions about municipal services",
+        "faq-subtitle": "Find answers to common questions about City services",
         "faq-general": "General Questions",
         "faq-certificates": "Certificates & Documents",
         "faq-business": "Business & Permits",
@@ -297,7 +297,7 @@ const translations = {
         
         // News Page
         "news-title": "News & Announcements",
-        "news-subtitle": "Latest updates from the Municipality of Solano",
+        "news-subtitle": "Latest updates from the City of Zamboanga",
         "news-latest": "Latest News",
         "news-announcements": "Announcements",
         "news-events": "Events",
@@ -426,7 +426,7 @@ const translations = {
         
         // Statistics Page
         "stats-title": "Estadistika ng Munisipalidad",
-        "stats-subtitle": "Datos at estadistika tungkol sa Solano, Nueva Vizcaya",
+        "stats-subtitle": "Datos at estadistika tungkol sa Zamboanga City",
         "stats-demographics": "Pangkalahatang-ideya ng Demograpiya",
         "stats-economic": "Mga Tagapagpahiwatig ng Ekonomiya",
         "stats-barangay": "Populasyon Ayon sa Barangay",
@@ -452,8 +452,8 @@ const translations = {
         "breadcrumb-terms": "Mga Tuntunin ng Paggamit",
         
         // Hero Section
-        "hero-welcome": "Maligayang Pagdating sa BetterSolano.org",
-        "hero-subtitle": "I-access ang mga serbisyo ng pamahalaan, impormasyon, at mga mapagkukunan para sa mga mamamayan ng Solano, Nueva Vizcaya.",
+        "hero-welcome": "Maligayang Pagdating sa Better Zamboanga",
+        "hero-subtitle": "I-access ang mga serbisyo ng pamahalaan, impormasyon, at mga mapagkukunan para sa mga mamamayan ng Zamboanga City.",
         "hero-browse": "Tingnan ang mga Serbisyo",
         "hero-contact": "Makipag-ugnayan sa Amin",
         "hero-search-placeholder": "Maghanap ng serbisyo...",
@@ -484,7 +484,7 @@ const translations = {
         "btn-view-all": "Tingnan Lahat",
         "btn-read-more": "Magbasa Pa",
         
-        // Municipal Leadership
+        // City Leadership
         "section-leadership": "Pamunuan ng Munisipalidad",
         "title-mayor": "Punong Bayan",
         "title-vice-mayor": "Bise Punong Bayan",
@@ -505,15 +505,15 @@ const translations = {
         "contact-directions": "Kumuha ng Direksyon",
         
         // Footer
-        "footer-title": "Better Solano",
-        "footer-desc": "Isang portal ng impormasyon na inuuna ang serbisyo para sa Munisipalidad ng Solano, Nueva Vizcaya.",
+        "footer-title": "Better Zamboanga",
+        "footer-desc": "Isang portal ng impormasyon na inuuna ang serbisyo para sa Munisipalidad ng Zamboanga City.",
         "footer-quick-links": "Mabilis na Links",
         "footer-all-services": "Lahat ng Serbisyo",
         "footer-officials": "Mga Opisyal",
         "footer-contact-us": "Makipag-ugnayan sa Amin",
         "footer-faq": "Mga Madalas Itanong",
         "footer-contact": "Makipag-ugnayan",
-        "footer-copyright": "Better Solano. Nakalaan ang lahat ng karapatan.",
+        "footer-copyright": "Better Zamboanga. Nakalaan ang lahat ng karapatan.",
         "accessibility-statement": "Pahayag ng Aksesibilidad",
         "footer-privacy": "Patakaran sa Privacy",
         "footer-terms": "Mga Tuntunin ng Paggamit",
@@ -523,7 +523,7 @@ const translations = {
 
         // Services Page
         "services-title": "Direktoryo ng Serbisyong Munisipal",
-        "services-subtitle": "Tingnan ang lahat ng serbisyong inaalok ng Munisipalidad ng Solano",
+        "services-subtitle": "Tingnan ang lahat ng serbisyong inaalok ng Lungsod ng Zamboanga",
         "search-placeholder": "Maghanap ng serbisyo...",
         "search-no-results": "Walang nahanap na serbisyo",
         "search-try-different": "Subukan ang ibang mga keyword o tingnan ang mga kategorya sa ibaba",
@@ -595,7 +595,7 @@ const translations = {
         "gov-title": "Istruktura at Opisyal ng Pamahalaan",
         "gov-subtitle": "Kilalanin ang pamunuan at mga opisina na naglilingkod sa Solano",
         "gov-executive": "Ehekutibong Sangay",
-        "gov-sb-members": "Mga Miyembro ng Sangguniang Bayan",
+        "gov-sb-members": "Mga Miyembro ng Sangguniang Panlungsod",
         "gov-sb-subtitle": "Mga Konsehal na naglilingkod sa mga tao ng Solano",
         "gov-departments": "Mga Pinuno ng Departamento at Pangunahing Opisina",
         "gov-dept-subtitle": "Mga opisina ng munisipalidad na nagbibigay ng serbisyo sa mga mamamayan",
@@ -699,7 +699,7 @@ const translations = {
         
         // News Page
         "news-title": "Balita at Anunsyo",
-        "news-subtitle": "Pinakabagong balita mula sa Munisipalidad ng Solano",
+        "news-subtitle": "Pinakabagong balita mula sa Lungsod ng Zamboanga",
         "news-latest": "Pinakabagong Balita",
         "news-announcements": "Mga Anunsyo",
         "news-events": "Mga Kaganapan",
@@ -828,7 +828,7 @@ const translations = {
         
         // Statistics Page
         "stats-title": "Estadistika ti Munisipalidad",
-        "stats-subtitle": "Datos ken estadistika maipapan iti Solano, Nueva Vizcaya",
+        "stats-subtitle": "Datos ken estadistika maipapan iti Zamboanga City",
         "stats-demographics": "Pakabuklan ti Demograpiya",
         "stats-economic": "Dagiti Pagilasinan ti Ekonomiya",
         "stats-barangay": "Populasion Sigun iti Barangay",
@@ -854,8 +854,8 @@ const translations = {
         "breadcrumb-terms": "Dagiti Kondision ti Panagusar",
         
         // Hero Section
-        "hero-welcome": "Naragsak a Panangyawat iti BetterSolano.org",
-        "hero-subtitle": "Aksesen dagiti serbisio ti gobierno, impormasion, ken dagiti rekurso para kadagiti umili ti Solano, Nueva Vizcaya.",
+        "hero-welcome": "Naragsak a Panangyawat iti Better Zamboanga",
+        "hero-subtitle": "Aksesen dagiti serbisio ti gobierno, impormasion, ken dagiti rekurso para kadagiti umili ti Zamboanga City.",
         "hero-browse": "Kitaen dagiti Serbisio",
         "hero-contact": "Kontaken Dakami",
         "hero-search-placeholder": "Agsapul ti serbisio...",
@@ -886,7 +886,7 @@ const translations = {
         "btn-view-all": "Kitaen Amin",
         "btn-read-more": "Agbasa Pay",
         
-        // Municipal Leadership
+        // City Leadership
         "section-leadership": "Panangidaulo ti Munisipalidad",
         "title-mayor": "Mayor ti Munisipalidad",
         "title-vice-mayor": "Bise Mayor ti Munisipalidad",
@@ -907,15 +907,15 @@ const translations = {
         "contact-directions": "Alaen ti Direksion",
         
         // Footer
-        "footer-title": "Better Solano",
-        "footer-desc": "Maysa a portal ti impormasion a mangipangpangruna ti serbisio para iti Munisipalidad ti Solano, Nueva Vizcaya.",
+        "footer-title": "Better Zamboanga",
+        "footer-desc": "Maysa a portal ti impormasion a mangipangpangruna ti serbisio para iti Munisipalidad ti Zamboanga City.",
         "footer-quick-links": "Dagiti Napartak a Silpo",
         "footer-all-services": "Amin a Serbisio",
         "footer-officials": "Dagiti Opisial",
         "footer-contact-us": "Kontaken Dakami",
         "footer-faq": "Masansan a Maisaludsod",
         "footer-contact": "Kontak",
-        "footer-copyright": "Better Solano. Amin a karbengan ket naireserbado.",
+        "footer-copyright": "Better Zamboanga. Amin a karbengan ket naireserbado.",
         "accessibility-statement": "Pahayag ti Aksesibilidad",
         "footer-privacy": "Pagannurotan ti Pribado",
         "footer-terms": "Dagiti Kondision ti Panagusar",
@@ -997,7 +997,7 @@ const translations = {
         "gov-title": "Estruktura ken Opisial ti Gobierno",
         "gov-subtitle": "Ammoen dagiti lider ken opisina a mangserbiserbisio iti Solano",
         "gov-executive": "Ehekutibo a Sanga",
-        "gov-sb-members": "Dagiti Kameng ti Sangguniang Bayan",
+        "gov-sb-members": "Dagiti Kameng ti Sangguniang Panlungsod",
         "gov-sb-subtitle": "Dagiti Konsehal a mangserbiserbisio kadagiti umili ti Solano",
         "gov-departments": "Dagiti Ulo ti Departamento ken Kangrunaan nga Opisina",
         "gov-dept-subtitle": "Dagiti opisina ti munisipalidad a mangted ti serbisio kadagiti umili",

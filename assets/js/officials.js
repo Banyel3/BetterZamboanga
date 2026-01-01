@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+﻿document.addEventListener('DOMContentLoaded', () => {
     const officialsContainer = document.getElementById('officials-container');
     if (!officialsContainer) return;
 
@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Councilors
         if (data.councilors && data.councilors.length > 0) {
-            html += '<h3 class="text-center mt-5 mb-4">Sangguniang Bayan Members</h3>';
+            html += '<h3 class="text-center mt-5 mb-4">Sangguniang Panlungsod Members</h3>';
             html += '<div class="grid grid-4">';
             data.councilors.forEach(councilor => {
                 html += createOfficialCard(councilor, 'SB Member');

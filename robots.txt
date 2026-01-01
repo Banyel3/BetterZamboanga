@@ -1,5 +1,5 @@
-# Better Solano - Robots.txt
-# Author: Ramon Logan Jr
+# Better Zamboanga - Robots.txt
+# Forked from BetterSolano.org by Ramon Logan Jr
 # This file tells search engine crawlers which pages to index
 
 User-agent: *
@@ -7,7 +7,8 @@ Allow: /
 Allow: /assets/images/banners/opengraph.png
 
 # Sitemap location
-Sitemap: https://bettersolano.org/sitemap.xml
+# TODO-ZAMBOANGA: Update to production domain when deployed
+Sitemap: https://betterzamboanga.org/sitemap.xml
 
 # Crawl-delay for polite crawling
 Crawl-delay: 1
