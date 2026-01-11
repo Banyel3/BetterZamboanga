@@ -7,7 +7,7 @@
   text-align: center;
   position: relative;
   overflow: hidden;
-  border-bottom: 3px solid var(--bz-primary, #003087);
+  border-bottom: 3px solid var(--bz-primary, #021C73);
 }
 
 .trans-hero::before {

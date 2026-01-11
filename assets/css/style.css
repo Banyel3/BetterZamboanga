@@ -2,8 +2,8 @@
 /* Color Palette inspired by the Official City of Zamboanga Seal & Logo */
 :root {
   /* Primary Colors - Deep Navy Blue from seal outline/water */
-  --bz-primary: #003087;
-  --bz-primary-dark: #002060;
+  --bz-primary: #021C73;
+  --bz-primary-dark: #01124d;
   --bz-primary-light: #e6eef8;
   --bz-primary-soft: #f0f4fa;
 
@@ -18,14 +18,14 @@
   --bz-accent-blue-light: #e6f7fe;
 
   /* Semantic Colors - Navy as Primary Brand */
-  --color-primary: #003087;
-  --color-primary-dark: #002060;
+  --color-primary: #021C73;
+  --color-primary-dark: #01124d;
   --color-secondary: #008751;
-  --color-accent: #38bdf8;
+  --color-accent: #f2c91d;
   --color-success: #008751;
   --color-danger: #ce1126;
   --color-info: #0066b2;
-  --color-warning: #f59e0b;
+  --color-warning: #f2c91d;
 
   /* Backgrounds - Clean, light neutrals */
   --color-bg: #ffffff;
