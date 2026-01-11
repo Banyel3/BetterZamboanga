@@ -89,3 +89,13 @@ Chung Hua Hospital: (062) 991-7171 / 0917-707-0710 (Ambulance)
 Metro Zamboanga Medical Center: 0917-719-3776 (Ambulance)
 
 # Hospital Data needs to be verified
+
+Mayor Data:
+
+name: HON. KHYMER ADAN T. OLASO
+Tel: 993-0000
+email: mayor@zamboangacity.gov.ph
+
+Location: City Government of Zamboanga
+Zamboanga City Hall, NS Valderrosa Street, Zone IV
+Zamboanga City
