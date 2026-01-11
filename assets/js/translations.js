@@ -197,8 +197,8 @@ const translations = {
         "gov-sb-subtitle": "City Councilors serving the people of Zamboanga City",
         "gov-departments": "Department Heads & Key Offices",
         "gov-dept-subtitle": "City offices providing services to citizens",
-        "gov-barangays": "Barangays of Solano",
-        "gov-barangays-count": "22 Barangays serving our community",
+        "gov-barangays": "Barangays of Zamboanga City",
+        "gov-barangays-count": "98 Barangays serving our community (Top 22 by population shown)",
         "gov-organizational-chart": "Organizational Chart",
         "gov-term": "Term",
         
@@ -593,14 +593,14 @@ const translations = {
         
         // Government Page
         "gov-title": "Istruktura at Opisyal ng Pamahalaan",
-        "gov-subtitle": "Kilalanin ang pamunuan at mga opisina na naglilingkod sa Solano",
+        "gov-subtitle": "Kilalanin ang pamunuan at mga opisina na naglilingkod sa Zamboanga City",
         "gov-executive": "Ehekutibong Sangay",
         "gov-sb-members": "Mga Miyembro ng Sangguniang Panlungsod",
-        "gov-sb-subtitle": "Mga Konsehal na naglilingkod sa mga tao ng Solano",
+        "gov-sb-subtitle": "Mga Konsehal na naglilingkod sa mga tao ng Zamboanga City",
         "gov-departments": "Mga Pinuno ng Departamento at Pangunahing Opisina",
         "gov-dept-subtitle": "Mga opisina ng munisipalidad na nagbibigay ng serbisyo sa mga mamamayan",
-        "gov-barangays": "Mga Barangay ng Solano",
-        "gov-barangays-count": "22 Barangay na naglilingkod sa ating komunidad",
+        "gov-barangays": "Mga Barangay ng Zamboanga City",
+        "gov-barangays-count": "98 Barangay na naglilingkod sa ating komunidad (Nangungunang 22 ayon sa populasyon)",
         "gov-organizational-chart": "Tsart ng Organisasyon",
         "gov-term": "Termino",
         
@@ -925,7 +925,7 @@ const translations = {
 
         // Services Page
         "services-title": "Direktorio ti Serbisio ti Munisipalidad",
-        "services-subtitle": "Kitaen amin a serbisio nga i-alok ti Munisipalidad ti Solano",
+        "services-subtitle": "Kitaen amin a serbisio nga i-alok ti Siyudad ti Zamboanga",
         "search-placeholder": "Agsapul ti serbisio...",
         "search-no-results": "Awan ti nasarakan a serbisio",
         "search-try-different": "Padasem ti sabali a keyword wenno kitaem dagiti kategorya iti baba",
@@ -995,14 +995,14 @@ const translations = {
         
         // Government Page
         "gov-title": "Estruktura ken Opisial ti Gobierno",
-        "gov-subtitle": "Ammoen dagiti lider ken opisina a mangserbiserbisio iti Solano",
+        "gov-subtitle": "Ammoen dagiti lider ken opisina a mangserbiserbisio iti Siyudad ti Zamboanga",
         "gov-executive": "Ehekutibo a Sanga",
         "gov-sb-members": "Dagiti Kameng ti Sangguniang Panlungsod",
-        "gov-sb-subtitle": "Dagiti Konsehal a mangserbiserbisio kadagiti umili ti Solano",
+        "gov-sb-subtitle": "Dagiti Konsehal a mangserbiserbisio kadagiti umili ti Siyudad ti Zamboanga",
         "gov-departments": "Dagiti Ulo ti Departamento ken Kangrunaan nga Opisina",
         "gov-dept-subtitle": "Dagiti opisina ti munisipalidad a mangted ti serbisio kadagiti umili",
-        "gov-barangays": "Dagiti Barangay ti Solano",
-        "gov-barangays-count": "22 a Barangay a mangserbiserbisio iti komunidad tayo",
+        "gov-barangays": "Dagiti Barangay ti Siyudad ti Zamboanga",
+        "gov-barangays-count": "98 a Barangay a mangserbiserbisio iti komunidad tayo (Nangatngato a 22 segun iti populasion)",
         "gov-organizational-chart": "Tsart ti Organisasion",
         "gov-term": "Termino",
         
@@ -1101,7 +1101,7 @@ const translations = {
         
         // News Page
         "news-title": "Damag ken Anunsiasion",
-        "news-subtitle": "Kabarbaro a damag manipud iti Munisipalidad ti Solano",
+        "news-subtitle": "Kabarbaro a damag manipud iti Siyudad ti Zamboanga",
         "news-latest": "Kabarbaro a Damag",
         "news-announcements": "Dagiti Anunsiasion",
         "news-events": "Dagiti Pasamak",

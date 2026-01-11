@@ -19,16 +19,22 @@ async function fetchOrdinances() {
 }
 
 /**
- * Sorts ordinances by ordinance number in descending order (newest first)
- * Ordinance format: "YYYY-XX-SS" (year-sequence-session)
+ * Sorts ordinances by year and ordinance number in descending order (newest first)
  * @param {Array} ordinances - Array of ordinance objects
  * @returns {Array} Sorted array of ordinances
  */
 function sortOrdinancesByNumber(ordinances) {
   return [...ordinances].sort((a, b) => {
-    // Extract sequence number from second segment (e.g., "05" from "2025-05-11")
-    const numA = parseInt(a.ordinanceNo.split("-")[1], 10);
-    const numB = parseInt(b.ordinanceNo.split("-")[1], 10);
+    // First sort by year
+    const yearA = parseInt(a.year, 10) || 0;
+    const yearB = parseInt(b.year, 10) || 0;
+    if (yearB !== yearA) {
+      return yearB - yearA;
+    }
+    
+    // Then by ordinance number (extract numeric part)
+    const numA = parseInt(a.ordinanceNo.replace(/\D/g, ''), 10) || 0;
+    const numB = parseInt(b.ordinanceNo.replace(/\D/g, ''), 10) || 0;
     return numB - numA;
   });
 }
@@ -43,11 +49,19 @@ function formatOrdinanceNo(ordinanceNo) {
 }
 
 /**
- * Formats session date for display
- * @param {string} dateString - ISO date string (e.g., "2025-01-06")
- * @returns {string} Formatted date (e.g., "January 6, 2025")
+ * Formats date for display
+ * @param {string} dateString - Date string (e.g., "Dec 20, 2025" or "2025-01-15")
+ * @returns {string} Formatted date
  */
 function formatSessionDate(dateString) {
+  if (!dateString) return 'N/A';
+  
+  // If already in a readable format (e.g., "Dec 20, 2025"), return as-is
+  if (dateString.match(/[A-Za-z]/)) {
+    return dateString;
+  }
+  
+  // Otherwise, try to parse and format
   try {
     const date = new Date(dateString + "T00:00:00");
     if (isNaN(date.getTime())) {
@@ -94,20 +108,20 @@ function renderOrdinanceTable(ordinances) {
   // Render each ordinance
   ordinances.forEach((ordinance) => {
     // Skip invalid records
-    if (!ordinance.ordinanceNo || !ordinance.title || !ordinance.sessionDate) {
+    if (!ordinance.ordinanceNo || !ordinance.title) {
       console.warn("Skipping invalid ordinance record:", ordinance);
       return;
     }
 
     const row = document.createElement("tr");
+    const dateToDisplay = ordinance.enacted || ordinance.approved || ordinance.sessionDate || 'N/A';
+    
     row.innerHTML = `
             <td data-label="Ordinance No.">${formatOrdinanceNo(
               ordinance.ordinanceNo
             )}</td>
             <td data-label="Title">${ordinance.title}</td>
-            <td data-label="Session Date">${formatSessionDate(
-              ordinance.sessionDate
-            )}</td>
+            <td data-label="Enacted">${formatSessionDate(dateToDisplay)}</td>
         `;
     tableBody.appendChild(row);
   });
@@ -121,6 +135,9 @@ async function initOrdinanceTable() {
     const ordinances = await fetchOrdinances();
     const sortedOrdinances = sortOrdinancesByNumber(ordinances);
     renderOrdinanceTable(sortedOrdinances);
+    
+    // Set up filter buttons
+    setupFilterButtons(ordinances);
   } catch (error) {
     console.error("Error initializing ordinance table:", error);
     const tableBody = document.getElementById("ordinance-table-body");
@@ -136,6 +153,39 @@ async function initOrdinanceTable() {
   }
 }
 
+/**
+ * Sets up filter button event listeners
+ * @param {Array} ordinances - Full array of ordinance objects
+ */
+function setupFilterButtons(ordinances) {
+  const filterButtons = document.querySelectorAll('.filter-btn');
+  
+  filterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      // Update active state
+      filterButtons.forEach(btn => {
+        btn.classList.remove('active');
+        btn.style.background = 'transparent';
+        btn.style.color = 'var(--color-text)';
+      });
+      button.classList.add('active');
+      button.style.background = 'var(--color-primary)';
+      button.style.color = 'white';
+      
+      // Filter ordinances
+      const category = button.getAttribute('data-category');
+      let filtered = ordinances;
+      
+      if (category !== 'all') {
+        filtered = ordinances.filter(ord => ord.category === category);
+      }
+      
+      const sorted = sortOrdinancesByNumber(filtered);
+      renderOrdinanceTable(sorted);
+    });
+  });
+}
+
 // Initialize when DOM is ready
 document.addEventListener("DOMContentLoaded", initOrdinanceTable);
 
@@ -148,5 +198,6 @@ if (typeof module !== "undefined" && module.exports) {
     formatSessionDate,
     renderOrdinanceTable,
     initOrdinanceTable,
+    setupFilterButtons,
   };
 }

@@ -627,3 +627,46 @@
     font-size: 0.75rem;
   }
 }
+
+/* Ordinance Filter Buttons */
+.ordinance-filters {
+  margin-bottom: var(--spacing-md);
+  text-align: center;
+}
+
+.filter-btn {
+  padding: 0.625rem 1.25rem;
+  border: none;
+  background: transparent;
+  color: var(--color-text);
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  font-size: 0.9375rem;
+}
+
+.filter-btn:hover {
+  background: var(--color-background-alt);
+  transform: translateY(-1px);
+}
+
+.filter-btn.active {
+  background: var(--color-primary);
+  color: white;
+}
+
+.filter-btn.active:hover {
+  background: var(--bz-primary-dark, #002066);
+}
+
+@media (max-width: 768px) {
+  .ordinance-filters > div {
+    flex-direction: column !important;
+  }
+  
+  .filter-btn {
+    width: 100%;
+    max-width: 300px;
+  }
+}

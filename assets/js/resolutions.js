@@ -19,16 +19,22 @@ async function fetchResolutions() {
 }
 
 /**
- * Sorts resolutions by resolution number in descending order (newest first)
- * Resolution format: "XXX-YYYY-SS" (sequence-year-session)
+ * Sorts resolutions by year and resolution number in descending order (newest first)
  * @param {Array} resolutions - Array of resolution objects
  * @returns {Array} Sorted array of resolutions
  */
 function sortResolutionsByNumber(resolutions) {
   return [...resolutions].sort((a, b) => {
-    // Extract sequence number from first segment (e.g., "246" from "246-2025-11")
-    const numA = parseInt(a.resolutionNo.split("-")[0], 10);
-    const numB = parseInt(b.resolutionNo.split("-")[0], 10);
+    // First sort by year
+    const yearA = parseInt(a.year, 10) || 0;
+    const yearB = parseInt(b.year, 10) || 0;
+    if (yearB !== yearA) {
+      return yearB - yearA;
+    }
+    
+    // Then by resolution number (extract numeric part)
+    const numA = parseInt(a.resolutionNo.replace(/\D/g, ''), 10) || 0;
+    const numB = parseInt(b.resolutionNo.replace(/\D/g, ''), 10) || 0;
     return numB - numA;
   });
 }
@@ -43,11 +49,19 @@ function formatResolutionNo(resolutionNo) {
 }
 
 /**
- * Formats session date for display
- * @param {string} dateString - ISO date string (e.g., "2025-01-06")
- * @returns {string} Formatted date (e.g., "January 6, 2025")
+ * Formats date for display
+ * @param {string} dateString - Date string (e.g., "Dec 20, 2025" or "2025-01-06")
+ * @returns {string} Formatted date
  */
 function formatSessionDate(dateString) {
+  if (!dateString) return 'N/A';
+  
+  // If already in a readable format (e.g., "Dec 20, 2025"), return as-is
+  if (dateString.match(/[A-Za-z]/)) {
+    return dateString;
+  }
+  
+  // Otherwise, try to parse and format
   try {
     const date = new Date(dateString + "T00:00:00");
     if (isNaN(date.getTime())) {
@@ -96,22 +110,21 @@ function renderResolutionTable(resolutions) {
     // Skip invalid records
     if (
       !resolution.resolutionNo ||
-      !resolution.title ||
-      !resolution.sessionDate
+      !resolution.title
     ) {
       console.warn("Skipping invalid resolution record:", resolution);
       return;
     }
 
     const row = document.createElement("tr");
+    const dateToDisplay = resolution.adopted || resolution.sessionDate || 'N/A';
+    
     row.innerHTML = `
-            <td data-label="Resolution">${formatResolutionNo(
+            <td data-label="Resolution No.">${formatResolutionNo(
               resolution.resolutionNo
             )}</td>
             <td data-label="Title">${resolution.title}</td>
-            <td data-label="Session Date">${formatSessionDate(
-              resolution.sessionDate
-            )}</td>
+            <td data-label="Adopted">${formatSessionDate(dateToDisplay)}</td>
         `;
     tableBody.appendChild(row);
   });
