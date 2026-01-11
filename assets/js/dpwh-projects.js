@@ -1,6 +1,6 @@
 // DPWH Projects Renderer - Progressive Loading Design
-// Better Zamboanga (forked from BetterSolano.org)
-// TODO-ZAMBOANGA: Fetches data/dpwh-projects.json containing Solano DPWH projects
+// Better Zamboanga - Infrastructure Transparency Dashboard
+// Data sources: DPWH Portal (https://transparency.dpwh.gov.ph/) & Sumbong sa Pangulo (https://sumbongsapangulo.ph/)
 (function () {
   "use strict";
 

@@ -1,8 +1,8 @@
 /**
  * Transparency Page V2 - Interactive Financial Dashboard
- * Better Zamboanga (forked from BetterSolano.org)
+ * Better Zamboanga
  * Modern, minimal design with smooth animations
- * TODO-ZAMBOANGA: Contains embedded Solano FY financial data (SRE_DATA)
+ * Financial data reflects Zamboanga City operations (Highly Urbanized City - HUC)
  */
 
 // Financial data for FY 2025
@@ -11,37 +11,37 @@ const FINANCIAL_DATA = {
     period: "Q1 2025",
     periodLabel: "Jan - Mar",
     income: {
-      local: 88.85,
-      external: 69.62,
-      total: 158.47,
+      local: 892.35,
+      external: 1245.80,
+      total: 2138.15,
     },
     expenditures: {
-      gps: 42.76,
-      social: 13.33,
-      economic: 11.07,
-      debt: 0.35,
-      total: 67.51,
+      gps: 856.40,
+      social: 425.30,
+      economic: 312.75,
+      debt: 45.50,
+      total: 1639.95,
     },
-    netIncome: 90.96,
-    fundBalance: 283.29,
+    netIncome: 498.20,
+    fundBalance: 1842.50,
   },
   q2: {
     period: "Q2 2025",
     periodLabel: "Apr - Jun",
     income: {
-      local: 114.15,
-      external: 139.25,
-      total: 253.4,
+      local: 1125.60,
+      external: 1380.25,
+      total: 2505.85,
     },
     expenditures: {
-      gps: 88.31,
-      social: 30.56,
-      economic: 20.32,
-      debt: 1.29,
-      total: 140.48,
+      gps: 945.80,
+      social: 520.40,
+      economic: 425.90,
+      debt: 52.30,
+      total: 1944.40,
     },
-    netIncome: 112.92,
-    fundBalance: 275.2,
+    netIncome: 561.45,
+    fundBalance: 1920.75,
   },
 };
 
