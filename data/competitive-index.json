@@ -1,8 +1,11 @@
 {
-  "__localization_note": "TODO-ZAMBOANGA: This file contains Solano CMCI competitiveness data. Replace with Zamboanga City CMCI scores from latest available years. Data source: DTI Regional Competitiveness Committee or CMCI official reports. Update all pillar indicators and values arrays.",
-  "title": "Solano Competitive Index",
-  "description": "Annual competitiveness indicators measuring local economic performance",
-  "source": "Cities and Municipalities Competitiveness Index (CMCI)",
+  "__localization_note": "CMCI pillar data awaiting official Zamboanga City scores from DTI CMCI reports. Current values are placeholders pending verification from DTI Regional Competitiveness Committee reports.",
+  "title": "Zamboanga City Competitive Index",
+  "description": "Annual competitiveness indicators measuring city economic performance",
+  "source": "Cities and Municipalities Competitiveness Index (CMCI) - DTI",
+  "city": "Zamboanga City",
+  "classification": "Highly Urbanized City",
+  "region": "Region IX - Zamboanga Peninsula",
   "years": [2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024],
   "pillars": [
     {

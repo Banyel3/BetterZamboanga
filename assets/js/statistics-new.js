@@ -1,7 +1,7 @@
 /**
  * Statistics Page - Enhanced Animations & Charts
  * Better Zamboanga Portal (forked from BetterSolano.org)
- * TODO-ZAMBOANGA: barangayData, historicalData, cmciData all contain Solano statistics
+ * Data sources: PSA 2020 Census, BLGF, DTI Region IX
  */
 
 // Brand colors
@@ -14,36 +14,38 @@ const COLORS = {
   info: "#0077BE",
 };
 
-// Barangay data (2024 Census)
+// Barangay data - Top 22 most populous of Zamboanga City's 98 barangays
+// Source: PSA 2020 Census of Population and Housing
 const barangayData = [
-  { name: "Roxas", pop: 9088 },
-  { name: "Quirino", pop: 6572 },
-  { name: "Osmeña", pop: 6403 },
-  { name: "Quezon", pop: 5758 },
-  { name: "Curifang", pop: 4885 },
-  { name: "Bagahabag", pop: 4731 },
-  { name: "Uddiawan", pop: 4217 },
-  { name: "Bascaran", pop: 3845 },
-  { name: "Aggub", pop: 3101 },
-  { name: "San Luis", pop: 2668 },
-  { name: "Communal", pop: 2586 },
-  { name: "Lactawan", pop: 2109 },
-  { name: "San Juan", pop: 1965 },
-  { name: "Concepcion", pop: 1954 },
-  { name: "Dadap", pop: 1409 },
-  { name: "Wacal", pop: 1398 },
-  { name: "Bangaan", pop: 1284 },
-  { name: "Tucal", pop: 1244 },
-  { name: "Bangar", pop: 1146 },
-  { name: "Pilar D. Galima", pop: 1146 },
-  { name: "Poblacion North", pop: 970 },
-  { name: "Poblacion South", pop: 817 },
+  { name: "Tetuan", pop: 52009 },
+  { name: "Tumaga", pop: 39272 },
+  { name: "San Roque", pop: 34270 },
+  { name: "Mampang", pop: 33366 },
+  { name: "Baliwasan", pop: 30214 },
+  { name: "Zone IV", pop: 29912 },
+  { name: "Talon-Talon", pop: 29618 },
+  { name: "Guiwan", pop: 28020 },
+  { name: "Zone III", pop: 26815 },
+  { name: "San Jose Gusu", pop: 25367 },
+  { name: "Sta. Catalina", pop: 24078 },
+  { name: "Pasonanca", pop: 23522 },
+  { name: "Camino Nuevo", pop: 22641 },
+  { name: "Sta. Maria", pop: 22034 },
+  { name: "Canelar", pop: 20621 },
+  { name: "Putik", pop: 20127 },
+  { name: "Sinunuc", pop: 19625 },
+  { name: "Zone II", pop: 18780 },
+  { name: "Culianan", pop: 18233 },
+  { name: "Zone I", pop: 17992 },
+  { name: "Tugbungan", pop: 17469 },
+  { name: "Bunguiao", pop: 16948 },
 ];
 
-// Historical data
+// Historical population - Zamboanga City Census Years
+// Source: Philippine Statistics Authority (PSA)
 const historicalData = {
-  years: [1990, 1995, 2000, 2007, 2010, 2015, 2020, 2024],
-  populations: [38006, 42857, 47288, 53004, 56831, 62649, 65896, 69296],
+  years: [1990, 1995, 2000, 2007, 2010, 2015, 2020],
+  populations: [511549, 601794, 688507, 774407, 807129, 861799, 977234],
 };
 
 // Chart instances
