@@ -200,378 +200,299 @@
     <link rel="stylesheet" href="assets/css/responsive.css" />
     <link rel="stylesheet" href="assets/css/accessibility.css" />
     <link rel="stylesheet" href="assets/css/footer.css" />
+    <link rel="stylesheet" href="assets/css/design-v3.css" />
   </head>
 
   <body>
     <a href="#main-content" class="skip-link">Skip to main content</a>
 
-    <!-- Hotline Bar -->
-    <div class="hotline-bar">
+    <!-- Slim Hotline Bar V3 -->
+    <div class="hotline-bar-v3" role="complementary" aria-label="Emergency hotlines">
       <div class="container">
-        <div class="hotline-inner">
-          <div class="hotline-items">
-            <a href="tel:09778558138" class="hotline-item">
-              <i class="bi bi-shield-fill"></i>
-              <span>ZCPO: 0977-855-8138</span>
-            </a>
-            <a href="tel:9959601" class="hotline-item">
-              <i class="bi bi-exclamation-triangle-fill"></i>
-              <span>ZCDRRMO: 995-9601</span>
-            </a>
-            <a href="tel:9912267" class="hotline-item">
-              <i class="bi bi-fire"></i>
-              <span>Fire: 991-2267</span>
-            </a>
-            <a href="tel:9930000" class="hotline-item">
-              <i class="bi bi-building-fill"></i>
-              <span>City Hall: 993-0000</span>
-            </a>
-            <a href="tel:09177132323" class="hotline-item">
-              <i class="bi bi-hospital-fill"></i>
-              <span>ZCMC: 0917-713-2323</span>
-            </a>
-            <a href="tel:09667316242" class="hotline-item">
-              <i class="bi bi-headset"></i>
-              <span>EOC: 0966-731-6242</span>
-            </a>
-          </div>
-        </div>
+        <a href="tel:09778558138" class="hotline-v3-item">
+          <i class="bi bi-shield-fill"></i>
+          <span>ZCPO: 0977-855-8138</span>
+        </a>
+        <a href="tel:9959601" class="hotline-v3-item">
+          <i class="bi bi-exclamation-triangle-fill"></i>
+          <span>ZCDRRMO: 995-9601</span>
+        </a>
+        <a href="tel:9912267" class="hotline-v3-item">
+          <i class="bi bi-fire"></i>
+          <span>Fire: 991-2267</span>
+        </a>
+        <a href="tel:9930000" class="hotline-v3-item">
+          <i class="bi bi-building-fill"></i>
+          <span>City Hall: 993-0000</span>
+        </a>
+        <a href="tel:09177132323" class="hotline-v3-item">
+          <i class="bi bi-hospital-fill"></i>
+          <span>ZCMC: 0917-713-2323</span>
+        </a>
       </div>
     </div>
 
-    <!-- Header -->
-    <header class="site-header">
-      <div class="container header-inner">
-        <div class="logo-container">
-          <a href="/">
-            <!-- TODO-ZAMBOANGA: Replace with assets/images/logo/better-zamboanga-logo.svg -->
+    <!-- Compact Header V3 -->
+    <header class="site-header-v3">
+      <div class="container">
+        <div class="header-v3-inner">
+          <a href="/" class="header-v3-logo">
             <img
               src="assets/images/logo/better-zamboanga-logo.svg"
               alt="Better Zamboanga Logo"
-              class="logo-img"
             />
           </a>
-        </div>
 
-        <nav class="main-nav" aria-label="Main Navigation">
-          <ul>
-            <li><a href="/" class="active" data-i18n="nav-home">Home</a></li>
-            <li class="has-dropdown">
-              <a href="services/" data-i18n="nav-services">Services</a>
-              <ul class="dropdown-menu">
-                <li><a href="services/certificates.html">Certificates</a></li>
-                <li><a href="services/business.html">Business</a></li>
-                <li><a href="services/tax-payments.html">Tax Payments</a></li>
-                <li>
-                  <a href="services/social-services.html">Social Services</a>
-                </li>
-                <li><a href="services/health.html">Health</a></li>
-                <li><a href="services/agriculture.html">Agriculture</a></li>
-                <li>
-                  <a href="services/infrastructure.html">Infrastructure</a>
-                </li>
-                <li><a href="services/education.html">Education</a></li>
-                <li><a href="services/public-safety.html">Public Safety</a></li>
-                <li><a href="services/environment.html">Environment</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="government/" data-i18n="nav-government">Government</a>
-            </li>
-            <li>
-              <a href="statistics/" data-i18n="nav-statistics">Statistics</a>
-            </li>
-            <li class="has-dropdown">
-              <a href="legislative/" data-i18n="nav-legislative">Legislative</a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a href="legislative/ordinance-framework.html"
-                    >Ordinance Framework</a
-                  >
-                </li>
-                <li>
-                  <a href="legislative/resolution-framework.html"
-                    >Resolution Framework</a
-                  >
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a href="budget/" data-i18n="nav-transparency">Transparency</a>
-            </li>
-            <li><a href="contact/" data-i18n="nav-contact">Contact</a></li>
-          </ul>
-        </nav>
+          <nav class="nav-v3" aria-label="Main Navigation">
+            <ul>
+              <li><a href="/" class="active" data-i18n="nav-home">Home</a></li>
+              <li class="has-dropdown">
+                <a href="services/" data-i18n="nav-services">Services</a>
+                <ul class="dropdown-menu-v3">
+                  <li><a href="services/certificates.html">Certificates</a></li>
+                  <li><a href="services/business.html">Business</a></li>
+                  <li><a href="services/tax-payments.html">Tax Payments</a></li>
+                  <li><a href="services/social-services.html">Social Services</a></li>
+                  <li><a href="services/health.html">Health</a></li>
+                  <li><a href="services/agriculture.html">Agriculture</a></li>
+                  <li><a href="services/infrastructure.html">Infrastructure</a></li>
+                  <li><a href="services/education.html">Education</a></li>
+                  <li><a href="services/public-safety.html">Public Safety</a></li>
+                  <li><a href="services/environment.html">Environment</a></li>
+                </ul>
+              </li>
+              <li><a href="government/" data-i18n="nav-government">Government</a></li>
+              <li><a href="statistics/" data-i18n="nav-statistics">Statistics</a></li>
+              <li class="has-dropdown">
+                <a href="legislative/" data-i18n="nav-legislative">Legislative</a>
+                <ul class="dropdown-menu-v3">
+                  <li><a href="legislative/ordinance-framework.html">Ordinance Framework</a></li>
+                  <li><a href="legislative/resolution-framework.html">Resolution Framework</a></li>
+                </ul>
+              </li>
+              <li><a href="budget/" data-i18n="nav-transparency">Transparency</a></li>
+              <li><a href="contact/" data-i18n="nav-contact">Contact</a></li>
+            </ul>
+          </nav>
 
-        <div class="header-actions">
-          <div class="lang-selector">
-            <button
-              type="button"
-              class="btn btn-secondary btn-sm lang-btn"
-              data-lang="en"
-              aria-label="Switch to English"
-            >
-              EN
-            </button>
-            <button
-              type="button"
-              class="btn btn-secondary btn-sm lang-btn"
-              data-lang="fil"
-              aria-label="Switch to Filipino"
-            >
-              FIL
-            </button>
-            <button
-              type="button"
-              class="btn btn-secondary btn-sm lang-btn"
-              data-lang="ilo"
-              aria-label="Switch to Ilocano"
-            >
-              ILO
+          <div class="header-v3-utils">
+            <div class="header-v3-info">
+              <div class="header-v3-info-item info-bar-datetime" aria-label="Philippine Date and Time">
+                <i class="bi bi-clock"></i>
+                <span class="time-value">--:-- --</span>
+                <span class="time-label">PHT</span>
+              </div>
+              <div class="header-v3-info-item info-bar-weather" aria-label="Current weather">
+                <i class="bi bi-thermometer-half"></i>
+                <span class="weather-temp">--°C</span>
+              </div>
+            </div>
+            <div class="lang-selector-v3">
+              <button type="button" data-lang="en" aria-label="Switch to English" class="active">EN</button>
+              <button type="button" data-lang="fil" aria-label="Switch to Filipino">FIL</button>
+              <button type="button" data-lang="ilo" aria-label="Switch to Ilocano">ILO</button>
+            </div>
+            <button class="mobile-menu-btn" aria-label="Open menu" aria-expanded="false">
+              <i class="bi bi-list"></i>
             </button>
           </div>
         </div>
       </div>
     </header>
 
-    <!-- Real-Time Info Bar -->
-    <div
-      class="info-bar"
-      role="complementary"
-      aria-label="Real-time information"
-    >
-      <div class="container">
-        <div class="info-bar-inner">
-          <div class="info-bar-item info-bar-rates" aria-label="Exchange rates">
-            <i class="bi bi-currency-exchange"></i>
-            <span class="rate-rotator">
-              <span class="rate-display">1 USD = ₱ --</span>
-            </span>
-          </div>
-          <div
-            class="info-bar-item info-bar-weather"
-            aria-label="Current weather in Zamboanga City"
-          >
-            <i class="bi bi-thermometer-half"></i>
-            <!-- TODO-ZAMBOANGA: Verify weather API supports Zamboanga City coordinates (6.9214, 122.0790) -->
-            <span class="weather-location">Zamboanga City</span>
-            <span class="weather-temp">--°C</span>
-          </div>
-          <div
-            class="info-bar-item info-bar-datetime"
-            aria-label="Philippine Date and Time"
-          >
-            <i class="bi bi-calendar3"></i>
-            <span class="date-value">--- --, ----</span>
-            <span class="datetime-separator">•</span>
-            <i class="bi bi-clock"></i>
-            <span class="time-value">--:-- --</span>
-            <span class="time-label">PHT</span>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <main id="main-content">
-      <!-- Hero Section -->
-      <section class="home-hero-v2">
+      <!-- Task-First Hero V3 -->
+      <section class="hero-v3">
         <div class="container">
-          <div class="home-hero-v2-inner">
-            <div class="home-hero-v2-text">
-              <h1 data-i18n="hero-welcome">Welcome to Better Zamboanga</h1>
-              <p data-i18n="hero-subtitle">
-                Access government services, information, and resources for the
-                people of Zamboanga City.
-              </p>
-              <div class="home-hero-v2-actions">
-                <a href="services/" class="btn btn-primary"
-                  >Browse Services <i class="bi bi-arrow-right"></i
-                ></a>
-                <a href="contact/" class="btn btn-outline">Contact Us</a>
-              </div>
+          <div class="hero-v3-content">
+            <h1 data-i18n="hero-welcome">What do you need to do today?</h1>
+            <p data-i18n="hero-subtitle">
+              Access government services, information, and resources for the people of Zamboanga City.
+            </p>
+            
+            <div class="hero-search-v3">
+              <form role="search" action="services/" method="get">
+                <input
+                  type="search"
+                  id="hero-search"
+                  name="q"
+                  placeholder="Search for a service (e.g., birth certificate, business permit)"
+                  aria-label="Search services"
+                  autocomplete="off"
+                />
+                <button type="submit">
+                  <i class="bi bi-search"></i>
+                  Search
+                </button>
+              </form>
             </div>
-            <div class="home-hero-v2-search">
-              <div class="home-search-box">
-                <h2><i class="bi bi-search"></i> Find a Service</h2>
-                <form class="search-form" role="search">
-                  <div class="search-input-wrapper">
-                    <input
-                      type="search"
-                      id="hero-search"
-                      class="service-search-input"
-                      placeholder="e.g., birth certificate, business permit"
-                      aria-label="Search services"
-                      autocomplete="off"
-                    />
-                    <button
-                      type="submit"
-                      class="search-submit-btn"
-                      aria-label="Search"
-                    >
-                      <i class="bi bi-arrow-right"></i>
-                    </button>
-                  </div>
-                </form>
-                <div class="home-search-tags">
-                  <span>Popular:</span>
-                  <a href="service-details/birth-certificate.html"
-                    >Birth Certificate</a
-                  >
-                  <a href="service-details/business-permits-licensing.html"
-                    >Business Permit</a
-                  >
-                  <a href="service-details/municipal-treasurer.html"
-                    >Real Property Tax</a
-                  >
-                </div>
-              </div>
+
+            <div class="top-tasks-v3">
+              <span>Popular:</span>
+              <a href="service-details/birth-certificate.html" class="top-task-pill">
+                <i class="bi bi-file-earmark-text"></i>
+                Birth Certificate
+              </a>
+              <a href="service-details/business-permits-licensing.html" class="top-task-pill">
+                <i class="bi bi-shop"></i>
+                Business Permit
+              </a>
+              <a href="service-details/municipal-treasurer.html" class="top-task-pill">
+                <i class="bi bi-cash-coin"></i>
+                Real Property Tax
+              </a>
+              <a href="services/health.html" class="top-task-pill">
+                <i class="bi bi-heart-pulse"></i>
+                Health Services
+              </a>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Quick Access Services -->
-      <section class="section">
+      <!-- Popular Services V3 - Tiered Grid -->
+      <section class="section-v3">
         <div class="container">
-          <div class="home-section-header">
-            <h2 data-i18n="section-popular">Popular Services</h2>
-            <p>Quick access to frequently requested municipal services</p>
+          <div class="section-header-v3">
+            <div>
+              <h2 data-i18n="section-popular">Popular Services</h2>
+              <p>Quick access to frequently requested municipal services</p>
+            </div>
+            <a href="services/" class="section-link-v3">
+              View All Services <i class="bi bi-arrow-right"></i>
+            </a>
           </div>
-          <div class="home-services-grid">
-            <a href="services/certificates.html" class="home-service-card">
-              <div class="home-service-icon">
-                <i class="bi bi-file-earmark-text-fill"></i>
-              </div>
-              <div class="home-service-content">
+          
+          <!-- Featured Services (Top 3 - Larger) -->
+          <div class="services-grid-v3">
+            <div class="services-featured-v3">
+              <a href="services/certificates.html" class="service-card-v3">
+                <div class="service-card-v3-icon">
+                  <i class="bi bi-file-earmark-text-fill"></i>
+                </div>
                 <h3 data-i18n="service-certificates">Certificates</h3>
-                <p data-i18n="service-certificates-desc">
-                  Birth, marriage, death certificates
-                </p>
-              </div>
-              <i class="bi bi-arrow-right home-service-arrow"></i>
-            </a>
-            <a href="services/business.html" class="home-service-card">
-              <div class="home-service-icon"><i class="bi bi-shop"></i></div>
-              <div class="home-service-content">
+                <p data-i18n="service-certificates-desc">Birth, marriage, death certificates</p>
+              </a>
+              <a href="services/business.html" class="service-card-v3">
+                <div class="service-card-v3-icon">
+                  <i class="bi bi-shop"></i>
+                </div>
                 <h3 data-i18n="service-business">Business Permits</h3>
-                <p data-i18n="service-business-desc">
-                  New permits and renewals
-                </p>
-              </div>
-              <i class="bi bi-arrow-right home-service-arrow"></i>
-            </a>
-            <a href="services/tax-payments.html" class="home-service-card">
-              <div class="home-service-icon">
-                <i class="bi bi-cash-coin"></i>
-              </div>
-              <div class="home-service-content">
+                <p data-i18n="service-business-desc">New permits and renewals</p>
+              </a>
+              <a href="services/tax-payments.html" class="service-card-v3">
+                <div class="service-card-v3-icon">
+                  <i class="bi bi-cash-coin"></i>
+                </div>
                 <h3 data-i18n="service-tax">Tax Payments</h3>
                 <p data-i18n="service-tax-desc">Property and business taxes</p>
-              </div>
-              <i class="bi bi-arrow-right home-service-arrow"></i>
-            </a>
-            <a href="services/social-services.html" class="home-service-card">
-              <div class="home-service-icon">
-                <i class="bi bi-people-fill"></i>
-              </div>
-              <div class="home-service-content">
+              </a>
+            </div>
+            
+            <!-- Secondary Services (Compact) -->
+            <div class="services-secondary-v3">
+              <a href="services/social-services.html" class="service-card-v3 service-card-v3--compact">
+                <div class="service-card-v3-icon">
+                  <i class="bi bi-people-fill"></i>
+                </div>
                 <h3 data-i18n="service-social">Social Services</h3>
-                <p data-i18n="service-social-desc">
-                  Senior citizen & PWD services
-                </p>
-              </div>
-              <i class="bi bi-arrow-right home-service-arrow"></i>
-            </a>
-            <a href="services/health.html" class="home-service-card">
-              <div class="home-service-icon">
-                <i class="bi bi-heart-pulse-fill"></i>
-              </div>
-              <div class="home-service-content">
-                <h3 data-i18n="service-health">Health Services</h3>
-                <p data-i18n="service-health-desc">
-                  Medical assistance & programs
-                </p>
-              </div>
-              <i class="bi bi-arrow-right home-service-arrow"></i>
-            </a>
-            <a
-              href="services/"
-              class="home-service-card home-service-card--all"
-            >
-              <div class="home-service-icon">
-                <i class="bi bi-grid-fill"></i>
-              </div>
-              <div class="home-service-content">
-                <h3 data-i18n="btn-view-all-services">View All Services</h3>
-                <p>Browse complete directory</p>
-              </div>
-              <i class="bi bi-arrow-right home-service-arrow"></i>
-            </a>
+                <p data-i18n="service-social-desc">Senior citizen & PWD</p>
+              </a>
+              <a href="services/health.html" class="service-card-v3 service-card-v3--compact">
+                <div class="service-card-v3-icon">
+                  <i class="bi bi-heart-pulse-fill"></i>
+                </div>
+                <h3 data-i18n="service-health">Health</h3>
+                <p data-i18n="service-health-desc">Medical assistance</p>
+              </a>
+              <a href="services/education.html" class="service-card-v3 service-card-v3--compact">
+                <div class="service-card-v3-icon">
+                  <i class="bi bi-mortarboard-fill"></i>
+                </div>
+                <h3>Education</h3>
+                <p>Schools & scholarships</p>
+              </a>
+              <a href="services/infrastructure.html" class="service-card-v3 service-card-v3--compact">
+                <div class="service-card-v3-icon">
+                  <i class="bi bi-buildings-fill"></i>
+                </div>
+                <h3>Infrastructure</h3>
+                <p>Building permits</p>
+              </a>
+              <a href="services/public-safety.html" class="service-card-v3 service-card-v3--compact">
+                <div class="service-card-v3-icon">
+                  <i class="bi bi-shield-check"></i>
+                </div>
+                <h3>Public Safety</h3>
+                <p>Security & emergency</p>
+              </a>
+              <a href="services/agriculture.html" class="service-card-v3 service-card-v3--compact">
+                <div class="service-card-v3-icon">
+                  <i class="bi bi-tree-fill"></i>
+                </div>
+                <h3>Agriculture</h3>
+                <p>Farming support</p>
+              </a>
+            </div>
           </div>
         </div>
       </section>
 
-      <!-- Quick Stats -->
-      <section class="home-stats-v2">
+
+      <!-- City Stats V3 - KPI Panels -->
+      <section class="section-v3 section-v3--alt">
         <div class="container">
-          <div class="home-stats-v2-header">
-            <h2>Solano at a Glance</h2>
-            <a href="statistics/" class="home-section-link"
-              >View Statistics <i class="bi bi-arrow-right"></i
-            ></a>
+          <div class="section-header-v3">
+            <div>
+              <h2>Zamboanga City at a Glance</h2>
+              <p>Key facts about the city</p>
+            </div>
+            <a href="statistics/" class="section-link-v3">
+              View Statistics <i class="bi bi-arrow-right"></i>
+            </a>
           </div>
-          <div class="home-stats-v2-grid">
-            <a href="statistics/" class="home-stat-card">
-              <div class="home-stat-card-icon">
+          <div class="kpi-grid-v3">
+            <a href="statistics/" class="kpi-panel-v3">
+              <div class="kpi-panel-v3-icon">
                 <i class="bi bi-people-fill"></i>
               </div>
-              <div class="home-stat-card-content">
-                <span class="home-stat-card-value" data-count="69296"
-                  >69,296</span
-                >
-                <span class="home-stat-card-label">Population</span>
-                <span class="home-stat-card-source">2024 Census</span>
-              </div>
+              <span class="kpi-panel-v3-value" data-count="977234">977,234</span>
+              <span class="kpi-panel-v3-label">Population</span>
+              <span class="kpi-panel-v3-source">2020 Census</span>
             </a>
-            <a href="government/" class="home-stat-card">
-              <div class="home-stat-card-icon">
+            <a href="government/" class="kpi-panel-v3">
+              <div class="kpi-panel-v3-icon">
                 <i class="bi bi-geo-alt-fill"></i>
               </div>
-              <div class="home-stat-card-content">
-                <span class="home-stat-card-value">22</span>
-                <span class="home-stat-card-label">Barangays</span>
-                <span class="home-stat-card-source">Administrative Units</span>
-              </div>
+              <span class="kpi-panel-v3-value">98</span>
+              <span class="kpi-panel-v3-label">Barangays</span>
+              <span class="kpi-panel-v3-source">Administrative Units</span>
             </a>
-            <a href="budget/" class="home-stat-card">
-              <div class="home-stat-card-icon">
+            <a href="budget/" class="kpi-panel-v3">
+              <div class="kpi-panel-v3-icon">
                 <i class="bi bi-award-fill"></i>
               </div>
-              <div class="home-stat-card-content">
-                <span class="home-stat-card-value">1st Class</span>
-                <span class="home-stat-card-label">Municipality</span>
-                <span class="home-stat-card-source">Income Classification</span>
-              </div>
+              <span class="kpi-panel-v3-value">HUC</span>
+              <span class="kpi-panel-v3-label">City Classification</span>
+              <span class="kpi-panel-v3-source">Highly Urbanized City</span>
             </a>
-            <a href="statistics/" class="home-stat-card">
-              <div class="home-stat-card-icon">
+            <a href="statistics/" class="kpi-panel-v3">
+              <div class="kpi-panel-v3-icon">
                 <i class="bi bi-rulers"></i>
               </div>
-              <div class="home-stat-card-content">
-                <span class="home-stat-card-value">162.70 km²</span>
-                <span class="home-stat-card-label">Land Area</span>
-                <span class="home-stat-card-source">Total Municipal Area</span>
-              </div>
+              <span class="kpi-panel-v3-value">1,414.7 km²</span>
+              <span class="kpi-panel-v3-label">Land Area</span>
+              <span class="kpi-panel-v3-source">Total City Area</span>
             </a>
           </div>
         </div>
       </section>
 
       <!-- Weather & Location Section -->
-      <section class="section weather-map-section">
+      <section class="section-v3 weather-map-section">
         <div class="container">
-          <div class="home-stats-v2-header">
-            <h2>Weather and Map of Solano</h2>
+          <div class="section-header-v3">
+            <h2>Weather and Map of Zamboanga City</h2>
           </div>
           <div class="weather-map-grid">
             <div class="weather-column">
