@@ -1,0 +1,31 @@
+{
+  "name": "bz-web",
+  "version": "1.1.8",
+  "description": "Better Zamboanga - Civic Portal for Zamboanga City (forked from BetterSolano.org)",
+  "scripts": {
+    "dev": "python3 -m http.server 8000",
+    "build": "bash build.sh",
+    "build:major": "bash scripts/version.sh major && bash build.sh --no-bump",
+    "build:minor": "bash scripts/version.sh minor && bash build.sh --no-bump",
+    "serve": "python3 -m http.server 8000",
+    "serve:dist": "cd dist && python3 -m http.server 8080",
+    "version:major": "bash scripts/version.sh major",
+    "version:minor": "bash scripts/version.sh minor",
+    "version:patch": "bash scripts/version.sh patch",
+    "version:check": "bash scripts/version.sh"
+  },
+  "keywords": [
+    "zamboanga-city",
+    "zamboanga",
+    "government",
+    "lgu",
+    "civic-tech"
+  ],
+  "author": "Better Zamboanga Contributors (forked from BetterSolano.org by Ramon Logan Jr.)",
+  "license": "MIT",
+  "devDependencies": {
+    "clean-css-cli": "^5.6.3",
+    "html-minifier-terser": "^7.2.0",
+    "terser": "^5.44.1"
+  }
+}

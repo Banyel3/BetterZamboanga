@@ -1,0 +1,246 @@
+{
+  "__localization_note": "Official ordinances from Zamboanga City Sangguniang Panlungsod extracted from zamboangacity.gov.ph. Data includes appropriation ordinances (annual budgets, supplemental budgets, plantilla), regulatory ordinances (healthcare, education, legal services), and revenue ordinances (taxes, fees, permits). Last updated: January 2026.",
+  "ordinances": [
+    {
+      "ordinanceNo": "Ord. 766",
+      "title": "Supplemental Budget No. 02, Series of 2025 (P95,780,000.00)",
+      "enacted": "Dec 20, 2025",
+      "approved": "Dec 27, 2025",
+      "category": "appropriation",
+      "year": "2025"
+    },
+    {
+      "ordinanceNo": "Ord. 765",
+      "title": "Plantilla of Personnel for Calendar Year 2026",
+      "enacted": "Dec 20, 2025",
+      "approved": "Dec 27, 2025",
+      "category": "appropriation",
+      "year": "2025"
+    },
+    {
+      "ordinanceNo": "Ord. 764",
+      "title": "Annual Budget for Fiscal Year 2026 (P7,068,055,610.00)",
+      "enacted": "Dec 20, 2025",
+      "approved": "Dec 27, 2025",
+      "category": "appropriation",
+      "year": "2025"
+    },
+    {
+      "ordinanceNo": "Ord. 763",
+      "title": "Supplemental Budget No. 01, Series of 2025 (P1,437,858,867.73)",
+      "enacted": "Aug 22, 2025",
+      "approved": "Sep 6, 2025",
+      "category": "appropriation",
+      "year": "2025"
+    },
+    {
+      "ordinanceNo": "Ord. 762",
+      "title": "Annual Budget for Fiscal Year 2025 (P6,422,969,270.00)",
+      "enacted": "Dec 19, 2024",
+      "approved": "Dec 26, 2024",
+      "category": "appropriation",
+      "year": "2024"
+    },
+    {
+      "ordinanceNo": "Ord. 761",
+      "title": "Plantilla of Personnel for Calendar Year 2025",
+      "enacted": "Dec 19, 2024",
+      "approved": "Dec 26, 2024",
+      "category": "appropriation",
+      "year": "2024"
+    },
+    {
+      "ordinanceNo": "Ord. 760",
+      "title": "Supplemental Budget No. 03, Series of 2024 (P127,770,000.00)",
+      "enacted": "Dec 13, 2024",
+      "approved": "Dec 27, 2024",
+      "category": "appropriation",
+      "year": "2024"
+    },
+    {
+      "ordinanceNo": "Ord. 759",
+      "title": "Supplemental Budget No. 02, Series of 2024 (P180,540,000.00)",
+      "enacted": "Aug 30, 2024",
+      "approved": "Sep 9, 2024",
+      "category": "appropriation",
+      "year": "2024"
+    },
+    {
+      "ordinanceNo": "Ord. 758",
+      "title": "Supplemental Budget No. 01, Series of 2024 (P1,059,960,000.00)",
+      "enacted": "Jun 7, 2024",
+      "approved": "Jun 13, 2024",
+      "category": "appropriation",
+      "year": "2024"
+    },
+    {
+      "ordinanceNo": "Ord. 757",
+      "title": "Annual Budget for Fiscal Year 2024 (P5,812,260,440.00)",
+      "enacted": "Dec 19, 2023",
+      "approved": "Dec 27, 2023",
+      "category": "appropriation",
+      "year": "2023"
+    },
+    {
+      "ordinanceNo": "Ord. 924",
+      "title": "Digital Healthcare Services Implementation",
+      "enacted": "Dec 2025",
+      "approved": "Dec 2025",
+      "category": "regulatory",
+      "year": "2025"
+    },
+    {
+      "ordinanceNo": "Ord. 923",
+      "title": "PhilHealth KONSULTA and YaKaP Program Implementation",
+      "enacted": "Dec 2025",
+      "approved": "Dec 2025",
+      "category": "regulatory",
+      "year": "2025"
+    },
+    {
+      "ordinanceNo": "Ord. 922",
+      "title": "Maintenance Medicines for Senior Citizens",
+      "enacted": "Dec 2025",
+      "approved": "Dec 2025",
+      "category": "regulatory",
+      "year": "2025"
+    },
+    {
+      "ordinanceNo": "Ord. 921",
+      "title": "Colegio de la Ciudad de Zamboanga Charter Amendment",
+      "enacted": "Dec 2025",
+      "approved": "Dec 2025",
+      "category": "regulatory",
+      "year": "2025"
+    },
+    {
+      "ordinanceNo": "Ord. 920",
+      "title": "Maritime Coordinating Council Establishment",
+      "enacted": "Dec 2025",
+      "approved": "Dec 2025",
+      "category": "regulatory",
+      "year": "2025"
+    },
+    {
+      "ordinanceNo": "Ord. 919",
+      "title": "Liberty Reintegration Program",
+      "enacted": "Dec 2025",
+      "approved": "Dec 2025",
+      "category": "regulatory",
+      "year": "2025"
+    },
+    {
+      "ordinanceNo": "Ord. 918",
+      "title": "Jail Contraband Prohibition Ordinance",
+      "enacted": "Dec 2025",
+      "approved": "Dec 2025",
+      "category": "regulatory",
+      "year": "2025"
+    },
+    {
+      "ordinanceNo": "Ord. 917",
+      "title": "Free Legal Aid Services for Indigent Litigants",
+      "enacted": "Dec 2025",
+      "approved": "Dec 2025",
+      "category": "regulatory",
+      "year": "2025"
+    },
+    {
+      "ordinanceNo": "Ord. 916",
+      "title": "Public Healthcare Accessibility Enhancement",
+      "enacted": "Nov 2025",
+      "approved": "Nov 2025",
+      "category": "regulatory",
+      "year": "2025"
+    },
+    {
+      "ordinanceNo": "Ord. 915",
+      "title": "Urban Planning and Zoning Regulations",
+      "enacted": "Nov 2025",
+      "approved": "Nov 2025",
+      "category": "regulatory",
+      "year": "2025"
+    },
+    {
+      "ordinanceNo": "2025-203",
+      "title": "The 2025 Revised Ordinance Prescribing Rules and Mechanism for the Issuance of Permits for the Extraction of Sand and Gravel and Other Similar Mineral Resources",
+      "enacted": "Dec 5, 2025, as an urgent measure",
+      "approved": "Dec 15, 2025",
+      "category": "revenue",
+      "year": "2025"
+    },
+    {
+      "ordinanceNo": "2025-202",
+      "title": "An Ordinance Extending the Deadline for the First Quarter Payment of City Licenses and Taxes from January 20, 2025 to January 31, 2025",
+      "enacted": "Jan 20, 2025, as an urgent measure",
+      "approved": "Jan 22, 2025",
+      "category": "revenue",
+      "year": "2025"
+    },
+    {
+      "ordinanceNo": "2024-201",
+      "title": "An Ordinance Amending Section 77 of Ordinance No. 2017-178 Entitled the 'Meat Inspection Code of Zamboanga City'",
+      "enacted": "11 Mar 2024, as an urgent measure",
+      "approved": "18 Mar 2024",
+      "category": "revenue",
+      "year": "2024"
+    },
+    {
+      "ordinanceNo": "2024-200",
+      "title": "An Ordinance Extending the Deadline for the First Quarter Payment of City Licenses and Taxes from January 20, 2024 to January 31, 2024",
+      "enacted": "17 Jan 2024, as an urgent measure",
+      "approved": "22 June 2024",
+      "category": "revenue",
+      "year": "2024"
+    },
+    {
+      "ordinanceNo": "2023-199",
+      "title": "An Ordinance Further Amending Sections 7 and 8 of Ordinance No. 93-018, Otherwise Known as the 'Revenue Ordinance of the Mayor Joaquin F. Enriquez, Jr. Memorial Sports Complex'",
+      "enacted": "14 June 2023",
+      "approved": "19 June 2023",
+      "category": "revenue",
+      "year": "2023"
+    },
+    {
+      "ordinanceNo": "2023-198",
+      "title": "An Ordinance Adopting, Approving and Prescribing the Schedule of Fair Market Value for Different Kinds of Lands, Structures and Improvements in the City of Zamboanga",
+      "enacted": "17 Apr 2023",
+      "approved": "26 Apr 2023",
+      "category": "revenue",
+      "year": "2023"
+    },
+    {
+      "ordinanceNo": "2023-197",
+      "title": "An Ordinance Further Amending Article III, Section 24 (B), of Ordinance No. 92-008, Otherwise Known as the 'Revenue Ordinance of the City of Zamboanga and Providing Penalty Thereof'",
+      "enacted": "06 Feb 2023, as an urgent measure",
+      "approved": "09 Feb 2023",
+      "category": "revenue",
+      "year": "2023"
+    },
+    {
+      "ordinanceNo": "2023-196",
+      "title": "An Ordinance Extending the Deadline for the First Quarter Payment of City Licenses and Taxes from January 20, 2023 to January 31, 2023",
+      "enacted": "18 Jan 2023, as an urgent measure",
+      "approved": "19 Jan 2023",
+      "category": "revenue",
+      "year": "2023"
+    },
+    {
+      "ordinanceNo": "2016-176",
+      "title": "An Ordinance Establishing the Integrated Solid Waste Management System of the City of Zamboanga, Prescribing Rates and Charges",
+      "enacted": "28 Jun 2016",
+      "approved": "07 Jul 2016",
+      "category": "revenue",
+      "year": "2016"
+    },
+    {
+      "ordinanceNo": "92-008",
+      "title": "Revenue Ordinance of the City of Zamboanga and Providing Penalty Thereof",
+      "enacted": "10 Dec 1992",
+      "approved": "22 Dec 1992",
+      "category": "revenue",
+      "year": "1992"
+    }
+  ]
+}
+

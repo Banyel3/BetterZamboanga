@@ -1,299 +1,36 @@
-# Better Zamboanga
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-A civic-tech initiative providing transparent access to municipal services, programs, and public funds of Zamboanga City, Philippines.
+## Getting Started
 
-![Version](https://img.shields.io/badge/version-1.1.8-green)
-![License](https://img.shields.io/badge/license-MIT%20%7C%20CC%20BY%204.0-blue)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
-![Node.js](https://img.shields.io/badge/Node.js-339933?logo=nodedotjs&logoColor=white)
-
-## About
-
-Better Zamboanga is a volunteer-driven, open-source project that empowers the people of Zamboanga City with easy access to local government information. The platform aggregates public data from official government portals and presents it in a user-friendly, accessible format.
-
-**Cost to the People of Zamboanga City = ₱0**
-
-> **Origin & Credits:** This repository is a fork of [BetterSolano.org](https://github.com/BetterSolano/bettersolano), originally created by Ramon Logan Jr. for LGU Solano, Nueva Vizcaya. Better Zamboanga adapts the platform architecture and templates for Zamboanga City. We deeply appreciate the pioneering work of the BetterSolano.org team.
-
-## Live Demo
-
-_Live deployment URL will be announced once hosting is finalized for Zamboanga City._
-
-## Technology Stack
-
-| Category            | Technologies                                                    |
-| ------------------- | --------------------------------------------------------------- |
-| **Frontend**        | HTML5, CSS3, JavaScript (ES6+)                                  |
-| **Styling**         | Custom CSS, CSS Variables, Flexbox, CSS Grid, Responsive Design |
-| **Icons**           | Bootstrap Icons (CDN)                                           |
-| **Fonts**           | Google Fonts (Inter)                                            |
-| **Maps**            | Leaflet.js, OpenStreetMap                                       |
-| **Charts**          | Chart.js (Canvas-based)                                         |
-| **Data Format**     | JSON                                                            |
-| **APIs**            | Open-Meteo (Weather), ExchangeRate API (Currency)               |
-| **Build Tools**     | Node.js, npm, Bash                                              |
-| **Minification**    | html-minifier-terser, clean-css-cli, terser                     |
-| **Version Control** | Git, GitHub                                                     |
-| **Server**          | Apache (.htaccess), mod_rewrite, mod_deflate                    |
-| **Hosting**         | cPanel (Production), Python HTTP Server (Development)           |
-| **SEO**             | Open Graph, Twitter Cards, XML Sitemap, robots.txt              |
-| **Security**        | HTTPS, CSP Headers, HSTS, X-Frame-Options                       |
-| **Analytics**       | Google Analytics (gtag.js)                                      |
-| **Accessibility**   | WCAG 2.1, ARIA, Semantic HTML                                   |
-| **Performance**     | GZIP Compression, Browser Caching, Asset Minification           |
-
-## Key Features
-
-| Feature                          | Description                                                                           |
-| -------------------------------- | ------------------------------------------------------------------------------------- |
-| **Municipal Services Directory** | Comprehensive guide to all LGU services with requirements, fees, and processing times |
-| **Government Officials**         | Directory of elected officials and department heads with contact information          |
-| **Budget Transparency**          | Financial reports, income/expenditure breakdowns, and infrastructure projects         |
-| **Legislative Documents**        | Searchable database of ordinances and resolutions from Sangguniang Bayan              |
-| **Municipal Statistics**         | Demographics, economic data, and competitive index rankings                           |
-| **Real-time Information**        | Live weather updates, currency exchange rates, and Philippine time                    |
-| **Multi-language Support**       | Available in English, Filipino, and Ilocano                                           |
-| **Accessibility**                | WCAG 2.1 compliant with skip links, ARIA labels, and semantic HTML                    |
-| **SEO Optimized**                | Meta tags, Open Graph, Twitter Cards, structured data, and XML sitemap                |
-| **Performance**                  | 90% size reduction through minification, GZIP compression, and browser caching        |
-
-## Quick Start
-
-```bash
-# Clone the repository
-git clone https://github.com/Banyel3/BetterZamboanga.git
-
-# Navigate to project directory
-cd BetterZamboanga
-
-# Install dependencies
-npm install
-
-# Start development server
-npm run dev
-
-# Open in browser
-# http://localhost:8000
-```
-
-## Installation
-
-### Prerequisites
-
-| Requirement | Version | Purpose                            |
-| ----------- | ------- | ---------------------------------- |
-| Node.js     | v16+    | Build tools and package management |
-| npm         | v8+     | Dependency management              |
-| Python 3    | v3.x    | Local development server           |
-| Git         | Latest  | Version control                    |
-
-### Setup Steps
-
-1. **Clone the repository**
-
-```bash
-git clone https://github.com/Banyel3/BetterZamboanga.git
-cd BetterZamboanga
-```
-
-2. **Install dependencies**
-
-```bash
-npm install
-```
-
-3. **Start the development server**
+First, run the development server:
 
 ```bash
 npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
 ```
 
-4. **Open in browser**
-   - Development: http://localhost:8000
-   - Production preview: http://localhost:8080 (after build)
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## Usage
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-### Development Commands
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-| Command                 | Description                                                           |
-| ----------------------- | --------------------------------------------------------------------- |
-| `npm run dev`           | Start local development server (port 8000)                            |
-| `npm run build`         | Build minified production files to `dist/` (auto-bumps patch version) |
-| `npm run build:minor`   | Bump minor version and build                                          |
-| `npm run build:major`   | Bump major version and build                                          |
-| `npm run serve:dist`    | Serve production build (port 8080)                                    |
-| `npm run version:check` | Display current version                                               |
-| `npm run version:patch` | Bump patch version only                                               |
-| `npm run version:minor` | Bump minor version only                                               |
-| `npm run version:major` | Bump major version only                                               |
+## Learn More
 
-### Production Deployment
+To learn more about Next.js, take a look at the following resources:
 
-1. **Build production files**
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-```bash
-npm run build
-```
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-2. **Output location**
+## Deploy on Vercel
 
-   - Minified files are generated in the `dist/` folder
-   - Original size: ~17MB → Minified: ~1.8MB (90% reduction)
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-3. **Deploy to server**
-   - Upload contents of `dist/` to your web server's `public_html` directory
-   - Ensure `.htaccess` is included for clean URLs and security headers
-
-### File Permissions (cPanel)
-
-| Type        | Permission | Numeric |
-| ----------- | ---------- | ------- |
-| Files       | rw-r--r--  | 644     |
-| Directories | rwxr-xr-x  | 755     |
-
-## Project Structure
-
-```
-BetterZamboanga/
-├── assets/
-│   ├── css/              # Stylesheets (9 files)
-│   ├── js/               # JavaScript modules (15 files)
-│   ├── images/           # Images, icons, banners
-│   └── fonts/            # Web fonts
-├── data/                 # JSON data files
-│   ├── officials.json    # Government officials data
-│   ├── services.json     # Municipal services data
-│   ├── ordinances.json   # Legislative ordinances
-│   └── resolutions.json  # Legislative resolutions
-├── services/             # Service category pages (11 pages)
-├── service-details/      # Individual service pages (22 pages)
-├── government/           # Government directory pages
-├── legislative/          # Legislative framework pages
-├── budget/               # Budget transparency page
-├── statistics/           # Municipal statistics page
-├── contact/              # Contact information page
-├── faq/                  # Frequently asked questions
-├── scripts/              # Build and version scripts
-├── dist/                 # Production build output
-├── index.html            # Homepage
-├── .htaccess             # Apache configuration
-├── sitemap.xml           # XML sitemap (SEO)
-├── robots.txt            # Search engine directives
-├── version.json          # Version tracking
-├── build.sh              # Build automation script
-├── package.json          # Node.js configuration
-└── README.md             # Project documentation
-```
-
-## Contributing
-
-We welcome contributions from everyone! Whether you're a developer, designer, data researcher, content writer, translator, or a concerned citizen of Zamboanga City, your participation helps shape this project for all.
-
-**Please read our community standards:**
-
-- [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) - Our community values and expected behavior
-- [CONTRIBUTING.md](CONTRIBUTING.md) - Detailed contribution guidelines and workflow
-- [SECURITY.md](SECURITY.md) - Responsible security disclosure procedures
-
-### How to Contribute
-
-1. **Fork** the repository
-2. **Create** a feature branch
-   ```bash
-   git checkout -b feature/your-feature-name
-   ```
-3. **Make** your changes
-4. **Test** thoroughly on multiple browsers
-5. **Commit** with a descriptive message
-   ```bash
-   git commit -m "Add: description of your changes"
-   ```
-6. **Push** to your fork
-   ```bash
-   git push origin feature/your-feature-name
-   ```
-7. **Open** a Pull Request with detailed description
-
-### Contribution Areas
-
-| Area                   | Description                                                   |
-| ---------------------- | ------------------------------------------------------------- |
-| **Bug Fixes**          | Report issues or submit fixes for existing bugs               |
-| **Features**           | Propose or implement new functionality                        |
-| **Content**            | Update service information, add missing municipal data        |
-| **Translations**       | Help translate content to Filipino or Ilocano                 |
-| **Design**             | Improve UI/UX, accessibility, and visual consistency          |
-| **Data**               | Verify and update municipal statistics and records            |
-| **Documentation**      | Enhance README, code comments, and guides                     |
-| **API Integration**    | Propose or implement API connections for real-time data feeds |
-| **Data Visualization** | Enhance charts, graphs, and interactive presentations         |
-
-### Code Style Guidelines
-
-| Guideline         | Description                                                       |
-| ----------------- | ----------------------------------------------------------------- |
-| **HTML**          | Use semantic HTML5 elements; validate before committing           |
-| **CSS**           | Follow BEM naming conventions; use CSS custom properties          |
-| **JavaScript**    | Keep vanilla JS unless proposing framework for data visualization |
-| **Naming**        | Use meaningful, descriptive variable and function names           |
-| **Comments**      | Add comments for complex logic and non-obvious implementations    |
-| **Accessibility** | Ensure WCAG 2.1 compliance (alt text, ARIA, keyboard navigation)  |
-| **Performance**   | Optimize images; minimize DOM manipulation                        |
-| **Testing**       | Test on Chrome, Firefox, Safari, Edge; test mobile responsiveness |
-| **Validation**    | Validate HTML/CSS before pull requests                            |
-
-## Data Sources
-
-All public information is sourced from official government portals:
-
-| Source                             | URL                                           | Data Type                 |
-| ---------------------------------- | --------------------------------------------- | ------------------------- |
-| Zamboanga City Official Website    | [zamboanga.gov.ph](https://zamboanga.gov.ph/) | Services, Officials       |
-| Philippine Statistics Authority    | [psa.gov.ph](https://psa.gov.ph/)             | Demographics, Census      |
-| Bureau of Local Government Finance | [blgf.gov.ph](https://blgf.gov.ph/)           | Budget, Financial Reports |
-| DPWH Region IX                     | [dpwh.gov.ph](https://dpwh.gov.ph/)           | Infrastructure Projects   |
-| DTI CMCI Portal                    | [cmci.dti.gov.ph](https://cmci.dti.gov.ph/)   | Competitive Index         |
-
-_Note: Data sources are being updated to reflect Zamboanga City official channels. Some datasets may be incomplete during the initial localization phase._
-
-## License
-
-This project is dual-licensed:
-
-| License     | Applies To  | Details                                |
-| ----------- | ----------- | -------------------------------------- |
-| MIT License | Source Code | Free to use, modify, and distribute    |
-| CC BY 4.0   | Content     | Attribution required for content reuse |
-
-See [LICENSE](LICENSE) for full details.
-
-## Contact
-
-_Contact channels and social media links will be announced once Better Zamboanga community infrastructure is established._
-
-| Channel      | Status                                                                |
-| ------------ | --------------------------------------------------------------------- |
-| Website      | In Development                                                        |
-| Email        | TBD                                                                   |
-| Social Media | TBD                                                                   |
-| GitHub       | [Banyel3/BetterZamboanga](https://github.com/Banyel3/BetterZamboanga) |
-
-## Acknowledgments
-
-- **[BetterSolano.org](https://github.com/BetterSolano/bettersolano)** - Original platform architecture and civic-tech vision by Ramon Logan Jr.
-- [BetterGov.ph](https://bettergov.ph) - For the civic-tech initiative in the Philippines
-- Zamboanga City LGU - For public data availability and transparency efforts
-- All volunteers and contributors who dedicate their time to this fork
-- Open-source community for the tools and libraries used
-- Citizens of Zamboanga City for their feedback and support
-
----
-
-Made for the people of Zamboanga City
-
-## Developer
-
-[Ramon Logan Jr.](https://ramonloganjr.com/) is a UAE-based full-stack developer and IT professional specializing in web development, design, cloud services, and cybersecurity. He is the developer behind BetterSolano.org and the founder of the small cloud-based solutions initiative, [HelloPinas.com](https://hellopinas.com). Ramon actively contributes to civic-tech efforts like [BetterGov.ph](https://bettergov.ph) and is an individual participant in the [OpenJS Foundation](https://openjsf.org/).
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.

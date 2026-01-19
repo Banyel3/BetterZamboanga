@@ -1,0 +1,164 @@
+@import "tailwindcss";
+
+/* BetterZamboanga Design Tokens - Aligned with v1 Static Site */
+/* Color Palette inspired by the Official City of Zamboanga Seal & Logo */
+:root {
+  /* Primary Colors - Deep Navy Blue from seal outline/water */
+  --bz-primary: #021C73;
+  --bz-primary-dark: #01124d;
+  --bz-primary-light: #e6eef8;
+  --bz-primary-soft: #f0f4fa;
+
+  /* Accent Colors from seal - Balanced palette */
+  --bz-accent-yellow: #f2c91d;
+  --bz-accent-yellow-soft: #fffbf0;
+  --bz-accent-green: #008751;
+  --bz-accent-green-light: #e8f5f0;
+  --bz-accent-red: #ce1126;
+  --bz-accent-red-light: #fce8eb;
+  --bz-accent-blue: #38bdf8;
+  --bz-accent-blue-light: #e6f7fe;
+
+  /* Semantic Colors - Navy as Primary Brand */
+  --color-primary: #021C73;
+  --color-primary-dark: #01124d;
+  --color-secondary: #008751;
+  --color-accent: #f2c91d;
+  --color-success: #008751;
+  --color-danger: #ce1126;
+  --color-info: #0066b2;
+  --color-warning: #f2c91d;
+
+  /* Backgrounds - Clean, light neutrals */
+  --bz-bg: #ffffff;
+  --bz-bg-alt: #f9fafb;
+  --bz-surface: #ffffff;
+  --bz-border: #e5e7eb;
+
+  /* Text Colors */
+  --bz-text: #1a1a1a;
+  --bz-text-muted: #6b7280;
+
+  /* Neutrals */
+  --bz-white: #ffffff;
+  --bz-gray-50: #f9fafb;
+  --bz-gray-100: #f3f4f6;
+  --bz-gray-200: #e5e7eb;
+  --bz-gray-300: #d1d5db;
+  --bz-gray-400: #9ca3af;
+  --bz-gray-500: #6b7280;
+  --bz-gray-600: #4b5563;
+  --bz-gray-700: #374151;
+  --bz-gray-800: #1f2937;
+  --bz-gray-900: #111827;
+}
+
+@theme inline {
+  /* Custom Colors for Tailwind - Aligned with v1 */
+  --color-bz-primary: var(--bz-primary);
+  --color-bz-primary-dark: var(--bz-primary-dark);
+  --color-bz-primary-light: var(--bz-primary-light);
+  --color-bz-accent: var(--bz-accent-yellow);
+  --color-bz-accent-yellow: var(--bz-accent-yellow);
+  --color-bz-accent-green: var(--bz-accent-green);
+  --color-bz-accent-red: var(--bz-accent-red);
+  --color-bz-accent-blue: var(--bz-accent-blue);
+  --color-bz-red: var(--bz-accent-red);
+  
+  /* Fonts */
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+/* Global Reset & Base Styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-sans);
+  background: var(--bz-bg);
+  color: var(--bz-text);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* Page Header V3 - Blue Gradient matching v1 */
+.page-header-v3 {
+  background: linear-gradient(135deg, var(--bz-primary) 0%, var(--bz-primary-dark) 100%);
+  position: relative;
+  padding: 3rem 0;
+  overflow: hidden;
+}
+
+.page-header-v3::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Ctext x='30' y='35' font-size='12' fill='rgba(255,255,255,0.04)' text-anchor='middle' font-family='system-ui'%3E+%3C/text%3E%3C/svg%3E");
+  pointer-events: none;
+}
+
+/* Skip Link */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--bz-accent-red);
+  color: white;
+  padding: 8px 16px;
+  z-index: 100;
+  transition: top 0.3s;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+/* Utility Classes */
+.text-balance {
+  text-wrap: balance;
+}
+
+/* Badge styles matching v1 */
+.badge {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.badge-success {
+  background-color: var(--bz-accent-green-light);
+  color: var(--bz-accent-green);
+}
+
+.badge-warning {
+  background-color: var(--bz-accent-yellow-soft);
+  color: #b8850c;
+}
+
+.badge-info {
+  background-color: var(--bz-accent-blue-light);
+  color: var(--color-info);
+}
+
+.badge-danger {
+  background-color: var(--bz-accent-red-light);
+  color: var(--bz-accent-red);
+}
