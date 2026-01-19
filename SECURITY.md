@@ -15,7 +15,7 @@ We take security seriously at Better Zamboanga. If you discover a security vulne
 
 **Do NOT open a public GitHub issue for security vulnerabilities.**
 
-Instead, please email: **<SECURITY_CONTACT_TBD>** or use [GitHub's private security advisory feature](https://github.com/Banyel3/BetterZamboanga/security/advisories/new).
+Instead, please email: cornelio.vaniel38@gmail.com or use [GitHub's private security advisory feature](https://github.com/Banyel3/BetterZamboanga/security/advisories/new).
 
 Include in your report:
 
