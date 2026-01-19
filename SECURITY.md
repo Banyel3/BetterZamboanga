@@ -98,7 +98,7 @@ Out of scope:
 
 ## Contact
 
-For security concerns: **<SECURITY_CONTACT_TBD>** or [GitHub Security Advisories](https://github.com/Banyel3/BetterZamboanga/security/advisories/new)
+For security concerns: cornelio.vaniel38@gmail.com or [GitHub Security Advisories](https://github.com/Banyel3/BetterZamboanga/security/advisories/new)
 
 For general inquiries: Open a GitHub issue or see [CONTRIBUTING.md](CONTRIBUTING.md)
 
