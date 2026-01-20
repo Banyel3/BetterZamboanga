@@ -7,7 +7,17 @@ export const metadata: Metadata = {
   description: 'City ordinances passed by the Sangguniang Panlungsod of Zamboanga City.',
 };
 
-const ordinances = ordinancesData.ordinances;
+// Combine all ordinance categories into a single array
+const ordinances = [
+  ...ordinancesData.appropriation.map(o => ({ ...o, ordinanceNo: `Ord. ${o.number}`, category: 'appropriation' })),
+  ...ordinancesData.revenue.map(o => ({ ...o, ordinanceNo: o.number, category: 'revenue' })),
+  ...ordinancesData.regulatory.map(o => ({ ...o, ordinanceNo: `Ord. ${o.number}`, category: 'regulatory' })),
+].sort((a, b) => {
+  // Sort by year descending, then by number
+  const yearA = a.year === 'Prior' ? 0 : parseInt(a.year);
+  const yearB = b.year === 'Prior' ? 0 : parseInt(b.year);
+  return yearB - yearA;
+});
 
 export default function OrdinanceFrameworkPage() {
   return (
@@ -51,7 +61,7 @@ export default function OrdinanceFrameworkPage() {
                     <th className="px-4 py-3 text-left font-semibold w-32">Ordinance No.</th>
                     <th className="px-4 py-3 text-left font-semibold">Title</th>
                     <th className="px-4 py-3 text-left font-semibold w-24">Category</th>
-                    <th className="px-4 py-3 text-left font-semibold w-32">Enacted</th>
+                    <th className="px-4 py-3 text-left font-semibold w-32">Year</th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-gray-100">
@@ -62,15 +72,14 @@ export default function OrdinanceFrameworkPage() {
                       </td>
                       <td className="px-4 py-3 text-gray-700">{ord.title}</td>
                       <td className="px-4 py-3">
-                        <span className={`inline-block px-2 py-0.5 text-xs rounded-full ${
-                          ord.category === 'appropriation' ? 'bg-blue-100 text-blue-700' :
+                        <span className={`inline-block px-2 py-0.5 text-xs rounded-full ${ord.category === 'appropriation' ? 'bg-blue-100 text-blue-700' :
                           ord.category === 'regulatory' ? 'bg-green-100 text-green-700' :
-                          'bg-yellow-100 text-yellow-700'
-                        }`}>
+                            'bg-yellow-100 text-yellow-700'
+                          }`}>
                           {ord.category}
                         </span>
                       </td>
-                      <td className="px-4 py-3 text-gray-500 whitespace-nowrap">{ord.enacted}</td>
+                      <td className="px-4 py-3 text-gray-500 whitespace-nowrap">{ord.year}</td>
                     </tr>
                   ))}
                 </tbody>

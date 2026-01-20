@@ -1,13 +1,14 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import resolutionsData from '@/data/resolutions.json';
+import type { Resolution } from '@/types';
 
 export const metadata: Metadata = {
   title: 'Resolution Framework',
   description: 'City resolutions passed by the Sangguniang Panlungsod of Zamboanga City.',
 };
 
-const resolutions = resolutionsData.resolutions;
+const resolutions = resolutionsData.resolutions as Resolution[];
 
 export default function ResolutionFrameworkPage() {
   return (
@@ -43,32 +44,53 @@ export default function ResolutionFrameworkPage() {
               ({resolutions.length} total)
             </span>
           </h2>
-          <div className="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
-            <div className="overflow-x-auto">
-              <table className="w-full text-sm">
-                <thead className="bg-gray-50 text-gray-700">
-                  <tr>
-                    <th className="px-4 py-3 text-left font-semibold w-32">Resolution No.</th>
-                    <th className="px-4 py-3 text-left font-semibold">Title</th>
-                    <th className="px-4 py-3 text-left font-semibold w-32">Adopted</th>
-                  </tr>
-                </thead>
-                <tbody className="divide-y divide-gray-100">
-                  {resolutions.map((res, i) => (
-                    <tr key={i} className="hover:bg-gray-50">
-                      <td className="px-4 py-3 font-medium text-bz-primary whitespace-nowrap">
-                        {res.resolutionNo}
-                      </td>
-                      <td className="px-4 py-3 text-gray-700">{res.title}</td>
-                      <td className="px-4 py-3 text-gray-500 whitespace-nowrap">
-                        {res.adopted || res.sessionDate || 'N/A'}
-                      </td>
+          {resolutions.length > 0 ? (
+            <div className="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
+              <div className="overflow-x-auto">
+                <table className="w-full text-sm">
+                  <thead className="bg-gray-50 text-gray-700">
+                    <tr>
+                      <th className="px-4 py-3 text-left font-semibold w-32">Resolution No.</th>
+                      <th className="px-4 py-3 text-left font-semibold">Title</th>
+                      <th className="px-4 py-3 text-left font-semibold w-32">Adopted</th>
                     </tr>
-                  ))}
-                </tbody>
-              </table>
+                  </thead>
+                  <tbody className="divide-y divide-gray-100">
+                    {resolutions.map((res, i) => (
+                      <tr key={i} className="hover:bg-gray-50">
+                        <td className="px-4 py-3 font-medium text-bz-primary whitespace-nowrap">
+                          {res.resolutionNo}
+                        </td>
+                        <td className="px-4 py-3 text-gray-700">{res.title}</td>
+                        <td className="px-4 py-3 text-gray-500 whitespace-nowrap">
+                          {res.adopted || res.sessionDate || 'N/A'}
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
             </div>
-          </div>
+          ) : (
+            <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-12 text-center">
+              <div className="w-16 h-16 bg-bz-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                <i className="bi bi-file-earmark-x text-3xl text-bz-primary"></i>
+              </div>
+              <h3 className="text-lg font-semibold text-gray-800 mb-2">Resolutions Pending Verification</h3>
+              <p className="text-gray-600 max-w-md mx-auto mb-4">
+                Resolution records require verification from official sources. We are working to compile verified resolutions from the Sangguniang Panlungsod.
+              </p>
+              <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 max-w-md mx-auto">
+                <p className="text-sm text-blue-700">
+                  <i className="bi bi-info-circle mr-2"></i>
+                  For official resolution records, please contact the Secretary to the Sangguniang Panlungsod or visit{' '}
+                  <a href="https://zamboangacity.gov.ph/sangguniang-panlungsod" target="_blank" rel="noopener noreferrer" className="underline font-medium">
+                    zamboangacity.gov.ph
+                  </a>
+                </p>
+              </div>
+            </div>
+          )}
 
           <div className="mt-8 text-center">
             <Link
