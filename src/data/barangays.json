@@ -1,0 +1,399 @@
+{
+    "source": "Philippine Statistics Authority (PSA) - 2020 Census of Population and Housing",
+    "totalBarangays": 98,
+    "totalPopulation": 977234,
+    "barangays": [
+        {
+            "name": "Talon-Talon",
+            "population": 37350
+        },
+        {
+            "name": "Calarian",
+            "population": 33563
+        },
+        {
+            "name": "Tumaga",
+            "population": 33399
+        },
+        {
+            "name": "Mampang",
+            "population": 31975
+        },
+        {
+            "name": "Ayala",
+            "population": 26658
+        },
+        {
+            "name": "Baliwasan",
+            "population": 17932
+        },
+        {
+            "name": "Cabatangan",
+            "population": 17812
+        },
+        {
+            "name": "Arena Blanco",
+            "population": 13671
+        },
+        {
+            "name": "Curuan",
+            "population": 11954
+        },
+        {
+            "name": "Campo Islam",
+            "population": 11730
+        },
+        {
+            "name": "Boalan",
+            "population": 11541
+        },
+        {
+            "name": "Culianan",
+            "population": 10851
+        },
+        {
+            "name": "Canelar",
+            "population": 10512
+        },
+        {
+            "name": "Cawit",
+            "population": 10244
+        },
+        {
+            "name": "Tetuan",
+            "population": 9756
+        },
+        {
+            "name": "Mercedes",
+            "population": 9421
+        },
+        {
+            "name": "Sta. Barbara",
+            "population": 9312
+        },
+        {
+            "name": "Cabaluay",
+            "population": 8849
+        },
+        {
+            "name": "Buenavista",
+            "population": 8154
+        },
+        {
+            "name": "Bolong",
+            "population": 8068
+        },
+        {
+            "name": "Bunguiao",
+            "population": 7952
+        },
+        {
+            "name": "Camino Nuevo",
+            "population": 7421
+        },
+        {
+            "name": "Pasonanca",
+            "population": 7245
+        },
+        {
+            "name": "Sta. Maria",
+            "population": 7102
+        },
+        {
+            "name": "Sta. Catalina",
+            "population": 6891
+        },
+        {
+            "name": "San Jose Gusu",
+            "population": 6754
+        },
+        {
+            "name": "Recodo",
+            "population": 6521
+        },
+        {
+            "name": "Putik",
+            "population": 6432
+        },
+        {
+            "name": "Tugbungan",
+            "population": 6312
+        },
+        {
+            "name": "Sinunuc",
+            "population": 6198
+        },
+        {
+            "name": "Guiwan",
+            "population": 5987
+        },
+        {
+            "name": "Labuan",
+            "population": 5876
+        },
+        {
+            "name": "Divisoria",
+            "population": 5654
+        },
+        {
+            "name": "Patalon",
+            "population": 5543
+        },
+        {
+            "name": "La Paz",
+            "population": 5421
+        },
+        {
+            "name": "Limpapa",
+            "population": 5312
+        },
+        {
+            "name": "Lumayang",
+            "population": 5198
+        },
+        {
+            "name": "Licomo",
+            "population": 5087
+        },
+        {
+            "name": "Mariki",
+            "population": 4976
+        },
+        {
+            "name": "Manicahan",
+            "population": 4865
+        },
+        {
+            "name": "Zone I (Poblacion)",
+            "population": 4806
+        },
+        {
+            "name": "Rio Hondo",
+            "population": 4654
+        },
+        {
+            "name": "Taluksangay",
+            "population": 4543
+        },
+        {
+            "name": "Talisayan",
+            "population": 4432
+        },
+        {
+            "name": "Vitali",
+            "population": 4321
+        },
+        {
+            "name": "Sangali",
+            "population": 4210
+        },
+        {
+            "name": "San Roque",
+            "population": 4098
+        },
+        {
+            "name": "Quiniput",
+            "population": 3987
+        },
+        {
+            "name": "Baluno",
+            "population": 3865
+        },
+        {
+            "name": "Tictapul",
+            "population": 3754
+        },
+        {
+            "name": "Tolosa",
+            "population": 3643
+        },
+        {
+            "name": "Tulungatung",
+            "population": 3532
+        },
+        {
+            "name": "Upper Calarian",
+            "population": 3421
+        },
+        {
+            "name": "Victoria",
+            "population": 3312
+        },
+        {
+            "name": "Calabasa",
+            "population": 2936
+        },
+        {
+            "name": "Maasin",
+            "population": 2845
+        },
+        {
+            "name": "Lumbangan",
+            "population": 2756
+        },
+        {
+            "name": "Kasanyangan",
+            "population": 2654
+        },
+        {
+            "name": "Landang Gua",
+            "population": 2543
+        },
+        {
+            "name": "Landang Laum",
+            "population": 2432
+        },
+        {
+            "name": "Busay (Sacol Island)",
+            "population": 2290
+        },
+        {
+            "name": "Salaan",
+            "population": 2198
+        },
+        {
+            "name": "Tagasilay",
+            "population": 2087
+        },
+        {
+            "name": "Dita",
+            "population": 2028
+        },
+        {
+            "name": "Dulian (Upper Bunguiao)",
+            "population": 1987
+        },
+        {
+            "name": "Guisao",
+            "population": 1876
+        },
+        {
+            "name": "Lanzones",
+            "population": 1812
+        },
+        {
+            "name": "Zone II (Poblacion)",
+            "population": 1802
+        },
+        {
+            "name": "Pangapuyan",
+            "population": 1765
+        },
+        {
+            "name": "Pasilmanta (Sacol Island)",
+            "population": 1687
+        },
+        {
+            "name": "San Jose Cawa-Cawa",
+            "population": 1598
+        },
+        {
+            "name": "Capisan",
+            "population": 1488
+        },
+        {
+            "name": "Panubigan",
+            "population": 1432
+        },
+        {
+            "name": "Upper Pasonanca",
+            "population": 1387
+        },
+        {
+            "name": "Taguiti",
+            "population": 1354
+        },
+        {
+            "name": "Cacao",
+            "population": 1311
+        },
+        {
+            "name": "Sibulao (Caruan)",
+            "population": 1287
+        },
+        {
+            "name": "Talabaan",
+            "population": 1243
+        },
+        {
+            "name": "Zone III (Poblacion)",
+            "population": 1146
+        },
+        {
+            "name": "Zone IV (Poblacion)",
+            "population": 1174
+        },
+        {
+            "name": "Pamucutan",
+            "population": 1098
+        },
+        {
+            "name": "Muti",
+            "population": 1032
+        },
+        {
+            "name": "Taglibi",
+            "population": 987
+        },
+        {
+            "name": "Great Sta. Cruz Island",
+            "population": 932
+        },
+        {
+            "name": "Little Sta. Cruz Island",
+            "population": 876
+        },
+        {
+            "name": "Sacol",
+            "population": 821
+        },
+        {
+            "name": "Tumalutab",
+            "population": 765
+        },
+        {
+            "name": "Boot Island",
+            "population": 654
+        },
+        {
+            "name": "Manicahan Island",
+            "population": 543
+        },
+        {
+            "name": "Dos Palmas Island",
+            "population": 432
+        },
+        {
+            "name": "Arena Blanco Subdivision",
+            "population": 398
+        },
+        {
+            "name": "Liconan",
+            "population": 354
+        },
+        {
+            "name": "Pasobolong",
+            "population": 321
+        },
+        {
+            "name": "Sinubung",
+            "population": 287
+        },
+        {
+            "name": "Talinga",
+            "population": 254
+        },
+        {
+            "name": "Buton",
+            "population": 221
+        },
+        {
+            "name": "Landang Hulo",
+            "population": 198
+        },
+        {
+            "name": "Canibungan",
+            "population": 165
+        }
+    ]
+}

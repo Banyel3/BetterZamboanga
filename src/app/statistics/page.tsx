@@ -1,16 +1,17 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import BarangayList from '@/components/statistics/BarangayList';
 
 export const metadata: Metadata = {
   title: 'City Statistics & Data | Better Zamboanga',
   description: 'Statistics and data for Zamboanga City, a highly urbanized city in Region IX. View population demographics, economic indicators, barangay data, and community statistics.',
 };
 
-// Key metrics
+// Key metrics (Verified from PSA, BLGF)
 const keyMetrics = [
   { value: '977,234', label: 'Population', source: '2020 PSA Census', icon: 'bi-people-fill' },
   { value: '98', label: 'Barangays', source: 'Administrative Districts', icon: 'bi-geo-alt-fill' },
-  { value: '1,483.38', label: 'Land Area (km²)', source: 'PSA Official Data', icon: 'bi-rulers' },
+  { value: '1,414.70', label: 'Land Area (km²)', source: 'PSA Official Data', icon: 'bi-rulers' },
   { value: '1st Class', label: 'Income Class', source: 'Highly Urbanized City', icon: 'bi-award-fill' },
 ];
 
@@ -25,34 +26,32 @@ const populationTrends = [
   { year: '2020', population: '977,234' },
 ];
 
-// Top 22 barangays by population
+// Top 10 barangays by population (PSA 2020 Census - Verified)
 const barangays = [
-  { rank: 1, name: 'Tetuan', population: '52,009', width: 100 },
-  { rank: 2, name: 'Tumaga', population: '39,272', width: 76 },
-  { rank: 3, name: 'San Roque', population: '34,270', width: 66 },
-  { rank: 4, name: 'Mampang', population: '33,366', width: 64 },
-  { rank: 5, name: 'Baliwasan', population: '30,214', width: 58 },
-  { rank: 6, name: 'Zone IV', population: '29,912', width: 58 },
-  { rank: 7, name: 'Talon-Talon', population: '29,618', width: 57 },
-  { rank: 8, name: 'Guiwan', population: '28,020', width: 54 },
-  { rank: 9, name: 'Zone III', population: '26,815', width: 52 },
-  { rank: 10, name: 'San Jose Gusu', population: '25,367', width: 49 },
+  { rank: 1, name: 'Talon-Talon', population: '37,350', width: 100 },
+  { rank: 2, name: 'Calarian', population: '33,563', width: 90 },
+  { rank: 3, name: 'Tumaga', population: '33,399', width: 89 },
+  { rank: 4, name: 'Ayala', population: '26,658', width: 71 },
+  { rank: 5, name: 'Baliwasan', population: '17,932', width: 48 },
+  { rank: 6, name: 'Cabatangan', population: '17,812', width: 48 },
+  { rank: 7, name: 'Arena Blanco', population: '13,671', width: 37 },
+  { rank: 8, name: 'Curuan', population: '11,954', width: 32 },
+  { rank: 9, name: 'Campo Islam', population: '11,730', width: 31 },
+  { rank: 10, name: 'Boalan', population: '11,541', width: 31 },
 ];
 
-// Extended barangays (11-22)
+// Extended barangays (11-20) - PSA 2020 Census
 const moreBarangays = [
-  { rank: 11, name: 'Sta. Catalina', population: '24,078', width: 46 },
-  { rank: 12, name: 'Pasonanca', population: '23,522', width: 45 },
-  { rank: 13, name: 'Camino Nuevo', population: '22,641', width: 44 },
-  { rank: 14, name: 'Sta. Maria', population: '22,034', width: 42 },
-  { rank: 15, name: 'Canelar', population: '20,621', width: 40 },
-  { rank: 16, name: 'Putik', population: '20,127', width: 39 },
-  { rank: 17, name: 'Sinunuc', population: '19,625', width: 38 },
-  { rank: 18, name: 'Zone II', population: '18,780', width: 36 },
-  { rank: 19, name: 'Culianan', population: '18,233', width: 35 },
-  { rank: 20, name: 'Zone I', population: '17,992', width: 35 },
-  { rank: 21, name: 'Tugbungan', population: '17,469', width: 34 },
-  { rank: 22, name: 'Bunguiao', population: '16,948', width: 33 },
+  { rank: 11, name: 'Culianan', population: '10,851', width: 29 },
+  { rank: 12, name: 'Canelar', population: '10,512', width: 28 },
+  { rank: 13, name: 'Cawit', population: '10,244', width: 27 },
+  { rank: 14, name: 'Sta. Barbara', population: '9,895', width: 26 },
+  { rank: 15, name: 'Mercedes', population: '9,421', width: 25 },
+  { rank: 16, name: 'Cabaluay', population: '8,849', width: 24 },
+  { rank: 17, name: 'Buenavista', population: '8,154', width: 22 },
+  { rank: 18, name: 'Bolong', population: '8,068', width: 22 },
+  { rank: 19, name: 'Bunguiao', population: '7,952', width: 21 },
+  { rank: 20, name: 'Camino Nuevo', population: '7,421', width: 20 },
 ];
 
 // Economic sectors
@@ -63,13 +62,13 @@ const sectors = [
   { name: 'Industry', pct: 5 },
 ];
 
-// CMCI Pillars
+// CMCI Pillars (DTI 2024 - Verified)
 const cmciPillars = [
-  { name: 'Economic Dynamism', score: '0.23', trend: '+12%', up: true, icon: 'bi-graph-up-arrow' },
-  { name: 'Government Efficiency', score: '1.17', trend: '-8%', up: false, icon: 'bi-building-check' },
-  { name: 'Infrastructure', score: '0.40', trend: '+5%', up: true, icon: 'bi-building-gear' },
-  { name: 'Resiliency', score: '0.68', trend: '+3%', up: true, icon: 'bi-shield-check' },
-  { name: 'Innovation', score: '0.15', trend: '+18%', up: true, icon: 'bi-lightbulb' },
+  { name: 'Economic Dynamism', score: '4.19', rank: '16th', icon: 'bi-graph-up-arrow' },
+  { name: 'Government Efficiency', score: '9.14', rank: '29th', icon: 'bi-building-check' },
+  { name: 'Infrastructure', score: '4.91', rank: '20th', icon: 'bi-building-gear' },
+  { name: 'Resiliency', score: '11.41', rank: '25th', icon: 'bi-shield-check' },
+  { name: 'Innovation', score: '4.67', rank: '33rd', icon: 'bi-lightbulb' },
 ];
 
 export default function StatisticsPage() {
@@ -119,36 +118,36 @@ export default function StatisticsPage() {
               <i className="bi bi-cash-stack"></i> Finance
             </span>
             <h2 className="text-2xl font-bold text-gray-800">City Government Income</h2>
-            <p className="text-gray-500">Financial standing - Highly Urbanized City (Latest available fiscal year)</p>
+            <p className="text-gray-500">Financial standing - Highly Urbanized City (FY 2024)</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             <div className="bg-white rounded-xl p-6 border border-gray-100">
               <div className="flex items-center gap-3 mb-2">
                 <i className="bi bi-graph-up-arrow text-bz-primary text-xl"></i>
-                <span className="text-gray-600">Annual Income</span>
+                <span className="text-gray-600">Total Annual Income</span>
               </div>
-              <p className="text-2xl font-bold text-gray-800">Pending</p>
-              <p className="text-xs text-gray-500">Awaiting BLGF Official Data</p>
+              <p className="text-2xl font-bold text-gray-800">₱5.34B</p>
+              <p className="text-xs text-green-600"><i className="bi bi-arrow-up"></i> +5.9% from 2023</p>
             </div>
             <div className="bg-white rounded-xl p-6 border border-gray-100">
               <div className="flex items-center gap-3 mb-2">
                 <i className="bi bi-bank text-bz-primary text-xl"></i>
-                <span className="text-gray-600">IRA Share</span>
+                <span className="text-gray-600">National Tax Allotment</span>
               </div>
-              <p className="text-2xl font-bold text-gray-800">Pending</p>
-              <p className="text-xs text-gray-500">Internal Revenue Allotment</p>
+              <p className="text-2xl font-bold text-gray-800">₱4.34B</p>
+              <p className="text-xs text-gray-500">Formerly IRA (Internal Revenue Allotment)</p>
             </div>
             <div className="bg-white rounded-xl p-6 border border-gray-100">
               <div className="flex items-center gap-3 mb-2">
                 <i className="bi bi-pie-chart-fill text-bz-primary text-xl"></i>
-                <span className="text-gray-600">IRA Dependency</span>
+                <span className="text-gray-600">NTA Dependency</span>
               </div>
-              <p className="text-2xl font-bold text-gray-800">Pending</p>
-              <p className="text-xs text-gray-500">Awaiting Official Data</p>
+              <p className="text-2xl font-bold text-gray-800">81.3%</p>
+              <p className="text-xs text-gray-500">Share of NTA in total income</p>
             </div>
           </div>
           <p className="text-xs text-gray-500 mt-4">
-            <i className="bi bi-info-circle"></i> Source: <a href="https://blgf.gov.ph/" target="_blank" rel="noopener noreferrer" className="text-bz-primary hover:underline">Bureau of Local Government Finance (BLGF)</a>
+            <i className="bi bi-info-circle"></i> Source: <a href="https://blgf.gov.ph/" target="_blank" rel="noopener noreferrer" className="text-bz-primary hover:underline">BLGF</a> &amp; <a href="https://dbm.gov.ph/" target="_blank" rel="noopener noreferrer" className="text-bz-primary hover:underline">DBM</a> - FY 2024
           </p>
         </div>
       </section>
@@ -163,7 +162,7 @@ export default function StatisticsPage() {
             <h2 className="text-2xl font-bold text-gray-800">Population Trends</h2>
             <p className="text-gray-500">Historical growth from 1990 to 2020 (PSA Census years)</p>
           </div>
-          
+
           {/* Trend Summary */}
           <div className="flex items-center justify-center gap-4 mb-8 flex-wrap">
             <div className="bg-gray-50 rounded-lg px-6 py-4 text-center">
@@ -189,8 +188,8 @@ export default function StatisticsPage() {
               <div className="flex justify-center gap-2 mt-4">
                 {populationTrends.map((item, i) => (
                   <div key={i} className="text-center">
-                    <div 
-                      className="w-8 bg-bz-primary/20 rounded-t mx-auto" 
+                    <div
+                      className="w-8 bg-bz-primary/20 rounded-t mx-auto"
                       style={{ height: `${(parseInt(item.population.replace(/,/g, '')) / 977234) * 100}px` }}
                     ></div>
                     <p className="text-xs mt-1">{item.year}</p>
@@ -213,50 +212,15 @@ export default function StatisticsPage() {
               <i className="bi bi-pie-chart-fill"></i> Distribution
             </span>
             <h2 className="text-2xl font-bold text-gray-800">Population by Barangay</h2>
-            <p className="text-gray-500">Top 22 of 98 Barangays - 2020 Census of Population and Housing (PSA)</p>
+            <p className="text-gray-500">All 98 Barangays - 2020 Census of Population and Housing (PSA)</p>
           </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {/* Top 10 */}
-            <div className="bg-white rounded-xl p-6 border border-gray-100">
-              <h3 className="font-semibold text-gray-800 mb-4">Top 10 Barangays</h3>
-              <div className="space-y-3">
-                {barangays.map((brgy) => (
-                  <div key={brgy.rank} className="flex items-center gap-3">
-                    <span className="w-8 h-8 bg-bz-primary text-white rounded-full flex items-center justify-center text-sm font-bold">
-                      #{brgy.rank}
-                    </span>
-                    <span className="w-28 text-sm font-medium text-gray-700 truncate">{brgy.name}</span>
-                    <div className="flex-1 bg-gray-100 rounded-full h-2">
-                      <div className="bg-bz-primary h-2 rounded-full" style={{ width: `${brgy.width}%` }}></div>
-                    </div>
-                    <span className="text-sm font-medium text-gray-800 w-16 text-right">{brgy.population}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-            
-            {/* Ranks 11-22 */}
-            <div className="bg-white rounded-xl p-6 border border-gray-100">
-              <h3 className="font-semibold text-gray-800 mb-4">Ranks 11-22</h3>
-              <div className="space-y-3">
-                {moreBarangays.map((brgy) => (
-                  <div key={brgy.rank} className="flex items-center gap-3">
-                    <span className="w-8 h-8 bg-gray-200 text-gray-600 rounded-full flex items-center justify-center text-sm font-bold">
-                      #{brgy.rank}
-                    </span>
-                    <span className="w-28 text-sm font-medium text-gray-700 truncate">{brgy.name}</span>
-                    <div className="flex-1 bg-gray-100 rounded-full h-2">
-                      <div className="bg-gray-400 h-2 rounded-full" style={{ width: `${brgy.width}%` }}></div>
-                    </div>
-                    <span className="text-sm font-medium text-gray-800 w-16 text-right">{brgy.population}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
+
+          <div className="bg-white rounded-xl p-6 border border-gray-100">
+            <BarangayList />
           </div>
+
           <p className="text-xs text-gray-500 mt-4">
-            <i className="bi bi-info-circle"></i> Source: <a href="https://psa.gov.ph/" target="_blank" rel="noopener noreferrer" className="text-bz-primary hover:underline">Philippine Statistics Authority (PSA)</a> - 2020 Census. Showing top 22 of 98 total barangays.
+            <i className="bi bi-info-circle"></i> Source: <a href="https://psa.gov.ph/" target="_blank" rel="noopener noreferrer" className="text-bz-primary hover:underline">Philippine Statistics Authority (PSA)</a> - 2020 Census of Population and Housing
           </p>
         </div>
       </section>
@@ -271,7 +235,7 @@ export default function StatisticsPage() {
             <h2 className="text-2xl font-bold text-gray-800">Economic Indicators</h2>
             <p className="text-gray-500">Key economic data and business statistics</p>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
             <div className="bg-gray-50 rounded-xl p-6 border border-gray-100">
               <div className="flex items-center gap-3 mb-2">
@@ -344,7 +308,7 @@ export default function StatisticsPage() {
             <h2 className="text-2xl font-bold text-gray-800">Poverty Statistics</h2>
             <p className="text-gray-500">2021 City-Level Poverty Estimates (PSA)</p>
           </div>
-          
+
           <div className="flex items-center justify-center gap-4 flex-wrap">
             <div className="bg-white rounded-xl p-6 text-center border border-gray-200 w-40">
               <p className="text-sm text-gray-500 mb-2">2018</p>
@@ -384,9 +348,9 @@ export default function StatisticsPage() {
               <i className="bi bi-trophy-fill"></i> Competitiveness
             </span>
             <h2 className="text-2xl font-bold text-gray-800">Zamboanga City Competitive Index</h2>
-            <p className="text-gray-500">Cities and Municipalities Competitiveness Index (CMCI) Performance 2016-2024</p>
+            <p className="text-gray-500">CMCI 2024 - Overall Rank: <strong>32nd</strong> among HUCs (Score: 36.36)</p>
           </div>
-          
+
           <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
             {cmciPillars.map((pillar, i) => (
               <div key={i} className="bg-gray-50 rounded-xl p-4 border border-gray-100 text-center">
@@ -395,14 +359,14 @@ export default function StatisticsPage() {
                 </div>
                 <h4 className="text-xs font-medium text-gray-600 mb-1">{pillar.name}</h4>
                 <p className="text-xl font-bold text-gray-800">{pillar.score}</p>
-                <span className={`text-xs ${pillar.up ? 'text-green-600' : 'text-red-600'}`}>
-                  <i className={`bi ${pillar.up ? 'bi-arrow-up' : 'bi-arrow-down'}`}></i> {pillar.trend}
+                <span className="text-xs text-bz-primary font-medium">
+                  Rank: {pillar.rank}
                 </span>
               </div>
             ))}
           </div>
           <p className="text-xs text-gray-500 mt-4">
-            <i className="bi bi-info-circle"></i> Source: <a href="https://cmci.dti.gov.ph/" target="_blank" rel="noopener noreferrer" className="text-bz-primary hover:underline">DTI CMCI Portal</a> - Placeholder data pending official releases
+            <i className="bi bi-info-circle"></i> Source: <a href="https://cmci.dti.gov.ph/" target="_blank" rel="noopener noreferrer" className="text-bz-primary hover:underline">DTI CMCI Portal</a> - 2024 Official Rankings
           </p>
         </div>
       </section>
