@@ -41,16 +41,16 @@ export default function GovernmentPage() {
             </span>
             <p className="text-gray-600">The executive officials leading Zamboanga City&apos;s governance</p>
           </div>
-          
+
           {/* Mayor & Vice Mayor - V1 Style with Blue Header */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
             {/* Mayor Card */}
             <div className="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
-              <div className="bg-bz-primary text-white p-4">
-                <h3 className="font-bold text-lg">{officials.mayor.name}</h3>
-                <p className="text-sm opacity-90">{officials.mayor.title}</p>
+              <div className="bg-bz-primary text-white p-6">
+                <h3 className="font-bold text-xl">{officials.mayor.name}</h3>
+                <p className="opacity-90">{officials.mayor.title}</p>
               </div>
-              <div className="p-4 space-y-2 text-sm text-gray-600">
+              <div className="p-6 space-y-3 text-gray-600">
                 {officials.mayor.email && (
                   <p className="flex items-center gap-2">
                     <i className="bi bi-envelope text-bz-primary"></i>
@@ -60,7 +60,7 @@ export default function GovernmentPage() {
                 {officials.mayor.phone && (
                   <p className="flex items-center gap-2">
                     <i className="bi bi-telephone text-bz-primary"></i>
-                    {officials.mayor.phone}
+                    {officials.mayor.phone.replace(/;\s*/g, ' | ')}
                   </p>
                 )}
                 <p className="flex items-center gap-2">
@@ -72,14 +72,14 @@ export default function GovernmentPage() {
 
             {/* Vice Mayor Card */}
             <div className="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
-              <div className="bg-bz-primary text-white p-4">
-                <h3 className="font-bold text-lg">{officials.vice_mayor.name}</h3>
-                <p className="text-sm opacity-90">{officials.vice_mayor.title}</p>
+              <div className="bg-bz-primary text-white p-6">
+                <h3 className="font-bold text-xl">{officials.vice_mayor.name}</h3>
+                <p className="opacity-90">{officials.vice_mayor.title}</p>
                 {officials.vice_mayor.subtitle && (
-                  <p className="text-xs opacity-75 mt-1">{officials.vice_mayor.subtitle}</p>
+                  <p className="text-sm opacity-75 mt-1">{officials.vice_mayor.subtitle}</p>
                 )}
               </div>
-              <div className="p-4 space-y-2 text-sm text-gray-600">
+              <div className="p-6 space-y-3 text-gray-600">
                 <p className="flex items-center gap-2">
                   <i className="bi bi-dash text-gray-300"></i>
                   —
@@ -92,21 +92,18 @@ export default function GovernmentPage() {
           <div className="mb-12">
             <h3 className="text-xl font-bold text-gray-800 mb-2 text-center">Sangguniang Panlungsod</h3>
             <p className="text-gray-500 text-center text-sm mb-6">City Councilors by District</p>
-            
+
             {/* District 1 */}
             <div className="mb-8">
-              <h4 className="font-semibold text-gray-700 mb-4 flex items-center gap-2">
-                <span className="w-8 h-8 bg-bz-primary text-white rounded-full flex items-center justify-center text-sm">1</span>
+              <h4 className="font-semibold text-gray-700 mb-4 flex items-center gap-2 text-lg">
+                <span className="w-10 h-10 bg-bz-primary text-white rounded-full flex items-center justify-center">1</span>
                 1st District
               </h4>
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-5">
                 {officials.councilors_district_1.map((councilor, i) => (
-                  <div key={i} className="bg-white rounded-lg p-4 shadow-sm border border-gray-100 text-center">
-                    <div className="w-14 h-14 bg-gray-100 rounded-full mx-auto mb-2 flex items-center justify-center">
-                      <i className="bi bi-person text-xl text-gray-500"></i>
-                    </div>
-                    <p className="text-sm font-medium text-gray-800 line-clamp-2">{councilor.name}</p>
-                    <p className="text-xs text-bz-primary">{councilor.district || '1st District'}</p>
+                  <div key={i} className="bg-white rounded-lg p-5 shadow-sm border border-gray-100 text-center">
+                    <p className="font-medium text-gray-800">{councilor.name}</p>
+                    <p className="text-sm text-bz-primary mt-1">City Councilor</p>
                   </div>
                 ))}
               </div>
@@ -114,18 +111,15 @@ export default function GovernmentPage() {
 
             {/* District 2 */}
             <div>
-              <h4 className="font-semibold text-gray-700 mb-4 flex items-center gap-2">
-                <span className="w-8 h-8 bg-bz-primary text-white rounded-full flex items-center justify-center text-sm">2</span>
+              <h4 className="font-semibold text-gray-700 mb-4 flex items-center gap-2 text-lg">
+                <span className="w-10 h-10 bg-bz-primary text-white rounded-full flex items-center justify-center">2</span>
                 2nd District
               </h4>
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-5">
                 {officials.councilors_district_2.map((councilor, i) => (
-                  <div key={i} className="bg-white rounded-lg p-4 shadow-sm border border-gray-100 text-center">
-                    <div className="w-14 h-14 bg-gray-100 rounded-full mx-auto mb-2 flex items-center justify-center">
-                      <i className="bi bi-person text-xl text-gray-500"></i>
-                    </div>
-                    <p className="text-sm font-medium text-gray-800 line-clamp-2">{councilor.name}</p>
-                    <p className="text-xs text-bz-primary">{councilor.district || '2nd District'}</p>
+                  <div key={i} className="bg-white rounded-lg p-5 shadow-sm border border-gray-100 text-center">
+                    <p className="font-medium text-gray-800">{councilor.name}</p>
+                    <p className="text-sm text-bz-primary mt-1">City Councilor</p>
                   </div>
                 ))}
               </div>
@@ -141,22 +135,19 @@ export default function GovernmentPage() {
             <i className="bi bi-diagram-3 mr-2 text-bz-primary"></i>
             Department Heads
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
             {officials.department_heads.map((dept, i) => (
               <div
                 key={i}
-                className="bg-white rounded-lg p-4 shadow-sm border border-gray-100 flex items-start gap-4"
+                className="bg-white rounded-lg p-5 shadow-sm border border-gray-100"
               >
-                <div className="w-12 h-12 bg-bz-primary/10 rounded-lg flex items-center justify-center text-bz-primary shrink-0">
-                  <i className="bi bi-person-badge text-xl"></i>
-                </div>
                 <div className="min-w-0">
-                  <h3 className="font-medium text-gray-800 text-sm">{dept.name}</h3>
-                  <p className="text-xs text-bz-primary font-medium">{dept.title}</p>
-                  <p className="text-xs text-gray-500 mt-1">{dept.office}</p>
+                  <h3 className="font-medium text-gray-800">{dept.name}</h3>
+                  <p className="text-sm text-bz-primary font-medium">{dept.title}</p>
+                  <p className="text-sm text-gray-500 mt-1">{dept.office}</p>
                   {dept.phone && (
-                    <p className="text-xs text-gray-500 mt-1">
-                      <i className="bi bi-telephone mr-1"></i>{dept.phone}
+                    <p className="text-sm text-gray-500 mt-1">
+                      <i className="bi bi-telephone mr-1"></i>{dept.phone.replace(/;\s*/g, ' | ')}
                     </p>
                   )}
                 </div>

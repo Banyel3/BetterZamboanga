@@ -65,8 +65,8 @@ export default function HomePage() {
               <input
                 type="search"
                 name="q"
-                placeholder="Search for a service (e.g., birth certificate, business permit)"
-                className="w-full px-6 py-4 rounded-full text-gray-800 shadow-lg focus:outline-none focus:ring-2 focus:ring-bz-accent-yellow"
+                placeholder="Search for a service..."
+                className="w-full px-6 py-4 pr-28 rounded-full text-gray-800 placeholder:text-gray-500 shadow-lg focus:outline-none focus:ring-2 focus:ring-bz-accent-yellow"
               />
               <button type="submit" className="absolute right-2 top-1/2 -translate-y-1/2 bg-bz-primary text-white px-5 py-2 rounded-full hover:bg-bz-primary-dark transition-colors flex items-center gap-2">
                 <i className="bi bi-search"></i>
@@ -77,20 +77,20 @@ export default function HomePage() {
 
           {/* Popular Tags */}
           <div className="flex flex-wrap justify-center gap-2">
-            <span className="text-gray-300 text-sm">Popular:</span>
-            <Link href="/service-details/birth-certificate" className="px-3 py-1 bg-white/30 text-white text-sm rounded-full hover:bg-white/40 transition-colors flex items-center gap-1">
+            <span className="text-white text-sm">Popular:</span>
+            <Link href="/service-details/birth-certificate" className="px-3 py-1 bg-white text-bz-primary text-sm rounded-full hover:bg-gray-100 transition-colors flex items-center gap-1 font-medium">
               <i className="bi bi-file-earmark-text"></i>
               Birth Certificate
             </Link>
-            <Link href="/service-details/business-permit-new" className="px-3 py-1 bg-white/30 text-white text-sm rounded-full hover:bg-white/40 transition-colors flex items-center gap-1">
+            <Link href="/service-details/business-permit-new" className="px-3 py-1 bg-white text-bz-primary text-sm rounded-full hover:bg-gray-100 transition-colors flex items-center gap-1 font-medium">
               <i className="bi bi-shop"></i>
               Business Permit
             </Link>
-            <Link href="/service-details/real-property-tax" className="px-3 py-1 bg-white/30 text-white text-sm rounded-full hover:bg-white/40 transition-colors flex items-center gap-1">
+            <Link href="/service-details/real-property-tax" className="px-3 py-1 bg-white text-bz-primary text-sm rounded-full hover:bg-gray-100 transition-colors flex items-center gap-1 font-medium">
               <i className="bi bi-cash-coin"></i>
               Real Property Tax
             </Link>
-            <Link href="/services/health" className="px-3 py-1 bg-white/30 text-white text-sm rounded-full hover:bg-white/40 transition-colors flex items-center gap-1">
+            <Link href="/services/health" className="px-3 py-1 bg-white text-bz-primary text-sm rounded-full hover:bg-gray-100 transition-colors flex items-center gap-1 font-medium">
               <i className="bi bi-heart-pulse"></i>
               Health Services
             </Link>
