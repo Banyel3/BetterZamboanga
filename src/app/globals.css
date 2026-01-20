@@ -9,7 +9,7 @@
   --bz-primary-light: #e6eef8;
   --bz-primary-soft: #f0f4fa;
 
-  /* Accent Colors from seal - Balanced palette */
+  /* Accent Colors - Zamboanga City Colors (Red, Green, Yellow) */
   --bz-accent-yellow: #f2c91d;
   --bz-accent-yellow-soft: #fffbf0;
   --bz-accent-green: #008751;
@@ -64,7 +64,7 @@
   --color-bz-accent-red: var(--bz-accent-red);
   --color-bz-accent-blue: var(--bz-accent-blue);
   --color-bz-red: var(--bz-accent-red);
-  
+
   /* Fonts */
   --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
 }
@@ -75,7 +75,8 @@
 }
 
 html {
-  font-size: 18px; /* Larger base font for accessibility */
+  font-size: 18px;
+  /* Larger base font for accessibility */
 }
 
 @media (max-width: 768px) {

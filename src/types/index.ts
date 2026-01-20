@@ -11,6 +11,7 @@ export interface Official {
   image?: string;
   subtitle?: string;
   district?: string;
+  icon?: string;
 }
 
 export interface OfficialsData {

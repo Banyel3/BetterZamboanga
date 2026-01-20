@@ -12,38 +12,44 @@ const featuredServices = [
     title: 'Certificates',
     description: 'Birth, marriage, death certificates',
     icon: 'bi-file-earmark-text-fill',
-    href: '/services/certificates'
+    href: '/services/certificates',
+    color: 'text-bz-accent-green',
+    bgColor: 'bg-green-50'
   },
   {
     title: 'Business Permits',
     description: 'New permits and renewals',
     icon: 'bi-shop',
-    href: '/services/business'
+    href: '/services/business',
+    color: 'text-bz-accent-red',
+    bgColor: 'bg-red-50'
   },
   {
     title: 'Tax Payments',
     description: 'Property and business taxes',
     icon: 'bi-cash-coin',
-    href: '/services/tax-payments'
+    href: '/services/tax-payments',
+    color: 'text-amber-500',
+    bgColor: 'bg-amber-50'
   },
 ];
 
 // Secondary services (compact)
 const secondaryServices = [
-  { title: 'Social Services', description: 'Senior citizen & PWD', icon: 'bi-people-fill', href: '/services/social-services' },
-  { title: 'Health', description: 'Medical assistance', icon: 'bi-heart-pulse-fill', href: '/services/health' },
-  { title: 'Education', description: 'Schools & scholarships', icon: 'bi-mortarboard-fill', href: '/services/education' },
-  { title: 'Infrastructure', description: 'Building permits', icon: 'bi-buildings-fill', href: '/services/infrastructure' },
-  { title: 'Public Safety', description: 'Security & emergency', icon: 'bi-shield-check', href: '/services/public-safety' },
-  { title: 'Agriculture', description: 'Farming support', icon: 'bi-tree-fill', href: '/services/agriculture' },
+  { title: 'Social Services', description: 'Senior citizen & PWD', icon: 'bi-people-fill', href: '/services/social-services', color: 'text-bz-accent-green' },
+  { title: 'Health', description: 'Medical assistance', icon: 'bi-heart-pulse-fill', href: '/services/health', color: 'text-bz-accent-red' },
+  { title: 'Education', description: 'Schools & scholarships', icon: 'bi-mortarboard-fill', href: '/services/education', color: 'text-bz-primary' },
+  { title: 'Infrastructure', description: 'Building permits', icon: 'bi-buildings-fill', href: '/services/infrastructure', color: 'text-bz-accent-yellow' },
+  { title: 'Public Safety', description: 'Security & emergency', icon: 'bi-shield-check', href: '/services/public-safety', color: 'text-bz-accent-red' },
+  { title: 'Agriculture', description: 'Farming support', icon: 'bi-tree-fill', href: '/services/agriculture', color: 'text-bz-accent-green' },
 ];
 
-// KPI Stats
+// KPI Stats with city colors
 const stats = [
-  { value: '977,234', label: 'Population', source: '2020 Census', icon: 'bi-people-fill', href: '/statistics' },
-  { value: '98', label: 'Barangays', source: 'Administrative Units', icon: 'bi-geo-alt-fill', href: '/government' },
-  { value: 'HUC', label: 'City Classification', source: 'Highly Urbanized City', icon: 'bi-award-fill', href: '/budget' },
-  { value: '1,414.7 km²', label: 'Land Area', source: 'Total City Area', icon: 'bi-rulers', href: '/statistics' },
+  { value: '977,234', label: 'Population', source: '2020 Census', icon: 'bi-people-fill', href: '/statistics', color: 'text-bz-accent-green', bgColor: 'bg-green-50' },
+  { value: '98', label: 'Barangays', source: 'Administrative Units', icon: 'bi-geo-alt-fill', href: '/government', color: 'text-bz-accent-red', bgColor: 'bg-red-50' },
+  { value: 'HUC', label: 'City Classification', source: 'Highly Urbanized City', icon: 'bi-award-fill', href: '/budget', color: 'text-bz-accent-yellow', bgColor: 'bg-yellow-50' },
+  { value: '1,414.7 km²', label: 'Land Area', source: 'Total City Area', icon: 'bi-rulers', href: '/statistics', color: 'text-bz-primary', bgColor: 'bg-blue-50' },
 ];
 
 export default function HomePage() {
@@ -117,10 +123,10 @@ export default function HomePage() {
               <Link
                 key={service.title}
                 href={service.href}
-                className="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition-all border border-blue-100 group text-center"
+                className="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition-all border border-gray-100 group text-center"
               >
-                <div className="w-16 h-16 bg-blue-50 rounded-2xl mx-auto mb-4 flex items-center justify-center group-hover:bg-bz-primary/10 transition-colors">
-                  <i className={`bi ${service.icon} text-3xl text-bz-primary`}></i>
+                <div className={`w-16 h-16 ${service.bgColor} rounded-2xl mx-auto mb-4 flex items-center justify-center group-hover:scale-105 transition-transform`}>
+                  <i className={`bi ${service.icon} text-3xl ${service.color}`}></i>
                 </div>
                 <h3 className="font-semibold text-gray-800 mb-1">{service.title}</h3>
                 <p className="text-sm text-gray-500">{service.description}</p>
@@ -134,10 +140,10 @@ export default function HomePage() {
               <Link
                 key={service.title}
                 href={service.href}
-                className="bg-white rounded-xl p-4 shadow-sm hover:shadow-md transition-all border border-blue-100 group text-center"
+                className="bg-white rounded-xl p-4 shadow-sm hover:shadow-md transition-all border border-gray-100 group text-center"
               >
-                <div className="w-12 h-12 bg-blue-50 rounded-xl mx-auto mb-2 flex items-center justify-center group-hover:bg-bz-primary/10 transition-colors">
-                  <i className={`bi ${service.icon} text-xl text-bz-primary`}></i>
+                <div className="w-12 h-12 bg-gray-50 rounded-xl mx-auto mb-2 flex items-center justify-center group-hover:scale-105 transition-transform">
+                  <i className={`bi ${service.icon} text-xl ${service.color}`}></i>
                 </div>
                 <h3 className="font-medium text-gray-800 text-sm">{service.title}</h3>
                 <p className="text-xs text-gray-500">{service.description}</p>
@@ -162,8 +168,8 @@ export default function HomePage() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {stats.map((stat, i) => (
               <Link key={i} href={stat.href} className="bg-white rounded-2xl p-6 text-center shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
-                <div className="w-12 h-12 bg-blue-50 rounded-xl mx-auto mb-3 flex items-center justify-center">
-                  <i className={`bi ${stat.icon} text-2xl text-bz-primary`}></i>
+                <div className={`w-12 h-12 ${stat.bgColor} rounded-xl mx-auto mb-3 flex items-center justify-center`}>
+                  <i className={`bi ${stat.icon} text-2xl ${stat.color}`}></i>
                 </div>
                 <p className="text-2xl font-bold text-gray-800">{stat.value}</p>
                 <p className="text-sm text-gray-800 font-medium">{stat.label}</p>

@@ -139,15 +139,26 @@ export default function GovernmentPage() {
             {officials.department_heads.map((dept, i) => (
               <div
                 key={i}
-                className="bg-white rounded-lg p-5 shadow-sm border border-gray-100"
+                className="bg-white rounded-lg overflow-hidden shadow-sm border border-gray-100 flex"
               >
-                <div className="min-w-0">
-                  <h3 className="font-medium text-gray-800">{dept.name}</h3>
-                  <p className="text-sm text-bz-primary font-medium">{dept.title}</p>
-                  <p className="text-sm text-gray-500 mt-1">{dept.office}</p>
+                {/* Icon Box */}
+                <div className="w-20 bg-bz-primary flex items-center justify-center shrink-0">
+                  <i className={`bi ${dept.icon || 'bi-building'} text-2xl text-white`}></i>
+                </div>
+                {/* Content */}
+                <div className="p-4 min-w-0">
+                  <h3 className="font-semibold text-gray-800">{dept.title}</h3>
+                  <p className="text-sm text-gray-600 mt-1">{dept.name}</p>
                   {dept.phone && (
-                    <p className="text-sm text-gray-500 mt-1">
-                      <i className="bi bi-telephone mr-1"></i>{dept.phone.replace(/;\s*/g, ' | ')}
+                    <p className="text-sm text-gray-500 mt-2 flex items-center gap-1">
+                      <i className="bi bi-telephone text-bz-primary"></i>
+                      {dept.phone.replace(/;\s*/g, ' | ')}
+                    </p>
+                  )}
+                  {dept.email && (
+                    <p className="text-sm text-gray-500 mt-1 flex items-center gap-1">
+                      <i className="bi bi-envelope text-bz-primary"></i>
+                      {dept.email}
                     </p>
                   )}
                 </div>

@@ -125,7 +125,7 @@
       "phone": "(062) 991-1630; 991-4985",
       "email": "zc.admoffice@gmail.com",
       "location": "2nd Floor, City Hall, Valderrosa Street",
-      "image": "assets/images/officials/city-administrator.jpg"
+      "icon": "bi-building-gear"
     },
     {
       "name": "Jo Ann Mae S. Hamili",
@@ -134,7 +134,7 @@
       "phone": "(062) 992-0807; 991-0719",
       "email": "zcacctg@gmail.com",
       "location": "G/Floor, Annex Bldg., City Hall, Valderrosa Street",
-      "image": "assets/images/officials/city-accountant.jpg"
+      "icon": "bi-calculator"
     },
     {
       "name": "Erwin E. Bernardo",
@@ -143,7 +143,7 @@
       "phone": "(062) 991-2294",
       "email": "cityassessoroffice@gmail.com",
       "location": "G/Floor, Annex Bldg., City Hall, Valderrosa Street",
-      "image": "assets/images/officials/city-assessor.jpg"
+      "icon": "bi-house-check"
     },
     {
       "name": "Romelita Candido",
@@ -152,7 +152,7 @@
       "phone": "(062) 992-3784; 991-2189; 991-2281",
       "email": "citytreasurerzc@gmail.com",
       "location": "G/Floor, Annex Bldg., City Hall, Valderrosa Street",
-      "image": "assets/images/officials/city-treasurer.jpg"
+      "icon": "bi-safe"
     },
     {
       "name": "Engr. Christopher Navarro",
@@ -161,7 +161,7 @@
       "phone": "(062) 991-2389; 991-0101",
       "email": "zambocityengineersoffice@yahoo.com",
       "location": "2nd Flr., Annex Bldg., City Hall, Valderrosa St.",
-      "image": "assets/images/officials/city-engineer.jpg"
+      "icon": "bi-tools"
     },
     {
       "name": "Atty. Evangelina S. Doctolero",
@@ -170,7 +170,7 @@
       "phone": "(062) 991-7294",
       "email": "zccitylegal@gmail.com",
       "location": "2nd Floor, City Hall, Valderrosa St.",
-      "image": "assets/images/officials/city-legal.jpg"
+      "icon": "bi-briefcase"
     },
     {
       "name": "Geraldine dela Paz",
@@ -179,7 +179,7 @@
       "phone": "(062) 991-2185; 992-7762; 992-5492",
       "email": "citybudgetofficezamboanga@gmail.com",
       "location": "G/Floor, Annex Bldg., City Hall, Valderrosa Street",
-      "image": "assets/images/officials/city-budget.jpg"
+      "icon": "bi-wallet2"
     },
     {
       "name": "Ma. Luz V. Agbayani",
@@ -188,7 +188,7 @@
       "phone": "(062) 991-3645; 991-3625",
       "email": "cpdozamboanga@gmail.com",
       "location": "2nd Floor, Annex Bldg., City Hall, Valderrosa St.",
-      "image": "assets/images/officials/city-planning.jpg"
+      "icon": "bi-map"
     },
     {
       "name": "Dr. Dulce Amor Miravite",
@@ -198,7 +198,7 @@
       "fax": "(062) 991-5421",
       "email": "zamboanga@zamboanga.gov.ph",
       "location": "Pettit Barracks, Zamboanga City",
-      "image": "assets/images/officials/city-health.jpg"
+      "icon": "bi-heart-pulse"
     },
     {
       "name": "Socorro Acuña-Rojas",
@@ -207,7 +207,7 @@
       "phone": "(062) 991-2284; 991-3734",
       "email": "cswdozc@gmail.com",
       "location": "Pettit Barracks, Zamboanga City",
-      "image": "assets/images/officials/city-social-welfare.jpg"
+      "icon": "bi-people"
     },
     {
       "name": "Dr. Aracadio B. Cavan, Jr.",
@@ -215,7 +215,7 @@
       "office": "Office of the City Veterinarian",
       "phone": "(062) 985-0247; 955-0245",
       "location": "San Roque, Zamboanga City",
-      "image": "assets/images/officials/city-veterinarian.jpg"
+      "icon": "bi-bug"
     },
     {
       "name": "Arben Magdugo",
@@ -224,7 +224,7 @@
       "phone": "(062) 985-0527; 985-0687",
       "email": "zc.agri.office@gmail.com",
       "location": "Tumaga, Zamboanga City",
-      "image": "assets/images/officials/city-agriculturist.jpg"
+      "icon": "bi-tree"
     }
   ],
   "chief_of_staff": {
