@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import ordinancesData from '@/data/ordinances.json';
+import OrdinanceTable from '@/components/legislative/OrdinanceTable';
 
 export const metadata: Metadata = {
   title: 'Ordinance Framework',
@@ -9,9 +10,9 @@ export const metadata: Metadata = {
 
 // Combine all ordinance categories into a single array
 const ordinances = [
-  ...ordinancesData.appropriation.map(o => ({ ...o, ordinanceNo: `Ord. ${o.number}`, category: 'appropriation' })),
-  ...ordinancesData.revenue.map(o => ({ ...o, ordinanceNo: o.number, category: 'revenue' })),
-  ...ordinancesData.regulatory.map(o => ({ ...o, ordinanceNo: `Ord. ${o.number}`, category: 'regulatory' })),
+  ...ordinancesData.appropriation.map(o => ({ ...o, ordinanceNo: `Ord. ${o.number}`, category: 'appropriation' as const })),
+  ...ordinancesData.revenue.map(o => ({ ...o, ordinanceNo: o.number, category: 'revenue' as const })),
+  ...ordinancesData.regulatory.map(o => ({ ...o, ordinanceNo: `Ord. ${o.number}`, category: 'regulatory' as const })),
 ].sort((a, b) => {
   // Sort by year descending, then by number
   const yearA = a.year === 'Prior' ? 0 : parseInt(a.year);
@@ -49,43 +50,9 @@ export default function OrdinanceFrameworkPage() {
           <h2 className="text-xl font-bold text-gray-800 mb-6 flex items-center gap-2">
             <i className="bi bi-file-earmark-ruled text-bz-primary"></i>
             All Ordinances
-            <span className="ml-2 text-sm font-normal text-gray-500">
-              ({ordinances.length} total)
-            </span>
           </h2>
-          <div className="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
-            <div className="overflow-x-auto">
-              <table className="w-full text-sm">
-                <thead className="bg-gray-50 text-gray-700">
-                  <tr>
-                    <th className="px-4 py-3 text-left font-semibold w-32">Ordinance No.</th>
-                    <th className="px-4 py-3 text-left font-semibold">Title</th>
-                    <th className="px-4 py-3 text-left font-semibold w-24">Category</th>
-                    <th className="px-4 py-3 text-left font-semibold w-32">Year</th>
-                  </tr>
-                </thead>
-                <tbody className="divide-y divide-gray-100">
-                  {ordinances.map((ord, i) => (
-                    <tr key={i} className="hover:bg-gray-50">
-                      <td className="px-4 py-3 font-medium text-bz-primary whitespace-nowrap">
-                        {ord.ordinanceNo}
-                      </td>
-                      <td className="px-4 py-3 text-gray-700">{ord.title}</td>
-                      <td className="px-4 py-3">
-                        <span className={`inline-block px-2 py-0.5 text-xs rounded-full ${ord.category === 'appropriation' ? 'bg-blue-100 text-blue-700' :
-                          ord.category === 'regulatory' ? 'bg-green-100 text-green-700' :
-                            'bg-yellow-100 text-yellow-700'
-                          }`}>
-                          {ord.category}
-                        </span>
-                      </td>
-                      <td className="px-4 py-3 text-gray-500 whitespace-nowrap">{ord.year}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-          </div>
+
+          <OrdinanceTable ordinances={ordinances} />
 
           <div className="mt-8 text-center">
             <Link

@@ -7,85 +7,93 @@ export const metadata: Metadata = {
 };
 
 const categories = [
-  { 
-    id: 'certificates', 
-    name: 'Certificates & Vital Records', 
+  {
+    id: 'certificates',
+    name: 'Certificates & Vital Records',
     icon: 'bi-file-earmark-text',
     description: 'Birth, marriage, death certificates, and other vital records',
     href: '/services/certificates',
     color: 'bg-green-600'
   },
-  { 
-    id: 'business', 
-    name: 'Business, Trade & Investment', 
+  {
+    id: 'business',
+    name: 'Business, Trade & Investment',
     icon: 'bi-shop',
     description: 'Business permits, licenses, and trade registration services',
     href: '/services/business',
     color: 'bg-green-600'
   },
-  { 
-    id: 'social-services', 
-    name: 'Social Services & Assistance', 
+  {
+    id: 'social-services',
+    name: 'Social Services & Assistance',
     icon: 'bi-people',
     description: 'Welfare programs, senior citizen services, and financial aid',
     href: '/services/social-services',
     color: 'bg-green-600'
   },
-  { 
-    id: 'health', 
-    name: 'Health & Wellness', 
+  {
+    id: 'health',
+    name: 'Health & Wellness',
     icon: 'bi-heart-pulse',
     description: 'Vaccination programs, health certificates, and medical assistance',
     href: '/services/health',
     color: 'bg-green-600'
   },
-  { 
-    id: 'tax-payments', 
-    name: 'Taxation & Payments', 
+  {
+    id: 'tax-payments',
+    name: 'Taxation & Payments',
     icon: 'bi-cash-stack',
     description: 'Property tax, business tax, payments, and tax clearances',
     href: '/services/tax-payments',
     color: 'bg-green-600'
   },
-  { 
-    id: 'agriculture', 
-    name: 'Agriculture & Economic Development', 
+  {
+    id: 'agriculture',
+    name: 'Agriculture & Economic Development',
     icon: 'bi-tree',
     description: 'Agricultural loans, crop insurance, and farming support',
     href: '/services/agriculture',
     color: 'bg-green-600'
   },
-  { 
-    id: 'infrastructure', 
-    name: 'Infrastructure & Public Works', 
+  {
+    id: 'infrastructure',
+    name: 'Infrastructure & Public Works',
     icon: 'bi-tools',
     description: 'Building permits and construction services',
     href: '/services/infrastructure',
     color: 'bg-green-600'
   },
-  { 
-    id: 'education', 
-    name: 'Education & Scholarship', 
+  {
+    id: 'education',
+    name: 'Education & Scholarship',
     icon: 'bi-mortarboard',
     description: 'Scholarships and educational grants',
     href: '/services/education',
     color: 'bg-green-600'
   },
-  { 
-    id: 'public-safety', 
-    name: 'Public Safety & Security', 
+  {
+    id: 'public-safety',
+    name: 'Public Safety & Security',
     icon: 'bi-shield-check',
     description: 'Security & emergency services',
     href: '/services/public-safety',
     color: 'bg-green-600'
   },
-  { 
-    id: 'environment', 
-    name: 'Environment & Natural Resources', 
+  {
+    id: 'environment',
+    name: 'Environment & Natural Resources',
     icon: 'bi-globe-americas',
     description: 'Environmental permits and conservation',
     href: '/services/environment',
     color: 'bg-green-600'
+  },
+  {
+    id: 'sumbong-sa-pangulo',
+    name: 'Sumbong sa Pangulo',
+    icon: 'bi-megaphone',
+    description: 'Presidential transparency projects and citizen reports',
+    href: '/services/sumbong-sa-pangulo',
+    color: 'bg-amber-600'
   },
 ];
 

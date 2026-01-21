@@ -1,0 +1,354 @@
+{
+    "__data_source": "Sumbong sa Pangulo Presidential Transparency Portal (https://sumbongsapangulo.ph/)",
+    "__last_updated": "January 21, 2026",
+    "__note": "Infrastructure projects submitted through the Presidential complaints mechanism for Zamboanga City",
+    "summary": {
+        "totalProjects": 34,
+        "totalCost": 1100484701.83,
+        "completedProjects": 34,
+        "ongoingProjects": 0,
+        "description": "Completed flood control, drainage, and shoreline protection projects (2022-2024)"
+    },
+    "projects": [
+        {
+            "id": "SSP-01",
+            "name": "Construction of Flood Mitigation Structure along Tumaga River (Sta. Maria Section)",
+            "location": "Barangay Santa Maria, Zamboanga City",
+            "category": "Flood Control and Drainage",
+            "contractor": "RME CONSTRUCTION AND ENTERPRISES",
+            "cost": 17633690.21,
+            "status": 100,
+            "completionDate": "10/21/2024"
+        },
+        {
+            "id": "SSP-02",
+            "name": "Construction of Flood Mitigation Structure (Drainage)",
+            "location": "Barangay Recodo, Zamboanga City",
+            "category": "Flood Control and Drainage",
+            "contractor": "RME CONSTRUCTION AND ENTERPRISES",
+            "cost": 4574902.04,
+            "status": 100,
+            "completionDate": "07/22/2024"
+        },
+        {
+            "id": "SSP-03",
+            "name": "Construction of Flood Mitigation Structure (Drainage)",
+            "location": "Barangay Ayala, Zamboanga City",
+            "category": "Flood Control and Drainage",
+            "contractor": "CITYWEST BUILDERS AND SUPPLY",
+            "cost": 4132146.97,
+            "status": 100,
+            "completionDate": "07/17/2024"
+        },
+        {
+            "id": "SSP-04",
+            "name": "Construction of Flood Mitigation Structure (Drainage)",
+            "location": "Barangay San Jose Cawa-Cawa, Zamboanga City",
+            "category": "Flood Control and Drainage",
+            "contractor": "MGM CONSTRUCTION AND SUPPLIES",
+            "cost": 4913600.78,
+            "status": 100,
+            "completionDate": "07/02/2024"
+        },
+        {
+            "id": "SSP-05",
+            "name": "Construction of Flood Mitigation Structure (Drainage)",
+            "location": "Barangay Campo Islam, Zamboanga City",
+            "category": "Flood Control and Drainage",
+            "contractor": "ASAP GENERAL TRADING CONSTRUCTION",
+            "cost": 4928330.56,
+            "status": 100,
+            "completionDate": "06/27/2024"
+        },
+        {
+            "id": "SSP-06",
+            "name": "Construction of Multi-Purpose Building (Senior Citizen Building)",
+            "location": "Barangay Pasonanca, Zamboanga City",
+            "category": "Buildings and Facilities",
+            "contractor": "SHERKAD CONSTRUCTION",
+            "cost": 4839061.2,
+            "status": 100,
+            "completionDate": "06/05/2024"
+        },
+        {
+            "id": "SSP-07",
+            "name": "Construction of Flood Mitigation Structure (Drainage)",
+            "location": "Barangay Divisoria, Zamboanga City",
+            "category": "Flood Control and Drainage",
+            "contractor": "ST. JOSEPH CONSTRUCTION AND TRADING",
+            "cost": 2497606.86,
+            "status": 100,
+            "completionDate": "05/10/2024"
+        },
+        {
+            "id": "SSP-08",
+            "name": "Construction of Flood Mitigation Structure (Drainage)",
+            "location": "Barangay Mercedes, Zamboanga City",
+            "category": "Flood Control and Drainage",
+            "contractor": "ASAP GENERAL TRADING CONSTRUCTION",
+            "cost": 4914949.26,
+            "status": 100,
+            "completionDate": "05/08/2024"
+        },
+        {
+            "id": "SSP-09",
+            "name": "Construction of Flood Mitigation Structure",
+            "location": "Barangay Talisayan, Zamboanga City",
+            "category": "Flood Control and Drainage",
+            "contractor": "DANSBURG MACRO-BUILDERS INC.",
+            "cost": 29399535.35,
+            "status": 100,
+            "completionDate": "12/12/2023"
+        },
+        {
+            "id": "SSP-10",
+            "name": "Construction of Drainage System",
+            "location": "Barangay Tetuan, Zamboanga City",
+            "category": "Flood Control and Drainage",
+            "contractor": "HMI ENTERPRISES",
+            "cost": 9899967.65,
+            "status": 100,
+            "completionDate": "11/24/2023"
+        },
+        {
+            "id": "SSP-11",
+            "name": "Construction of Drainage System",
+            "location": "Barangay Talon-Talon, Zamboanga City",
+            "category": "Flood Control and Drainage",
+            "contractor": "MI CONSTRUCTION",
+            "cost": 9897612.75,
+            "status": 100,
+            "completionDate": "10/20/2023"
+        },
+        {
+            "id": "SSP-12",
+            "name": "Construction of Flood Control Structure",
+            "location": "Barangay Ayala, Zamboanga City",
+            "category": "Flood Control and Drainage",
+            "contractor": "MCGABRIEL CONSTRUCTION",
+            "cost": 9768821.29,
+            "status": 100,
+            "completionDate": "10/18/2023"
+        },
+        {
+            "id": "SSP-13",
+            "name": "Construction of Flood Control at Upper Calarian River",
+            "location": "San Roque, Zamboanga City",
+            "category": "Flood Control and Drainage",
+            "contractor": "JM2K CONSTRUCTION",
+            "cost": 48885694.5,
+            "status": 100,
+            "completionDate": "09/29/2023"
+        },
+        {
+            "id": "SSP-14",
+            "name": "Construction of Flood Control at Ayala River (Phase 1)",
+            "location": "Ayala, Zamboanga City",
+            "category": "Flood Control and Drainage",
+            "contractor": "AEJ HARDWARE CONSTRUCTION",
+            "cost": 19614527.39,
+            "status": 100,
+            "completionDate": "09/22/2023"
+        },
+        {
+            "id": "SSP-15",
+            "name": "Construction of Flood Control Structure at Rio Hondo",
+            "location": "Zamboanga City",
+            "category": "Flood Control and Drainage",
+            "contractor": "BENRAM CONSTRUCTION",
+            "cost": 126619461,
+            "status": 100,
+            "completionDate": "08/30/2023"
+        },
+        {
+            "id": "SSP-16",
+            "name": "Construction of Flood Control at Saaz River",
+            "location": "San Ramon, Zamboanga City",
+            "category": "Flood Control and Drainage",
+            "contractor": "JM2K CONSTRUCTION",
+            "cost": 49482639.74,
+            "status": 100,
+            "completionDate": "03/25/2023"
+        },
+        {
+            "id": "SSP-17",
+            "name": "Construction of Flood Control Structure at Tumaga River (Talabaan Section)",
+            "location": "Zamboanga City",
+            "category": "Flood Control and Drainage",
+            "contractor": "JRBT CONSTRUCTION AND SUPPLY",
+            "cost": 39199913.65,
+            "status": 100,
+            "completionDate": "03/22/2023"
+        },
+        {
+            "id": "SSP-18",
+            "name": "Construction of Flood Control Structure at Tumaga River (Tagasilay Section)",
+            "location": "Zamboanga City",
+            "category": "Flood Control and Drainage",
+            "contractor": "TEDDIE CONSTRUCTION DEVELOPMENT, INC.",
+            "cost": 50167247.61,
+            "status": 100,
+            "completionDate": "02/27/2023"
+        },
+        {
+            "id": "SSP-19",
+            "name": "Construction of Flood Control at Rio Hondo Area",
+            "location": "Zamboanga City",
+            "category": "Flood Control and Drainage",
+            "contractor": "BENRAM CONSTRUCTION",
+            "cost": 39475116.57,
+            "status": 100,
+            "completionDate": "02/23/2023"
+        },
+        {
+            "id": "SSP-20",
+            "name": "Construction of Flood Control at Tumaga River, Arena Blanco Section",
+            "location": "Zamboanga City",
+            "category": "Flood Control and Drainage",
+            "contractor": "TEDDIE CONSTRUCTION DEVELOPMENT, INC.",
+            "cost": 48856645.26,
+            "status": 100,
+            "completionDate": "02/18/2023"
+        },
+        {
+            "id": "SSP-21",
+            "name": "Construction of Flood Control Structure at Curuan River",
+            "location": "Zamboanga City",
+            "category": "Flood Control and Drainage",
+            "contractor": "VICTER CONSTRUCTION AND DEVELOPMENT, OPC",
+            "cost": 24431108.19,
+            "status": 100,
+            "completionDate": "01/15/2023"
+        },
+        {
+            "id": "SSP-22",
+            "name": "Construction of Flood Control Structure at Tumaga River, Cabatangan Section",
+            "location": "Zamboanga City",
+            "category": "Flood Control and Drainage",
+            "contractor": "LL CONSTRUCTION",
+            "cost": 55327247.85,
+            "status": 100,
+            "completionDate": "01/05/2023"
+        },
+        {
+            "id": "SSP-23",
+            "name": "Construction of Flood Control Structure along Tumaga River (Tetuan Section)",
+            "location": "Zamboanga City",
+            "category": "Flood Control and Drainage",
+            "contractor": "RABBIT CONSTRUCTION & DEVELOPMENT CORPORATION",
+            "cost": 55099658.74,
+            "status": 100,
+            "completionDate": "12/23/2022"
+        },
+        {
+            "id": "SSP-24",
+            "name": "Construction of Flood Control Structure along Ayala River, Tulungatung Section",
+            "location": "Zamboanga City",
+            "category": "Flood Control and Drainage",
+            "contractor": "TEDDIE CONSTRUCTION DEVELOPMENT, INC.",
+            "cost": 57867414.58,
+            "status": 100,
+            "completionDate": "12/22/2022"
+        },
+        {
+            "id": "SSP-25",
+            "name": "Construction of Slope Protection Structure",
+            "location": "Sinunuc, Zamboanga City",
+            "category": "Flood Control and Drainage",
+            "contractor": "TEDDIE CONSTRUCTION DEVELOPMENT, INC.",
+            "cost": 19599660.32,
+            "status": 100,
+            "completionDate": "12/21/2022"
+        },
+        {
+            "id": "SSP-26",
+            "name": "Construction of Shoreline Protection at Sinunuc Section",
+            "location": "Zamboanga City",
+            "category": "Flood Control and Drainage",
+            "contractor": "BENRAM CONSTRUCTION",
+            "cost": 39253426.63,
+            "status": 100,
+            "completionDate": "12/12/2022"
+        },
+        {
+            "id": "SSP-27",
+            "name": "Construction of Zamboanga Economic Zone Seafront, San Ramon Shoreline Protection",
+            "location": "San Ramon, Zamboanga City",
+            "category": "Flood Control and Drainage",
+            "contractor": "YN BUILDERS AND SUPPLY",
+            "cost": 19071820.96,
+            "status": 100,
+            "completionDate": "11/28/2022"
+        },
+        {
+            "id": "SSP-28",
+            "name": "Construction of Drainage System",
+            "location": "Barangay Guiwan, Zamboanga City",
+            "category": "Flood Control and Drainage",
+            "contractor": "TERRAINSHAPER CONSTRUCTION AND ENTERPRISES",
+            "cost": 4801870.31,
+            "status": 100,
+            "completionDate": "10/19/2022"
+        },
+        {
+            "id": "SSP-29",
+            "name": "Construction of Shore Protection at Busugan Section",
+            "location": "Barangay Sinubong, Zamboanga City",
+            "category": "Flood Control and Drainage",
+            "contractor": "LONG ISLAND BUILDERS & CONSTRUCTION",
+            "cost": 39549988.07,
+            "status": 100,
+            "completionDate": "10/17/2022"
+        },
+        {
+            "id": "SSP-30",
+            "name": "Construction of Shoreline Protection, San Ramon Section",
+            "location": "Talisayan, Zamboanga City",
+            "category": "Flood Control and Drainage",
+            "contractor": "MCGABRIEL CONSTRUCTION / AQUATERRA KONSTRUKT INC.",
+            "cost": 41992237.57,
+            "status": 100,
+            "completionDate": "09/13/2022"
+        },
+        {
+            "id": "SSP-31",
+            "name": "Construction of Shoreline Protection, Limpapa Section",
+            "location": "Zamboanga City",
+            "category": "Flood Control and Drainage",
+            "contractor": "JAMARI CONSTRUCTION",
+            "cost": 39544872.43,
+            "status": 100,
+            "completionDate": "08/25/2022"
+        },
+        {
+            "id": "SSP-32",
+            "name": "Construction of Flood Control Structure at Saaz River along San Ramon Br. 2",
+            "location": "Talisayan, Zamboanga City",
+            "category": "Flood Control and Drainage",
+            "contractor": "ALTOS CONSTRUCTION / GRACE CONSTRUCTION CORPORATION",
+            "cost": 89083475.33,
+            "status": 100,
+            "completionDate": "08/02/2022"
+        },
+        {
+            "id": "SSP-33",
+            "name": "Construction of Flood Control Structure at Latap River",
+            "location": "Zamboanga City",
+            "category": "Flood Control and Drainage",
+            "contractor": "RCDG CONSTRUCTION CORPORATION",
+            "cost": 75410486.7,
+            "status": 100,
+            "completionDate": "07/29/2022"
+        },
+        {
+            "id": "SSP-34",
+            "name": "Construction of Slope Protection, Sitio Uwak River",
+            "location": "San Roque, Zamboanga City",
+            "category": "Flood Control and Drainage",
+            "contractor": "LL CONSTRUCTION",
+            "cost": 4875209.31,
+            "status": 100,
+            "completionDate": "07/04/2022"
+        }
+    ]
+}

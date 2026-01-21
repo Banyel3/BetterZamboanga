@@ -1,69 +1,89 @@
-import { Metadata } from 'next';
+'use client';
+
+import { useState } from 'react';
 import Link from 'next/link';
+import InfrastructureTable from '@/components/budget/InfrastructureTable';
+import dpwhData from '@/data/dpwh-projects.json';
 
-export const metadata: Metadata = {
-  title: 'Budget & Financial Transparency | Better Zamboanga',
-  description: 'View the municipal budget and financial transparency reports of Zamboanga City. Access public funds data, budget breakdown, expenditures, and financial statements.',
+// Official BLGF SRE Data - Verified from SRE-QTR-2025.xlsx
+// Source: Bureau of Local Government Finance (BLGF)
+const sreDataByQuarter = {
+  Q1: {
+    label: 'Q1 2025 (Jan-Mar)',
+    totalIncome: '₱2,074.23 M',
+    totalIncomeRaw: 2074233405.90,
+    totalExpense: '₱431.27 M',
+    totalExpenseRaw: 431273684.18,
+    netIncome: '₱1,642.96 M',
+    netIncomeRaw: 1642959721.72,
+    fundBalance: '₱9,239.45 M',
+    fundBalanceRaw: 9239446543.47,
+    cashBalanceBegin: '₱8,580.71 M',
+    income: {
+      local: {
+        amount: '₱784.61 M',
+        pct: '37.8%',
+        label: 'Local Sources',
+        detail: 'Tax & Non-Tax Revenue',
+        raw: 784607830.02
+      },
+      external: {
+        amount: '₱1,289.63 M',
+        pct: '62.2%',
+        label: 'External Sources',
+        detail: 'National Tax Allotment (NTA)',
+        raw: 1289625575.88
+      },
+    },
+    expenditure: {
+      gps: { amount: '₱192.98 M', pct: '44.8%', label: 'General Public Services', detail: 'Administration & Operations' },
+      social: { amount: '₱163.45 M', pct: '37.9%', label: 'Social Services', detail: 'Health, Education, Welfare' },
+      economic: { amount: '₱74.85 M', pct: '17.3%', label: 'Economic Services', detail: 'Infrastructure & Development' },
+      debt: { amount: '₱0.00 M', pct: '0.0%', label: 'Debt Service', detail: 'Interest & Charges' },
+    },
+  },
+  Q2: {
+    label: 'Q2 2025 (Apr-Jun)',
+    totalIncome: '₱3,510.87 M',
+    totalIncomeRaw: 3510870810.10,
+    totalExpense: '₱1,246.96 M',
+    totalExpenseRaw: 1246955944.67,
+    netIncome: '₱2,263.91 M',
+    netIncomeRaw: 2263914865.43,
+    fundBalance: '₱9,065.20 M',
+    fundBalanceRaw: 9065195890.53,
+    cashBalanceBegin: '₱8,580.71 M',
+    income: {
+      local: {
+        amount: '₱932.19 M',
+        pct: '26.5%',
+        label: 'Local Sources',
+        detail: 'Tax & Non-Tax Revenue',
+        raw: 932190918.85
+      },
+      external: {
+        amount: '₱2,578.68 M',
+        pct: '73.5%',
+        label: 'External Sources',
+        detail: 'National Tax Allotment (NTA)',
+        raw: 2578679891.25
+      },
+    },
+    expenditure: {
+      gps: { amount: '₱470.83 M', pct: '37.8%', label: 'General Public Services', detail: 'Administration & Operations' },
+      social: { amount: '₱580.45 M', pct: '46.5%', label: 'Social Services', detail: 'Health, Education, Welfare' },
+      economic: { amount: '₱195.68 M', pct: '15.7%', label: 'Economic Services', detail: 'Infrastructure & Development' },
+      debt: { amount: '₱0.00 M', pct: '0.0%', label: 'Debt Service', detail: 'Interest & Charges' },
+    },
+  },
 };
 
-// SRE Q1 Data
-const sreData = {
-  totalIncome: '₱2,138.15 M',
-  totalExpense: '₱1,639.95 M',
-  netIncome: '₱498.20 M',
-  fundBalance: '₱1,842.50 M',
-  income: {
-    local: { amount: '₱892.35 M', pct: '41.7%', label: 'Local Sources', detail: 'Tax & Non-Tax Revenue' },
-    external: { amount: '₱1,245.80 M', pct: '58.3%', label: 'External Sources', detail: 'National Tax Allotment' },
-  },
-  expenditure: {
-    gps: { amount: '₱856.40 M', pct: '52.2%', label: 'General Public Services', detail: 'Administration & Operations' },
-    social: { amount: '₱425.30 M', pct: '25.9%', label: 'Social Services', detail: 'Health, Education, Welfare' },
-    economic: { amount: '₱312.75 M', pct: '19.1%', label: 'Economic Services', detail: 'Infrastructure & Development' },
-    debt: { amount: '₱45.50 M', pct: '2.8%', label: 'Debt Service', detail: 'Interest & Charges' },
-  },
-};
-
-// Infrastructure stats
-const infraStats = [
-  { value: '84', label: 'Total Projects', icon: 'bi-folder-fill' },
-  { value: '₱3.19B', label: 'Total Investment', icon: 'bi-currency-peso' },
-  { value: '72', label: 'Completed', icon: 'bi-check-circle-fill' },
-  { value: '12', label: 'Ongoing', icon: 'bi-hourglass-split' },
-];
-
-// Sample DPWH projects
-const dpwhProjects = [
-  {
-    year: '2023',
-    category: 'Flood Control',
-    title: 'Flood Control for Urban Core and Central District (Package II)',
-    location: 'Urban Core and Central District, Zamboanga City',
-    workType: 'Flood Control with Pumping Station and RROW',
-    contractor: 'Sunwest, Inc. / Bendimil Construction',
-    cost: '₱198,360,500',
-  },
-  {
-    year: '2023',
-    category: 'Flood Control',
-    title: 'Construction of Flood Control Structure at Tinuba River',
-    location: 'Sinubong, Zamboanga City',
-    workType: 'River Flood Control Structure',
-    contractor: 'JM2K Construction',
-    cost: '₱41,109,967',
-  },
-  {
-    year: '2023',
-    category: 'Flood Control',
-    title: 'Construction of Flood Control Structure at Maasin Creek',
-    location: 'Zamboanga City',
-    workType: 'Creek Flood Control Structure',
-    contractor: 'Benram Construction / Allrock Construction',
-    cost: '₱39,189,522',
-  },
-];
+// Load infrastructure projects from data file
 
 export default function BudgetPage() {
+  const [selectedQuarter, setSelectedQuarter] = useState<'Q1' | 'Q2'>('Q1');
+  const sreData = sreDataByQuarter[selectedQuarter];
+
   return (
     <>
       {/* Page Header */}
@@ -93,14 +113,26 @@ export default function BudgetPage() {
                 <i className="bi bi-graph-up-arrow"></i> Financial Report
               </span>
               <h2 className="text-2xl font-bold text-gray-800">Statement of Receipts & Expenditures</h2>
-              <p className="text-gray-500">FY 2025 quarterly financial performance</p>
+              <p className="text-gray-500">FY 2025 quarterly financial performance - {sreData.label}</p>
             </div>
             <div className="flex gap-2">
-              <button className="px-4 py-2 bg-bz-primary text-white rounded-lg text-sm font-medium">
+              <button
+                onClick={() => setSelectedQuarter('Q1')}
+                className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${selectedQuarter === 'Q1'
+                  ? 'bg-bz-primary text-white'
+                  : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
+                  }`}
+              >
                 <span className="font-bold">Q1</span>
                 <span className="text-xs block opacity-80">Jan - Mar</span>
               </button>
-              <button className="px-4 py-2 bg-gray-100 text-gray-600 rounded-lg text-sm font-medium hover:bg-gray-200">
+              <button
+                onClick={() => setSelectedQuarter('Q2')}
+                className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${selectedQuarter === 'Q2'
+                  ? 'bg-bz-primary text-white'
+                  : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
+                  }`}
+              >
                 <span className="font-bold">Q2</span>
                 <span className="text-xs block opacity-80">Apr - Jun</span>
               </button>
@@ -188,11 +220,10 @@ export default function BudgetPage() {
               <div className="space-y-3">
                 {Object.values(sreData.expenditure).map((item, i) => (
                   <div key={i} className="flex items-center gap-4">
-                    <div className={`w-3 h-3 rounded-full ${
-                      i === 0 ? 'bg-indigo-500' :
+                    <div className={`w-3 h-3 rounded-full ${i === 0 ? 'bg-indigo-500' :
                       i === 1 ? 'bg-orange-500' :
-                      i === 2 ? 'bg-teal-500' : 'bg-gray-500'
-                    }`}></div>
+                        i === 2 ? 'bg-teal-500' : 'bg-gray-500'
+                      }`}></div>
                     <div className="flex-1">
                       <p className="font-medium text-gray-800 text-sm">{item.label}</p>
                       <p className="text-xs text-gray-500">{item.detail}</p>
@@ -207,103 +238,29 @@ export default function BudgetPage() {
             </div>
           </div>
           <p className="text-xs text-gray-500 mt-4">
-            <i className="bi bi-info-circle"></i> Source: <a href="https://blgf.gov.ph/" target="_blank" rel="noopener noreferrer" className="text-bz-primary hover:underline">Bureau of Local Government Finance (BLGF)</a>
+            <i className="bi bi-info-circle"></i> Source: <a href="https://blgf.gov.ph/" target="_blank" rel="noopener noreferrer" className="text-bz-primary hover:underline">Bureau of Local Government Finance (BLGF)</a> - Statement of Receipts & Expenditures FY 2025
           </p>
         </div>
       </section>
 
-      {/* Infrastructure Investments */}
+      {/* Infrastructure Investments - DPWH & Sumbong sa Pangulo Projects */}
       <section className="py-10 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="mb-6">
             <span className="inline-flex items-center gap-2 bg-bz-primary/10 text-bz-primary px-3 py-1 rounded-full text-sm mb-2">
-              <i className="bi bi-building-gear"></i> Public Works
+              <i className="bi bi-building-gear"></i> Infrastructure Projects
             </span>
-            <h2 className="text-2xl font-bold text-gray-800">Infrastructure Investments</h2>
-            <p className="text-gray-500">₱3.19 billion in infrastructure development across 84 projects</p>
-          </div>
-
-          {/* Stats Grid */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
-            {infraStats.map((stat, i) => (
-              <div key={i} className="bg-white rounded-xl p-5 border border-gray-100 flex items-center gap-4">
-                <div className="w-12 h-12 bg-bz-primary/10 rounded-xl flex items-center justify-center">
-                  <i className={`bi ${stat.icon} text-xl text-bz-primary`}></i>
-                </div>
-                <div>
-                  <p className="text-xl font-bold text-gray-800">{stat.value}</p>
-                  <p className="text-sm text-gray-600">{stat.label}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          {/* Project Cards */}
-          <div className="space-y-4">
-            {dpwhProjects.map((project, i) => (
-              <div key={i} className="bg-white rounded-xl p-6 border border-gray-100">
-                <div className="flex flex-wrap gap-2 mb-3">
-                  <span className="bg-bz-primary text-white text-xs px-2 py-1 rounded">{project.year}</span>
-                  <span className="bg-blue-100 text-blue-700 text-xs px-2 py-1 rounded flex items-center gap-1">
-                    <i className="bi bi-water"></i> {project.category}
-                  </span>
-                </div>
-                <h3 className="font-bold text-gray-800 mb-2">{project.title}</h3>
-                <p className="text-sm text-gray-500 mb-4">
-                  <i className="bi bi-geo-alt"></i> {project.location}
-                </p>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
-                  <div>
-                    <p className="text-gray-500">Type of Work</p>
-                    <p className="font-medium text-gray-800">{project.workType}</p>
-                  </div>
-                  <div>
-                    <p className="text-gray-500">Contractor</p>
-                    <p className="font-medium text-gray-800">{project.contractor}</p>
-                  </div>
-                  <div>
-                    <p className="text-gray-500">Contract Cost</p>
-                    <p className="font-bold text-bz-primary">{project.cost}</p>
-                  </div>
-                </div>
-                <div className="flex justify-between items-center mt-4 pt-4 border-t border-gray-100">
-                  <span className="text-xs text-gray-500">
-                    <i className="bi bi-info-circle"></i> Source: Sumbong sa Pangulo
-                  </span>
-                  <a href="https://sumbongsapangulo.ph/" target="_blank" rel="noopener noreferrer" className="text-sm text-bz-primary hover:underline">
-                    View Details <i className="bi bi-arrow-up-right"></i>
-                  </a>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* DPWH Projects */}
-      <section className="py-10 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="mb-6">
-            <span className="inline-flex items-center gap-2 bg-bz-primary/10 text-bz-primary px-3 py-1 rounded-full text-sm mb-2">
-              <i className="bi bi-building"></i> National Government Projects
-            </span>
-            <h2 className="text-2xl font-bold text-gray-800">DPWH Infrastructure Projects in Zamboanga City</h2>
+            <h2 className="text-2xl font-bold text-gray-800">DPWH & Government Infrastructure Projects</h2>
             <p className="text-gray-500">Implementing Agency: Zamboanga City 2nd District Engineering Office / Region IX</p>
-            <p className="text-xs text-gray-500 mt-1">
-              <i className="bi bi-database"></i> Showing 84 of 1,111 total contracts from DPWH portal
-            </p>
           </div>
 
-          <div className="bg-gray-50 rounded-xl p-8 text-center border border-gray-100">
-            <i className="bi bi-building-gear text-4xl text-gray-300 mb-4"></i>
-            <p className="text-gray-500">DPWH project data is loaded dynamically from the transparency portal.</p>
-            <a href="https://transparency.dpwh.gov.ph/" target="_blank" rel="noopener noreferrer" className="mt-4 inline-flex items-center gap-2 text-bz-primary hover:underline">
-              Visit DPWH Transparency Portal <i className="bi bi-arrow-up-right"></i>
-            </a>
-          </div>
+          <InfrastructureTable
+            projects={dpwhData.projects}
+            summary={dpwhData.summary}
+          />
 
-          <p className="text-xs text-gray-500 mt-4">
-            <i className="bi bi-info-circle"></i> Data Sources: <a href="https://transparency.dpwh.gov.ph/" target="_blank" rel="noopener noreferrer" className="text-bz-primary hover:underline">DPWH Transparency Portal (1,111 contracts verified)</a> & <a href="https://sumbongsapangulo.ph/" target="_blank" rel="noopener noreferrer" className="text-bz-primary hover:underline">Sumbong sa Pangulo (18 flood control projects)</a>
+          <p className="text-xs text-gray-500 mt-6">
+            <i className="bi bi-info-circle"></i> Data Sources: <a href="https://transparency.dpwh.gov.ph/" target="_blank" rel="noopener noreferrer" className="text-bz-primary hover:underline">DPWH Transparency Portal ({dpwhData.summary.dpwhPortalTotal?.toLocaleString() || '1,111'} contracts verified)</a> & <a href="https://sumbongsapangulo.ph/" target="_blank" rel="noopener noreferrer" className="text-bz-primary hover:underline">Sumbong sa Pangulo ({dpwhData.summary.dataSources?.sumbongSaPangulo?.projects || 34} flood control projects)</a>
           </p>
         </div>
       </section>
